@@ -1,0 +1,16 @@
+Paleta de colores:
+#DED9C9 
+#D9D3C3 Oscuro (Sombra)
+#E3E0D5 Crema
+#C6B866 Oliva
+#D6C476 Oliva Claro
+#911714 Rojo
+#9C332F Rojo Claro
+#1DBFAF Verde Agua
+#199E8E Verde Agua Oscuro (Sombra)
+#49C7BA Verde Agua Claro
+#181B34 Azul
+#3A3A39 Gris
+
+Tipografías:
+Truculenta: https://fonts.google.com/specimen/Truculenta para subtítulos descripciones y texto continuo, tiene mil cuerpos y pesos está buena

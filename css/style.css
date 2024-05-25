@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Truculenta:opsz,wght@12..72,100..900&display=swap'); /*Benefio: se guarda en memoria cache de todo aquel que la visite y no consume nuevamente memoria en descargarla*/
+/*@font-face {
+  font-family: "Truculenta";
+  src: url("../fonts/Truculenta-Regular.ttf");
+  font-weight: 100; //Beneficio de descargarlo, al no tener internet funciona - Contra aumenta peso de la pagina(es poco)
+}*/
+*{
+  box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+
+	list-style: none;
+	text-decoration: none;
+  font-family: "Truculenta", sans-serif;
+  color: #181B34;
+}
+
+/*img {
+  width: 200px;
+  background: #DED9C9;
+  padding: 10px;
+  border-radius: 10px;
+}*/
+.img-logo{
+  width: 5rem;
+}
+/*-Header--------------------------------------------------------------------------------------*/
+
+/*-Navbar--------------------------------------------------------------------------------------*/
+.navbar{
+  font-size: 1.5rem;
+  padding: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color:#181B34;
+  background-color: #DED9C9 ;
+  border-bottom: 0.15rem solid #181B34;
+}
+.img-logo{
+  width: 7rem;
+}
+.menu {
+  display: flex;
+  padding: 0 0.25rem;
+  color: #181B34;
+  list-style-type: none;
+}
+.menu li {
+  display: inline-block;
+  margin: 0 1.4rem;
+  padding: 0 0.7rem;
+}
+.menu li a {
+  color: #181B34;
+  padding: 0 0.25rem;
+  font-weight: bold;
+}
+.menu-opcion:hover {
+  background: #D9D3C3;
+  padding: 0 0.25rem;
+  border: 0.2rem solid #181B34;
+  border-radius: 7.5px;
+}
+.menu-opcion.active {
+  /*Achicar padding y capaz imitar a logo*/
+  background: #49C7BA;
+  color: #911714 !important; /*No funciona*/
+  padding: 0 0.25rem;
+  border: 0.2rem solid #199E8E;
+  border-radius: 7.5px;
+  text-transform: uppercase;
+  text-shadow: 
+        -0.5px -0.5px 0 #C6B866,  
+        0.5px -0.5px 0 #C6B866,
+        -0.5px 0.5px 0 #C6B866,
+        0.5px 0.5px 0 #C6B866; 
+}
+/*-Footer--------------------------------------------------------------------------------------*/
+.footer {
+  padding: 1vh;
+  display: block;
+  align-content: center;
+  justify-content: center;
+  color:#181B34;
+  background-color: #DED9C9;
+  border-top: 0.15rem solid #181B34;
+}
+.footer-copyright{
+  font-size: 1rem;
+}
+/*-Index---------------------------------------------------------------------------------------*/
+.main-inicio {
+  height: 100vh;
+  display: block;
+  background: #DED9C9;
+  background-image: url("./../img/tanques.png");
+  background-size: contain; /*contain: encuentra tamaño mas chico / cover: encuentra tamaño mas grande*/
+ 	background-repeat: no-repeat;
+ 	background-position: bottom right;
+  /*background-attachment: fixed; //fixed:imagen fija cuando scrolleamos*/
+}
+.inicio {
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  display: block;
+}
+.inicio-logo{
+  width: 20rem;
+}
+.menu-inicio {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 20px;
+}
+.menu-inicio li {
+  padding: 20px;
+}
+.menu-inicio li a {
+  color: #181B34;
+  background-color: #DED9C9;
+  border-radius: 10px;
+}
+.menu-inicio li a:hover {
+  background: #D9D3C3;
+  padding: 0.25rem;
+  border: 0.25rem solid #181B34;
+  border-radius: 15px;
+}
+/*-Sobre-Nosotros------------------------------------------------------------------------------*/
+.main-sobre-nosotros {
+  background-color: #DED9C9;
+  font-size: 1.2rem;
+  padding: 1rem;
+}
+.parrafo-sobre-nosotros{
+  display: inline;
+}
+.img-sobre-nosotros{
+  max-width: 30%;
+}
+/*-Productos-----------------------------------------------------------------------------------*/
+.main-productos {
+  background-color: #DED9C9;
+  padding: 1rem;
+}
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.producto {
+  flex: 1;
+  background: #D9D3C3;
+  border: 0.15rem solid #181B34;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0.5rem;
+  min-width: 20rem;
+  text-align: center;
+}
+.imagen-producto {
+  max-width: 100%;
+  max-height: 15rem;
+}
+.producto h2 {
+  text-shadow: 
+        -0.5px -0.5px 0 #C6B866,  
+        0.5px -0.5px 0 #C6B866,
+        -0.5px 0.5px 0 #C6B866,
+        0.5px 0.5px 0 #C6B866; 
+}
+.producto h3 {
+  color: #911714;
+}
+.aceites{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.aceite-de-oliva, .aceite-de-uva, .aceite-de-girasol{
+  display: block;
+}
+
+.titulo-producto {
+  font-size: 2rem;
+}
+.subtitulo-producto {
+  font-size: 1.2rem;
+}
+
+.propiedad-producto {
+
+}
+/*-Envases-------------------------------------------------------------------------------------*/
+.main-envases {
+  background-color: #DED9C9;
+}
+.main-envases div {
+  display: flex;
+}
+.img-envase{
+  width: 200px;
+}
+/*-Contacto------------------------------------------------------------------------------------*/
+.main-contacto {
+  background-color: #DED9C9;
+}
+.contactanos {
+
+}
+form {
+
+}
+.encontranos img {
+  width: 100%;
+  max-width: 400px;
+}
+
+.envios {
+
+}
+.medios-de-pago {
+
+}
