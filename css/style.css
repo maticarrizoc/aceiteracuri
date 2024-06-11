@@ -1,0 +1,795 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  /*Para crear variables de CSS*/
+  --clr-principal: #DED9C9;
+  --clr-secundario: #D9D3C3;
+  --clr-crema: #E3E0D5;
+  --clr-oliva: #C6B866;
+  --clr-oliva-claro: #D6C476;
+  --clr-rojo: #911714;
+  --clr-rojo-claro: #9C332F;
+  --clr-verde-agua: #1DBFAF;
+  --clr-verde-agua-claro: #49C7BA;
+  --clr-verde-agua-oscuro: #199E8E;
+  --clr-azul: #181B34;
+  --clr-gris: #3A3A39;
+}
+
+.img-logo {
+  width: 5rem;
+}
+
+/*-Header--------------------------------------------------------------------------------------*/
+/*-Navbar--------------------------------------------------------------------------------------*/
+.navbar {
+  font-size: 1.5rem;
+  font-family: "Truculenta", sans-serif;
+  padding: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-principal);
+  border-bottom: 0.15rem solid #181B34;
+}
+
+.img-logo {
+  width: 7rem;
+}
+
+.menu {
+  display: flex;
+  padding: 0 0.25rem;
+  list-style-type: none;
+  height: 200%;
+}
+
+.menu li {
+  display: inline-block;
+  margin: 0 1.4rem;
+  padding: 0 0.7rem;
+  align-self: center;
+}
+
+.menu li a {
+  color: #181B34;
+  padding: 0 0.25rem;
+  font-weight: bold;
+}
+
+.menu-opcion:hover {
+  font-family: "Become Choice";
+  font-style: italic;
+  font-size: 1.9rem;
+  font-weight: 900;
+  /*Corregir movimiento que hacen las palabras*/
+  padding: 0 1rem 0 0;
+  /*Funciona para SN y Prod*/
+}
+
+.menu .active {
+  /*Achicar padding y capaz imitar a logo*/
+  color: #911714;
+  background: #49C7BA;
+  font-family: "Fredoka", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow:
+    -0.05rem -0.05rem 0 #C6B866,
+    0.05rem -0.05rem 0 #C6B866,
+    -0.05rem 0.05rem 0 #C6B866,
+    0.05rem 0.05rem 0 #C6B866,
+    0.1rem 0.1rem 0 #181B34;
+  /* Segunda sombra */
+  padding: 0.75rem 0.25rem;
+  border: 0.2rem solid #199E8E;
+  border-radius: 12.5px;
+}
+
+.menu .active a {
+  /*Achicar padding y capaz imitar a logo*/
+  color: #911714;
+  padding: 1rem 0;
+}
+
+.menu .active:hover {
+  font-family: "Fredoka", sans-serif;
+  font-style: normal;
+  font-size: 1.2rem;
+}
+
+/*-Footer-----------------------------------------------------*/
+.footer {
+  padding: 1.5vh 1vh 1vh 1vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: space-around;
+  color: #181B34;
+  background-color: var(--clr-principal);
+  border-top: 0.15rem solid #181B34;
+  font-family: "Truculenta", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.footer-logo {
+  order: 1;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-logo-img {
+  width: 10rem;
+}
+
+.informacion1 {
+  order: 2;
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.informacion2,
+.informacion3,
+.informacion3 a {
+  align-content: space-around;
+  color: #911714;
+  font-weight: 700;
+  text-shadow:
+    -0.01rem -0.01rem 0 #C6B866,
+    0.01rem -0.01rem 0 #C6B866,
+    -0.01rem 0.01rem 0 #C6B866,
+    0.01rem 0.01rem 0 #C6B866;
+  margin-top: auto;
+  padding-bottom: 1vh;
+}
+
+.informacion2 {
+  order: 3;
+  text-align: left;
+}
+
+.informacion3,
+.informacion3 a {
+  order: 4;
+  text-align: right;
+}
+
+.informacion3 a:hover {
+  color: #181B34;
+}
+
+.informacion3 a:hover .fa-solid {
+  /*order: 2; Para que pase el icono con una animacion a la derecha de la ubicacion*/
+  transition: transform 0.5s ease;
+  transform: rotate(-25deg);
+}
+
+.footer-copyright {
+  order: 5;
+  width: 100%;
+  text-align: center;
+  border-top: 0.10rem solid #181B34;
+  padding-top: 1vh;
+}
+
+.footer-copyright a {
+  color: #181B34;
+}
+
+.icono-footer {
+  color: #181B34;
+  font-size: 1.75rem;
+}
+
+.fa-phone {
+  font-size: 1.5rem;
+}
+
+.fa-linkedin,
+.fa-github {
+  font-size: 1.25rem;
+}
+
+/*-Index-------------------------------------------------------*/
+.main-inicio {
+  height: 100vh;
+  font-family: "Truculenta", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: var(--clr-principal);
+  background-image: url("./../img/tanques.png");
+  background-size: contain;
+  /*contain: encuentra tamaño mas chico / cover: encuentra tamaño mas grande*/
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 1rem 1rem 0.5rem 0.5rem;
+  /*background-attachment: fixed; //fixed:imagen fija cuando scrolleamos*/
+}
+
+.inicio {
+  width: 100%;
+  text-align: left;
+}
+
+.informacion {
+  color: #911714;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: right;
+  text-shadow:
+    -0.05rem -0.05rem 0 #C6B866,
+    0.05rem -0.05rem 0 #C6B866,
+    -0.05rem 0.05rem 0 #C6B866,
+    0.05rem 0.05rem 0 #C6B866;
+  margin-top: auto;
+}
+
+.inicio-logo {
+  width: 16rem;
+}
+
+.menu-inicio {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.menu-inicio li {
+  padding: 1.1rem;
+}
+
+.menu-inicio li a {
+  color: #181B34;
+  border-radius: 10px;
+}
+
+.menu-inicio li a:hover {
+  font-family: "Become Choice";
+  font-style: italic;
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
+.informacion,
+.informacion a {
+  color: #911714;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  text-shadow:
+    -0.05rem -0.05rem 0 #C6B866,
+    0.05rem -0.05rem 0 #C6B866,
+    -0.05rem 0.05rem 0 #C6B866,
+    0.05rem 0.05rem 0 #C6B866;
+  margin-top: auto;
+}
+
+.ubicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.ubicacion:hover {
+  color: #181B34;
+}
+
+.ubicacion:hover .fa-solid {
+  /*order: 2; Para que pase el icono con una animacion a la derecha de la ubicacion*/
+  transition: transform 0.5s ease;
+  transform: rotate(-25deg);
+}
+
+/*-Sobre-Nosotros----------------------------------------------*/
+.main-sobre-nosotros {
+  font-family: "Truculenta", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  width: 100%;
+  color: #181B34;
+  background-color: var(--clr-principal);
+  display: grid;
+  grid-template-areas: "consumasalud img1"
+    "img2 parrafo1"
+    "parrafo2 img3"
+    "img4 parrafo3";
+}
+
+.contenedor__sn {
+  height: 70vh;
+  width: 49.4vw;
+  /*No va pero me funciona (atado con alambre)*/
+  align-content: center;
+}
+
+.consumasalud {
+  order: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-family: "Become Choice";
+  font-size: 4rem;
+  text-shadow:
+    -0.05rem -0.05rem 0 var(--clr-principal),
+    0.05rem -0.05rem 0 var(--clr-principal),
+    -0.05rem 0.05rem 0 var(--clr-principal),
+    0.05rem 0.05rem 0 var(--clr-principal);
+  background-image: url("/img/bgsn3.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.consumasalud p {
+  font-size: 6rem;
+  font-weight: 300;
+  transform: rotate(10deg);
+}
+
+.consumasalud .p-invertido {
+  transform: rotate(190deg);
+}
+
+.parrafo1 {
+  order: 4;
+}
+
+.parrafo2 {
+  order: 5;
+}
+
+.parrafo3 {
+  order: 8;
+}
+
+.parrafo1,
+.parrafo2,
+.parrafo3 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  background-image: url("/img/bgsn.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img1 {
+  order: 2;
+  background-image: url("/img/sirviendo1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img2 {
+  order: 3;
+  background-image: url("/img/sirviendo2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img3 {
+  order: 6;
+  background-image: url("/img/hardanylautaro4.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.img4 {
+  order: 7;
+  background-image: url("/img/distincionsenadores.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*-Productos-----------------------------------------------------------------------------------*/
+.main-productos {
+  font-family: "Truculenta", sans-serif;
+  background-color: var(--clr-principal);
+  padding: 1rem;
+}
+
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.producto {
+  flex: 1;
+  background: #D9D3C3;
+  border: 0.15rem solid #181B34;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0.5rem;
+  min-width: 20rem;
+  text-align: center;
+}
+
+.imagen-producto {
+  max-width: 100%;
+  max-height: 15rem;
+}
+
+.producto h2 {
+  text-shadow:
+    -0.5px -0.5px 0 #C6B866,
+    0.5px -0.5px 0 #C6B866,
+    -0.5px 0.5px 0 #C6B866,
+    0.5px 0.5px 0 #C6B866;
+}
+
+.producto h3 {
+  color: #911714;
+  /*Si funciona*/
+}
+
+.aceites {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.aceite-de-oliva,
+.aceite-de-uva,
+.aceite-de-girasol {
+  display: block;
+}
+
+.titulo-producto {
+  font-size: 2rem;
+}
+
+.subtitulo-producto {
+  font-size: 1.2rem;
+}
+
+.propiedad-producto {}
+
+.hide {
+  display: none;
+}
+
+
+.producto.aceite:hover .hide {
+  display: block;
+}
+
+/*-Envases-------------------------------------------------------------------------------------*/
+.main-envases {
+  font-family: "Truculenta", sans-serif;
+  background-color: var(--clr-principal);
+}
+
+.main-envases div {
+  display: flex;
+}
+
+.img-envase {
+  width: 200px;
+}
+
+/*-Contacto------------------------------------------------------------------------------------*/
+.main-contacto {
+  font-family: "Truculenta", sans-serif;
+  background-color: var(--clr-principal);
+  color: var(--clr-azul);
+  display: grid;
+  grid-template-areas: "contactanos contactanos encontranos"
+                       "envios promociones encontranos"
+                       "mediosdepago promociones encontranos";
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 20px;
+  padding: 10px;
+}
+.main-contacto h1, .main-contacto h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 2rem;
+}
+.contactanos {
+  grid-area: contactanos;
+}
+.contactanos a{
+  color: var(--clr-azul);
+  font-weight: 600;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.icono-contacto .fa-phone, .icono-contacto .fa-envelope {
+  font-size: 2rem;
+}
+.icono-contacto .fa-whatsapp, .icono-contacto .fa-instagram {
+  font-size: 2.3rem;
+}
+form {
+  display: inline-block;
+}
+form input, form textarea, form button{
+  width: 100%;
+  font-family: "Truculenta", sans-serif;
+  font-size: 1rem;
+  background: var(--clr-secundario);
+  color: var(--clr-azul);
+  border: 2px solid var(--clr-azul);
+  border-radius: 5px;
+  margin-top: 1px;
+}
+form button{
+  width: auto;
+  font-weight: bold;
+  padding: 1px;
+}
+.encontranos {
+  grid-area: encontranos;
+  display: inline-block;
+}
+.encontranos a{
+  color: var(--clr-azul);
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  align-items: center;
+}
+.encontranos a i{
+  font-size: 2rem;
+}
+.encontranos img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.envios {
+  grid-area: envios;
+}
+
+.medios-de-pago {
+  grid-area: mediosdepago;
+}
+.promociones {
+  grid-area: promociones;
+}
+.img-promocion {
+  width: 100%;
+  border-radius: 15px;
+}
+
+@media (width < 1200px) {
+
+  /*-Sobre-Nosotros----------------------------------------------*/
+  .main-sobre-nosotros {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+
+  .contenedor__sn {
+    height: 60vh;
+  }
+
+  /*.main-inicio {
+    display: flex;
+    background: none;
+    background-color: var(--clr-principal);
+  }
+  .inicio {
+    width: 100%;
+    display: flex;
+  }
+  .contenedor-logo {
+    width: 100%;
+    background-image: url("./../img/tanques.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+     background-position: bottom right;
+  }
+  .informacion{
+    color:#911714;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow:
+          -0.5px -0.5px 0 #C6B866,  
+          0.5px -0.5px 0 #C6B866,
+          -0.5px 0.5px 0 #C6B866,
+          0.5px 0.5px 0 #C6B866; 
+  }
+  .inicio-logo{
+    width: 16rem;
+  }
+  .menu-inicio {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 20px;
+  }
+  .menu-inicio li {
+    padding: 20px;
+  }
+  .menu-inicio li a {
+    color: #181B34;
+    background-color: var(--clr-principal) 15%;
+    border-radius: 10px;
+  }
+  /*.menu-inicio li a:hover {
+    background: #c6b76683;
+    padding: 0.25rem;
+    border: 0.25rem solid #181B34;
+    border-radius: 15px;
+  }
+  .menu-inicio li:hover {
+    background: #D9D3C3;
+  }*/
+}
+
+@media (width < 1020px) {
+
+  /*-Sobre-Nosotros----------------------------------------------*/
+  .consumasalud {
+    font-size: 3rem;
+  }
+
+  .consumasalud p {
+    font-size: 5rem;
+    font-weight: 400;
+  }
+}
+
+@media (width <=800px) {
+
+  /*-Index-----------------------------------------------------*/
+  .informacion,
+  .informacion a {
+    font-size: 1rem;
+    /*Que vaya al final*/
+  }
+
+  /*-Footer----------------------------------------------------*/
+  .informacion2,
+  .informacion3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .icono-footer {
+    font-size: 1.5rem;
+  }
+
+  .fa-phone {
+    font-size: 1.2rem;
+  }
+
+  .fa-linkedin,
+  .fa-github {
+    font-size: 1.1rem;
+  }
+
+  /*-Sobre-Nosotros----------------------------------------------*/
+  .main-sobre-nosotros {
+    font-size: 1.2rem;
+    font-weight: 700;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contenedor__sn {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .consumasalud {
+    order: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Become Choice";
+    font-size: 4rem;
+
+  }
+
+  .consumasalud p {
+    font-size: 6rem;
+    font-weight: 400;
+  }
+
+  .parrafo1 {
+    order: 3;
+  }
+
+  .parrafo2 {
+    order: 5;
+  }
+
+  .parrafo3 {
+    order: 7;
+  }
+
+  .img1 {
+    order: 2;
+  }
+
+  .img2 {
+    order: 4;
+  }
+
+  .img3 {
+    order: 6;
+  }
+
+  .img4 {
+    order: 8;
+  }
+}
+
+@media (width <=700px) {
+
+  /*-Index-----------------------------------------------------*/
+  .informacion,
+  .informacion a {
+    font-size: 0.9rem;
+  }
+
+  /*-Footer-----------------------------------------------------*/
+  /*Contacto esconder esa palabra?*/
+  .footer {
+    justify-items: center;
+  }
+
+  .informacion1,
+  .informacion2,
+  .informacion3,
+  .informacion3 a {
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    font-size: 0.8rem;
+  }
+
+  .informacion2 {
+    order: 4;
+  }
+
+  .informacion3 {
+    order: 3;
+  }
+
+  .footer-logo-img {
+    width: 7.5rem;
+  }
+
+}
+
+@media (width <=550px) {
+
+  /*-Sobre-Nosotros----------------------------------------------*/
+  .consumasalud {
+    font-size: 3rem;
+  }
+
+  .consumasalud p {
+    font-size: 5rem;
+  }
+}

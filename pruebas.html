@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/styleprueba.css">
+    <script src="https://kit.fontawesome.com/975f2c8dd5.js" crossorigin="anonymous"></script>
+    <style>
+        .curved-text {
+          display: block;
+          width: 100%;
+          text-align: center;
+          margin: 20px 0;
+        }
+      </style>
+    </head>
+    <body>
+      <h1>Ejemplo de Texto Curvo</h1>
+      <div class="curved-text">
+        <svg width="600" height="200" viewBox="0 0 600 200">
+          <path id="curve" fill="transparent" d="M 100 150 Q 300 -50 500 150" />
+          <text width="500">
+            <textPath href="#curve" startOffset="50%" text-anchor="middle" style="font-size: 24px; fill: black;">
+              Texto Curvo
+            </textPath>
+          </text>
+        </svg>
+      </div>
+    </body>
+    </html>
