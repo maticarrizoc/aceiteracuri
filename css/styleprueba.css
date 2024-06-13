@@ -1,18 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
 @import url('https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     list-style: none;
     text-decoration: none;
-    flex-grow: 0;
-    background: #181B34;
+}
+
+:root {
+    /*Para crear variables de CSS*/
+    --clr-principal: #DED9C9;
+    --clr-secundario: #D9D3C3;
+    --clr-crema: #E3E0D5;
+    --clr-oliva: #C6B866;
+    --clr-oliva-claro: #D6C476;
+    --clr-rojo: #911714;
+    --clr-rojo-claro: #9C332F;
+    --clr-verde-agua: #1DBFAF;
+    --clr-verde-agua-claro: #49C7BA;
+    --clr-verde-agua-oscuro: #199E8E;
+    --clr-azul: #181B34;
+    --clr-gris: #3A3A39;
 }
 
 /*.text-container {
@@ -21,3 +34,70 @@
     border-radius: 15px;
     display: inline-block;
 }*/
+
+/*-Productos--------------------------------------------------*/
+.main-productos {
+    font-family: "Truculenta", sans-serif;
+    background-color: var(--clr-principal);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.productos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+.producto {
+    display: flex;
+    flex-direction: column;
+    border: 0.15rem solid #181B34;
+    border-radius: 15px;
+    padding: 0.1rem;
+    margin: 0.1rem;
+    max-width: 20rem;
+    text-align: center;
+    align-items: center;
+}
+.producto h2 {
+    color: var(--clr-azul);
+    font-size: 1.5rem;
+    text-shadow:
+        -0.05rem -0.05rem 0 #C6B866,
+        0.05rem -0.05rem 0 #C6B866,
+        -0.05rem 0.05rem 0 #C6B866,
+        0.05rem 0.05rem 0 #C6B866;
+}
+.producto h3 {
+    color: #911714;
+    font-size: 1.2rem;
+}
+.propiedades-producto {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: start;
+    padding: 0 0.5rem;
+}
+/* 
+.hide {
+    display: none;
+}
+
+.producto.aceite:hover .hide {
+    display: block;
+}
+.producto.aceite:hover img {
+    transform: rotate(70deg);
+    transition: 2s;
+}
+.producto.aceite:hover h2{ 
+    transform: translateY(-250px);
+    transition: 2s;
+}
+.producto.aceite:hover .propiedad-producto {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+ */

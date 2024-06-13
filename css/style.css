@@ -32,8 +32,103 @@
   width: 5rem;
 }
 
-/*-Header--------------------------------------------------------------------------------------*/
-/*-Navbar--------------------------------------------------------------------------------------*/
+/*-Index-------------------------------------------------------*/
+.main-inicio {
+  height: 100vh;
+  font-family: "Truculenta", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background: var(--clr-principal);
+  background-image: url("./../img/tanques.png");
+  background-size: contain;
+  /*contain: encuentra tamaño mas chico / cover: encuentra tamaño mas grande*/
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 1rem 1rem 0.5rem 0.5rem;
+  /*background-attachment: fixed; //fixed:imagen fija cuando scrolleamos*/
+}
+
+.inicio {
+  width: 100%;
+  text-align: left;
+}
+
+.informacion {
+  color: #911714;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: right;
+  text-shadow:
+    -0.05rem -0.05rem 0 #C6B866,
+    0.05rem -0.05rem 0 #C6B866,
+    -0.05rem 0.05rem 0 #C6B866,
+    0.05rem 0.05rem 0 #C6B866;
+  margin-top: auto;
+}
+
+.inicio-logo {
+  width: 16rem;
+}
+
+.menu-inicio {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+
+.menu-inicio li {
+  padding: 1.1rem;
+}
+
+.menu-inicio li a {
+  color: #181B34;
+  border-radius: 10px;
+}
+
+.menu-inicio li a:hover {
+  font-family: "Become Choice";
+  font-style: italic;
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+
+.informacion,
+.informacion a {
+  color: #911714;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: right;
+  text-shadow:
+    -0.05rem -0.05rem 0 #C6B866,
+    0.05rem -0.05rem 0 #C6B866,
+    -0.05rem 0.05rem 0 #C6B866,
+    0.05rem 0.05rem 0 #C6B866;
+  margin-top: auto;
+}
+
+/* .informacion{
+  background-color: #ded9c948;
+} */
+.ubicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.ubicacion:hover {
+  color: #181B34;
+}
+
+.ubicacion:hover .bi-geo-alt-fill {
+  /*order: 2; Para que pase el icono con una animacion a la derecha de la ubicacion*/
+  transition: transform 0.5s ease;
+  transform: rotate(-25deg);
+}
+
+/*-Header------------------------------------------------------*/
+/*-Navbar------------------------------------------------------*/
 .navbar {
   font-size: 1.5rem;
   font-family: "Truculenta", sans-serif;
@@ -174,10 +269,30 @@
   color: #181B34;
 }
 
-.informacion3 a:hover .fa-solid {
+.informacion3 a:hover .bi-geo-alt-fill {
+  /*No funciona*/
   /*order: 2; Para que pase el icono con una animacion a la derecha de la ubicacion*/
   transition: transform 0.5s ease;
   transform: rotate(-25deg);
+}
+
+.icono-footer {
+  color: #181B34;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.icono-footer .bi-telephone {
+  font-weight: 900;
+}
+
+.icono-footer .bi-envelope-at {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+a i:hover {
+  color: var(--clr-rojo);
 }
 
 .footer-copyright {
@@ -192,110 +307,8 @@
   color: #181B34;
 }
 
-.icono-footer {
-  color: #181B34;
-  font-size: 1.75rem;
-}
-
-.fa-phone {
-  font-size: 1.5rem;
-}
-
-.fa-linkedin,
-.fa-github {
-  font-size: 1.25rem;
-}
-
-/*-Index-------------------------------------------------------*/
-.main-inicio {
-  height: 100vh;
-  font-family: "Truculenta", sans-serif;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  background: var(--clr-principal);
-  background-image: url("./../img/tanques.png");
-  background-size: contain;
-  /*contain: encuentra tamaño mas chico / cover: encuentra tamaño mas grande*/
-  background-repeat: no-repeat;
-  background-position: bottom right;
-  padding: 1rem 1rem 0.5rem 0.5rem;
-  /*background-attachment: fixed; //fixed:imagen fija cuando scrolleamos*/
-}
-
-.inicio {
-  width: 100%;
-  text-align: left;
-}
-
-.informacion {
-  color: #911714;
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: right;
-  text-shadow:
-    -0.05rem -0.05rem 0 #C6B866,
-    0.05rem -0.05rem 0 #C6B866,
-    -0.05rem 0.05rem 0 #C6B866,
-    0.05rem 0.05rem 0 #C6B866;
-  margin-top: auto;
-}
-
-.inicio-logo {
-  width: 16rem;
-}
-
-.menu-inicio {
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 1rem;
-}
-
-.menu-inicio li {
-  padding: 1.1rem;
-}
-
-.menu-inicio li a {
-  color: #181B34;
-  border-radius: 10px;
-}
-
-.menu-inicio li a:hover {
-  font-family: "Become Choice";
-  font-style: italic;
-  font-size: 2.3rem;
-  font-weight: 900;
-}
-
-.informacion,
-.informacion a {
-  color: #911714;
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: right;
-  text-shadow:
-    -0.05rem -0.05rem 0 #C6B866,
-    0.05rem -0.05rem 0 #C6B866,
-    -0.05rem 0.05rem 0 #C6B866,
-    0.05rem 0.05rem 0 #C6B866;
-  margin-top: auto;
-}
-
-.ubicacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  gap: 0.5rem;
-}
-
-.ubicacion:hover {
-  color: #181B34;
-}
-
-.ubicacion:hover .fa-solid {
-  /*order: 2; Para que pase el icono con una animacion a la derecha de la ubicacion*/
-  transition: transform 0.5s ease;
-  transform: rotate(-25deg);
+.footer-copyright i {
+  font-size: 1.1rem;
 }
 
 /*-Sobre-Nosotros----------------------------------------------*/
@@ -491,96 +504,165 @@
   width: 200px;
 }
 
-/*-Contacto------------------------------------------------------------------------------------*/
+/*-Contacto---------------------------------------------------*/
 .main-contacto {
   font-family: "Truculenta", sans-serif;
   background-color: var(--clr-principal);
   color: var(--clr-azul);
   display: grid;
   grid-template-areas: "contactanos contactanos encontranos"
-                       "envios promociones encontranos"
-                       "mediosdepago promociones encontranos";
+    "envios promociones encontranos"
+    "mediosdepago promociones encontranos";
   grid-template-columns: 1fr 1fr 2fr;
   gap: 20px;
   padding: 10px;
 }
-.main-contacto h1, .main-contacto h2 {
+
+.main-contacto h1,
+.main-contacto h2 {
   text-align: center;
-  padding-bottom: 10px;
   font-size: 2rem;
 }
+
 .contactanos {
   grid-area: contactanos;
+  font-size: 1rem;
 }
-.contactanos a{
+
+.contactanos a {
   color: var(--clr-azul);
   font-weight: 600;
   display: flex;
   gap: 10px;
   align-items: center;
 }
-.icono-contacto .fa-phone, .icono-contacto .fa-envelope {
-  font-size: 2rem;
+
+.icono-contacto i {
+  font-size: 1.3rem;
 }
-.icono-contacto .fa-whatsapp, .icono-contacto .fa-instagram {
-  font-size: 2.3rem;
-}
+
 form {
   display: inline-block;
 }
-form input, form textarea, form button{
+
+form input,
+form textarea,
+form button {
   width: 100%;
   font-family: "Truculenta", sans-serif;
-  font-size: 1rem;
+  font-size: 0.9rem;
   background: var(--clr-secundario);
   color: var(--clr-azul);
-  border: 2px solid var(--clr-azul);
+  border: 1px solid var(--clr-azul);
   border-radius: 5px;
   margin-top: 1px;
 }
-form button{
+
+form button {
   width: auto;
   font-weight: bold;
   padding: 1px;
+  color: var(--clr-principal);
+  background: var(--clr-azul);
 }
+
 .encontranos {
   grid-area: encontranos;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }
-.encontranos a{
+
+.encontranos a {
   color: var(--clr-azul);
   text-align: center;
   padding-bottom: 10px;
   font-size: 1rem;
   font-weight: 600;
-  align-items: center;
 }
-.encontranos a i{
-  font-size: 2rem;
+
+.encontranos a i {
+  font-size: 1.3rem;
 }
+
 .encontranos img {
   width: 100%;
   border-radius: 15px;
 }
 
+.encontranos .mapa2 {
+  display: none;
+}
+
 .envios {
   grid-area: envios;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.camion {
+  text-align: start;
+  position: relative;
+  height: 1.5rem;
+  border-bottom: 0.01rem solid #181B34;
+}
+
+.camion i {
+  font-size: 1.5rem;
+  width: 100%;
+  position: absolute;
+}
+
+.camion .bi-shop {
+  font-size: 1.3rem;
+}
+
+.camion .bi-truck {
+  transform: translateX(1.5rem);
+}
+
+.camion .bi-house {
+  font-size: 1.35rem;
+  text-align: end;
+}
+
+.envios:hover .bi-truck {
+  transform: translateX(calc(100% - 3rem));
+  transition: transform 5s ease;
+}
+
+.envio-gratis {
+  background: var(--clr-verde-agua);
+
 }
 
 .medios-de-pago {
   grid-area: mediosdepago;
+  font-size: 1rem;
 }
+
+.medios-de-pago i {
+  font-size: 1.3rem;
+  padding-left: 5rem;
+}
+
 .promociones {
   grid-area: promociones;
 }
+
 .img-promocion {
   width: 100%;
   border-radius: 15px;
 }
 
+.img-promocion-horizontal {
+  display: none;
+}
+
 @media (width < 1200px) {
 
-  /*-Sobre-Nosotros----------------------------------------------*/
+  /*-Sobre-Nosotros-------------------------------------------*/
   .main-sobre-nosotros {
     font-size: 1.2rem;
     font-weight: 700;
@@ -588,6 +670,15 @@ form button{
 
   .contenedor__sn {
     height: 60vh;
+  }
+
+  /*-Contacto-------------------------------------------------*/
+  .encontranos p {
+    text-wrap: stable;
+  }
+
+  .medios-de-pago i {
+    padding-left: 2rem;
   }
 
   /*.main-inicio {
@@ -645,7 +736,7 @@ form button{
 
 @media (width < 1020px) {
 
-  /*-Sobre-Nosotros----------------------------------------------*/
+  /*-Sobre-Nosotros-------------------------------------------*/
   .consumasalud {
     font-size: 3rem;
   }
@@ -653,6 +744,61 @@ form button{
   .consumasalud p {
     font-size: 5rem;
     font-weight: 400;
+  }
+
+  /*-Contacto-------------------------------------------------*/
+  .main-contacto {
+    display: grid;
+    grid-template-areas: "contactanos contactanos encontranos"
+      "mediosdepago envios promociones ";
+  }
+
+  .main-contacto h1,
+  .main-contacto h2 {
+    font-size: 1.8rem;
+  }
+
+  .encontranos a {
+    padding-bottom: 1px;
+  }
+
+  .encontranos img {
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .encontranos .mapa1 {
+    display: none;
+  }
+
+  .encontranos .mapa2 {
+    display: block;
+  }
+
+  .envios p {
+    font-size: 0.9rem;
+  }
+
+  .medios-de-pago {
+    font-size: 0.9rem;
+  }
+
+  .medios-de-pago i {
+    padding-left: 1rem;
+  }
+
+  .promociones {
+    grid-area: promociones;
+  }
+
+  .img-promocion {
+    display: none;
+  }
+
+  .img-promocion-horizontal {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
   }
 }
 
@@ -676,16 +822,19 @@ form button{
     font-size: 1.5rem;
   }
 
-  .fa-phone {
-    font-size: 1.2rem;
+  .icono-footer .bi-envelope-at {
+    font-size: 1.7rem;
   }
 
-  .fa-linkedin,
-  .fa-github {
-    font-size: 1.1rem;
+  .footer-copyright {
+    font-size: 0.9rem;
   }
 
-  /*-Sobre-Nosotros----------------------------------------------*/
+  .footer-copyright i {
+    font-size: 1rem;
+  }
+
+  /*-Sobre-Nosotros--------------------------------------------*/
   .main-sobre-nosotros {
     font-size: 1.2rem;
     font-weight: 700;
@@ -742,6 +891,45 @@ form button{
   .img4 {
     order: 8;
   }
+
+  /*-Contacto--------------------------------------------------*/
+  .main-contacto {
+    display: grid;
+    grid-template-areas: "contactanos contactanos"
+      "encontranos encontranos"
+      "envios mediosdepago"
+      "promociones promociones";
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .main-contacto h1,
+  .main-contacto h2 {
+    font-size: 1.6rem;
+  }
+
+  .contactanos {
+    /* font-size: 1rem; */
+  }
+
+  .icono-contacto i {
+    /* font-size: 1.3rem; */
+  }
+
+  .encontranos a {
+    /* font-size: 1rem; */
+  }
+
+  .encontranos a i {
+    /* font-size: 1.3rem; */
+  }
+
+  .encontranos img {
+    width: 60%;
+    transform: translate(40%, 0);
+    /*Me sirve para centrar, pero no se si es correcto*/
+  }
 }
 
 @media (width <=700px) {
@@ -753,7 +941,6 @@ form button{
   }
 
   /*-Footer-----------------------------------------------------*/
-  /*Contacto esconder esa palabra?*/
   .footer {
     justify-items: center;
   }
@@ -784,12 +971,21 @@ form button{
 
 @media (width <=550px) {
 
-  /*-Sobre-Nosotros----------------------------------------------*/
+  /*-Sobre-Nosotros--------------------------------------------*/
   .consumasalud {
     font-size: 3rem;
   }
 
   .consumasalud p {
     font-size: 5rem;
+  }
+
+  /*-Contacto--------------------------------------------------*/
+  .main-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+  .medios-de-pago i {
+    padding-left: 30%;
   }
 }
