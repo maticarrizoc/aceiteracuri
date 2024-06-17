@@ -75,7 +75,7 @@ h1::after{
   flex-direction: column;
   flex-wrap: wrap;
   background: var(--clr-principal);
-  background-image: url("./../img/tanques.png");
+  background-image: url("../img/tanques.png");
   background-size: contain;
   /*contain: encuentra tamaño mas chico / cover: encuentra tamaño mas grande*/
   background-repeat: no-repeat;
@@ -374,7 +374,7 @@ a i:hover {
     0.05rem -0.05rem 0 var(--clr-principal),
     -0.05rem 0.05rem 0 var(--clr-principal),
     0.05rem 0.05rem 0 var(--clr-principal);
-  background-image: url("/img/bgsn3.jpg");
+  background-image: url("../img/bgsn3.jpg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -401,14 +401,14 @@ a i:hover {
   font-size: 1.2rem;
   text-align: center;
   padding: 1rem;
-  background-image: url("/img/bgsn.png");
+  background-image: url("../img/bgsn.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .img1 {
-  background-image: url("/img/sirviendo1.jpg");
+  background-image: url("../img/sirviendo1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -422,14 +422,14 @@ a i:hover {
 }
 
 .img3 {
-  background-image: url("/img/hardanylautaro4.png");
+  background-image: url("../img/hardanylautaro4.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .img4 {
-  background-image: url("/img/distincionsenadores.jpg");
+  background-image: url("../img/distincionsenadores.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
