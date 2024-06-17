@@ -11,6 +11,17 @@
   list-style: none;
   text-decoration: none;
 }
+/* *body{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+} */
+a {
+  text-decoration: none;
+  /*Agregado porque Bootstrap subraya a todos los a*/
+}
 
 :root {
   /*Para crear variables de CSS*/
@@ -27,10 +38,34 @@
   --clr-azul: #181B34;
   --clr-gris: #3A3A39;
 }
-
-.img-logo {
-  width: 5rem;
+body{
+  background: var(--clr-principal);
 }
+/* h1{
+  position: relative;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+h1::before{
+  content: "before";
+  background: var(--clr-azul);
+  color: var(--clr-principal);
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  right: calc(100% + 1rem);
+}
+h1::after{
+  content: "a";
+  background: var(--clr-azul);
+  color: var(--clr-principal);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: calc(100% + 1rem);
+} */
 
 /*-Index-------------------------------------------------------*/
 .main-inicio {
@@ -54,16 +89,25 @@
   text-align: left;
 }
 
-.informacion {
-  color: #911714;
+.menu-inicio li a {
+  color: var(--clr-azul);
+  text-shadow:
+    -0.05rem -0.05rem 0 var(--clr-principal),
+    0.05rem -0.05rem 0 var(--clr-principal),
+    -0.05rem 0.05rem 0 var(--clr-principal),
+    0.05rem 0.05rem 0 var(--clr-principal);
+}
+
+.informacion p {
+  color: var(--clr-rojo);
   font-size: 1.5rem;
   font-weight: 600;
   text-align: right;
   text-shadow:
-    -0.05rem -0.05rem 0 #C6B866,
-    0.05rem -0.05rem 0 #C6B866,
-    -0.05rem 0.05rem 0 #C6B866,
-    0.05rem 0.05rem 0 #C6B866;
+    -0.05rem -0.05rem 0 var(--clr-oliva),
+    0.05rem -0.05rem 0 var(--clr-oliva),
+    -0.05rem 0.05rem 0 var(--clr-oliva),
+    0.05rem 0.05rem 0 var(--clr-oliva);
   margin-top: auto;
 }
 
@@ -82,7 +126,7 @@
 }
 
 .menu-inicio li a {
-  color: #181B34;
+  color: var(--clr-azul);
   border-radius: 10px;
 }
 
@@ -95,21 +139,18 @@
 
 .informacion,
 .informacion a {
-  color: #911714;
+  color: var(--clr-rojo);
   font-size: 1.5rem;
   font-weight: bold;
   text-align: right;
   text-shadow:
-    -0.05rem -0.05rem 0 #C6B866,
-    0.05rem -0.05rem 0 #C6B866,
-    -0.05rem 0.05rem 0 #C6B866,
-    0.05rem 0.05rem 0 #C6B866;
+    -0.05rem -0.05rem 0 var(--clr-oliva),
+    0.05rem -0.05rem 0 var(--clr-oliva),
+    -0.05rem 0.05rem 0 var(--clr-oliva),
+    0.05rem 0.05rem 0 var(--clr-oliva);
   margin-top: auto;
 }
 
-/* .informacion{
-  background-color: #ded9c948;
-} */
 .ubicacion {
   display: flex;
   flex-direction: row;
@@ -117,106 +158,105 @@
   gap: 0.5rem;
 }
 
-.ubicacion:hover {
-  color: #181B34;
+.ubicacion p:hover {
+  color: var(--clr-azul);
 }
 
 .ubicacion:hover .bi-geo-alt-fill {
   /*order: 2; Para que pase el icono con una animacion a la derecha de la ubicacion*/
+  color: var(--clr-azul);
   transition: transform 0.5s ease;
   transform: rotate(-25deg);
 }
 
 /*-Header------------------------------------------------------*/
-/*-Navbar------------------------------------------------------*/
+
+header {
+  border-bottom: 0.15rem solid var(--clr-azul);
+  background: var(--clr-principal);
+}
+
 .navbar {
   font-size: 1.5rem;
   font-family: "Truculenta", sans-serif;
-  padding: 1vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: var(--clr-principal);
-  border-bottom: 0.15rem solid #181B34;
+  padding: 0;
+  min-width: 90%;
 }
 
 .img-logo {
   width: 7rem;
 }
 
+.boton-navbar {
+  border: solid var(--clr-azul);
+}
+
+.boton-navbar:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.boton-navbar .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(24, 27, 52, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E');
+}
 .menu {
-  display: flex;
-  padding: 0 0.25rem;
-  list-style-type: none;
-  height: 200%;
+  margin-bottom: 2px;
 }
 
 .menu li {
-  display: inline-block;
-  margin: 0 1.4rem;
-  padding: 0 0.7rem;
-  align-self: center;
+  margin-left: 1.4rem;
+  margin-right: auto;
 }
 
 .menu li a {
-  color: #181B34;
-  padding: 0 0.25rem;
+  color: var(--clr-azul);
   font-weight: bold;
 }
 
-.menu-opcion:hover {
+.menu-opcion a:hover {
+  color: var(--clr-azul);
   font-family: "Become Choice";
   font-style: italic;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   font-weight: 900;
-  /*Corregir movimiento que hacen las palabras*/
-  padding: 0 1rem 0 0;
-  /*Funciona para SN y Prod*/
 }
 
 .menu .active {
-  /*Achicar padding y capaz imitar a logo*/
-  color: #911714;
-  background: #49C7BA;
-  font-family: "Fredoka", sans-serif;
+  color: var(--clr-rojo) !important;
+  background: var(--clr-verde-agua);
+  font-family: "Fredoka";
   font-size: 1.2rem;
   font-weight: 600;
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
   text-shadow:
-    -0.05rem -0.05rem 0 #C6B866,
-    0.05rem -0.05rem 0 #C6B866,
-    -0.05rem 0.05rem 0 #C6B866,
-    0.05rem 0.05rem 0 #C6B866,
-    0.1rem 0.1rem 0 #181B34;
-  /* Segunda sombra */
-  padding: 0.75rem 0.25rem;
-  border: 0.2rem solid #199E8E;
+    -0.05rem -0.05rem 0 var(--clr-oliva),
+    0.05rem -0.05rem 0 var(--clr-oliva),
+    -0.05rem 0.05rem 0 var(--clr-oliva),
+    0.05rem 0.05rem 0 var(--clr-oliva),
+    0.1rem 0.1rem 0 var(--clr-azul);
+  border: 0.2rem solid var(--clr-verde-agua-oscuro);
   border-radius: 12.5px;
 }
 
-.menu .active a {
-  /*Achicar padding y capaz imitar a logo*/
-  color: #911714;
-  padding: 1rem 0;
-}
-
 .menu .active:hover {
-  font-family: "Fredoka", sans-serif;
+  color: var(--clr-rojo);
+  font-family: "Fredoka";
   font-style: normal;
+  font-weight: 600;
   font-size: 1.2rem;
 }
 
 /*-Footer-----------------------------------------------------*/
 .footer {
   padding: 1.5vh 1vh 1vh 1vh;
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-between;*/
   align-items: space-around;
-  color: #181B34;
+  color: var(--clr-azul);
   background-color: var(--clr-principal);
-  border-top: 0.15rem solid #181B34;
+  border-top: 0.15rem solid var(--clr-azul);
   font-family: "Truculenta", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -243,13 +283,13 @@
 .informacion3,
 .informacion3 a {
   align-content: space-around;
-  color: #911714;
+  color: var(--clr-rojo);
   font-weight: 700;
   text-shadow:
-    -0.01rem -0.01rem 0 #C6B866,
-    0.01rem -0.01rem 0 #C6B866,
-    -0.01rem 0.01rem 0 #C6B866,
-    0.01rem 0.01rem 0 #C6B866;
+    -0.01rem -0.01rem 0 var(--clr-oliva),
+    0.01rem -0.01rem 0 var(--clr-oliva),
+    -0.01rem 0.01rem 0 var(--clr-oliva),
+    0.01rem 0.01rem 0 var(--clr-oliva);
   margin-top: auto;
   padding-bottom: 1vh;
 }
@@ -266,7 +306,7 @@
 }
 
 .informacion3 a:hover {
-  color: #181B34;
+  color: var(-clr-azul);
 }
 
 .informacion3 a:hover .bi-geo-alt-fill {
@@ -277,7 +317,7 @@
 }
 
 .icono-footer {
-  color: #181B34;
+  color: var(--clr-azul);
   font-size: 1.8rem;
   font-weight: 900;
 }
@@ -299,46 +339,34 @@ a i:hover {
   order: 5;
   width: 100%;
   text-align: center;
-  border-top: 0.10rem solid #181B34;
+  border-top: 0.10rem solid var(--clr-azul);
   padding-top: 1vh;
 }
 
 .footer-copyright a {
-  color: #181B34;
+  color: var(--clr-azul);
 }
 
 .footer-copyright i {
   font-size: 1.1rem;
 }
 
+
 /*-Sobre-Nosotros----------------------------------------------*/
 .main-sobre-nosotros {
   font-family: "Truculenta", sans-serif;
   font-size: 1.2rem;
   font-weight: 700;
-  width: 100%;
-  color: #181B34;
-  background-color: var(--clr-principal);
-  display: grid;
-  grid-template-areas: "consumasalud img1"
-    "img2 parrafo1"
-    "parrafo2 img3"
-    "img4 parrafo3";
+  color: var(--clr-azul);
+  background: var(--clr-principal);
 }
 
 .contenedor__sn {
   height: 70vh;
-  width: 49.4vw;
-  /*No va pero me funciona (atado con alambre)*/
   align-content: center;
 }
 
 .consumasalud {
-  order: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-family: "Become Choice";
   font-size: 4rem;
   text-shadow:
@@ -352,6 +380,11 @@ a i:hover {
   background-size: cover;
 }
 
+.consumasalud h2 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+
 .consumasalud p {
   font-size: 6rem;
   font-weight: 300;
@@ -360,18 +393,6 @@ a i:hover {
 
 .consumasalud .p-invertido {
   transform: rotate(190deg);
-}
-
-.parrafo1 {
-  order: 4;
-}
-
-.parrafo2 {
-  order: 5;
-}
-
-.parrafo3 {
-  order: 8;
 }
 
 .parrafo1,
@@ -387,7 +408,6 @@ a i:hover {
 }
 
 .img1 {
-  order: 2;
   background-image: url("/img/sirviendo1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -395,7 +415,6 @@ a i:hover {
 }
 
 .img2 {
-  order: 3;
   background-image: url("/img/sirviendo2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -403,7 +422,6 @@ a i:hover {
 }
 
 .img3 {
-  order: 6;
   background-image: url("/img/hardanylautaro4.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -411,7 +429,6 @@ a i:hover {
 }
 
 .img4 {
-  order: 7;
   background-image: url("/img/distincionsenadores.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -432,8 +449,8 @@ a i:hover {
 
 .producto {
   flex: 1;
-  background: #D9D3C3;
-  border: 0.15rem solid #181B34;
+  background: var(--clr-secundario);
+  border: 0.15rem solid var(--clr-azul);
   border-radius: 15px;
   padding: 10px;
   margin: 0.5rem;
@@ -448,14 +465,14 @@ a i:hover {
 
 .producto h2 {
   text-shadow:
-    -0.5px -0.5px 0 #C6B866,
-    0.5px -0.5px 0 #C6B866,
-    -0.5px 0.5px 0 #C6B866,
-    0.5px 0.5px 0 #C6B866;
+    -0.5px -0.5px 0 var(--clr-oliva),
+    0.5px -0.5px 0 var(--clr-oliva),
+    -0.5px 0.5px 0 var(--clr-oliva),
+    0.5px 0.5px 0 var(--clr-oliva);
 }
 
 .producto h3 {
-  color: #911714;
+  color: var(--clr-rojo);
   /*Si funciona*/
 }
 
@@ -509,13 +526,12 @@ a i:hover {
   font-family: "Truculenta", sans-serif;
   background-color: var(--clr-principal);
   color: var(--clr-azul);
-  display: grid;
   grid-template-areas: "contactanos contactanos encontranos"
     "envios promociones encontranos"
     "mediosdepago promociones encontranos";
   grid-template-columns: 1fr 1fr 2fr;
   gap: 20px;
-  padding: 10px;
+  min-width: 95%;
 }
 
 .main-contacto h1,
@@ -532,17 +548,12 @@ a i:hover {
 .contactanos a {
   color: var(--clr-azul);
   font-weight: 600;
-  display: flex;
   gap: 10px;
   align-items: center;
 }
 
 .icono-contacto i {
   font-size: 1.3rem;
-}
-
-form {
-  display: inline-block;
 }
 
 form input,
@@ -568,10 +579,6 @@ form button {
 
 .encontranos {
   grid-area: encontranos;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
 }
 
 .encontranos a {
@@ -599,13 +606,14 @@ form button {
   grid-area: envios;
   font-size: 1rem;
   text-align: center;
+  margin-bottom: 2px;
 }
 
 .camion {
   text-align: start;
   position: relative;
   height: 1.5rem;
-  border-bottom: 0.01rem solid #181B34;
+  border-bottom: 0.01rem solid var(-clr-azul);
 }
 
 .camion i {
@@ -640,15 +648,19 @@ form button {
 .medios-de-pago {
   grid-area: mediosdepago;
   font-size: 1rem;
+  /* gap: auto; */
 }
-
+.medios-de-pago ul {
+  padding-left: auto;
+  margin-bottom: 2px;
+}
 .medios-de-pago i {
   font-size: 1.3rem;
-  padding-left: 5rem;
 }
 
 .promociones {
   grid-area: promociones;
+  margin-bottom: 2px;
 }
 
 .img-promocion {
@@ -663,10 +675,6 @@ form button {
 @media (width < 1200px) {
 
   /*-Sobre-Nosotros-------------------------------------------*/
-  .main-sobre-nosotros {
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
 
   .contenedor__sn {
     height: 60vh;
@@ -675,10 +683,6 @@ form button {
   /*-Contacto-------------------------------------------------*/
   .encontranos p {
     text-wrap: stable;
-  }
-
-  .medios-de-pago i {
-    padding-left: 2rem;
   }
 
   /*.main-inicio {
@@ -698,14 +702,14 @@ form button {
      background-position: bottom right;
   }
   .informacion{
-    color:#911714;
+    color:var(--clr-rojo);
     font-size: 1.5rem;
     text-align: center;
     text-shadow:
-          -0.5px -0.5px 0 #C6B866,  
-          0.5px -0.5px 0 #C6B866,
-          -0.5px 0.5px 0 #C6B866,
-          0.5px 0.5px 0 #C6B866; 
+          -0.5px -0.5px 0 var(--clr-oliva),  
+          0.5px -0.5px 0 var(--clr-oliva),
+          -0.5px 0.5px 0 var(--clr-oliva),
+          0.5px 0.5px 0 var(--clr-oliva); 
   }
   .inicio-logo{
     width: 16rem;
@@ -719,28 +723,25 @@ form button {
     padding: 20px;
   }
   .menu-inicio li a {
-    color: #181B34;
+    color: var(--clr-azul);
     background-color: var(--clr-principal) 15%;
     border-radius: 10px;
   }
   /*.menu-inicio li a:hover {
     background: #c6b76683;
     padding: 0.25rem;
-    border: 0.25rem solid #181B34;
+    border: 0.25rem solid var(--clr-azul);
     border-radius: 15px;
   }
   .menu-inicio li:hover {
-    background: #D9D3C3;
+    background: var(--clr-secundario);
   }*/
 }
 
 @media (width < 1020px) {
 
   /*-Sobre-Nosotros-------------------------------------------*/
-  .consumasalud {
-    font-size: 3rem;
-  }
-
+  .consumasalud h2,
   .consumasalud p {
     font-size: 5rem;
     font-weight: 400;
@@ -781,10 +782,11 @@ form button {
 
   .medios-de-pago {
     font-size: 0.9rem;
+    padding: 0;
   }
 
-  .medios-de-pago i {
-    padding-left: 1rem;
+  .medios-de-pago ul {
+    padding-left: 0.1rem;
   }
 
   .promociones {
@@ -811,6 +813,13 @@ form button {
     /*Que vaya al final*/
   }
 
+  /*-Sobre-Nosotros-------------------------------------------*/
+  .consumasalud h2,
+  .consumasalud p {
+    font-size: 4.5rem;
+    font-weight: 400;
+  }
+
   /*-Footer----------------------------------------------------*/
   .informacion2,
   .informacion3 {
@@ -832,64 +841,6 @@ form button {
 
   .footer-copyright i {
     font-size: 1rem;
-  }
-
-  /*-Sobre-Nosotros--------------------------------------------*/
-  .main-sobre-nosotros {
-    font-size: 1.2rem;
-    font-weight: 700;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .contenedor__sn {
-    height: 50vh;
-    width: 100%;
-  }
-
-  .consumasalud {
-    order: 1;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    font-family: "Become Choice";
-    font-size: 4rem;
-
-  }
-
-  .consumasalud p {
-    font-size: 6rem;
-    font-weight: 400;
-  }
-
-  .parrafo1 {
-    order: 3;
-  }
-
-  .parrafo2 {
-    order: 5;
-  }
-
-  .parrafo3 {
-    order: 7;
-  }
-
-  .img1 {
-    order: 2;
-  }
-
-  .img2 {
-    order: 4;
-  }
-
-  .img3 {
-    order: 6;
-  }
-
-  .img4 {
-    order: 8;
   }
 
   /*-Contacto--------------------------------------------------*/
@@ -932,12 +883,59 @@ form button {
   }
 }
 
+@media (width <=768px) {
+
+  /*-Sobre-Nosotros----------------------------------------------*/
+  .main-sobre-nosotros {
+    font-size: 1.2rem;
+  }
+
+  .parrafo1,
+  .parrafo2,
+  .parrafo3 {
+    /* font-size: 1.2rem;
+    padding: 1rem; */
+  }
+
+  .consumasalud {
+    order: 1;
+  }
+
+  .parrafo1 {
+    order: 3;
+  }
+
+  .parrafo2 {
+    order: 5;
+  }
+
+  .parrafo3 {
+    order: 7;
+  }
+
+  .img1 {
+    order: 2;
+  }
+
+  .img2 {
+    order: 4;
+  }
+
+  .img3 {
+    order: 6;
+  }
+
+  .img4 {
+    order: 8;
+  }
+}
+
 @media (width <=700px) {
 
   /*-Index-----------------------------------------------------*/
-  .informacion,
-  .informacion a {
-    font-size: 0.9rem;
+  .informacion p,
+  .informacion a p {
+    font-size: 1.2rem;
   }
 
   /*-Footer-----------------------------------------------------*/
@@ -961,6 +959,7 @@ form button {
 
   .informacion3 {
     order: 3;
+    padding-bottom: 0.5vh;
   }
 
   .footer-logo-img {
@@ -971,21 +970,25 @@ form button {
 
 @media (width <=550px) {
 
+  /*-Index-----------------------------------------------------*/
+  .informacion p,
+  .informacion a p {
+    font-size: 0.9rem;
+  }
+
   /*-Sobre-Nosotros--------------------------------------------*/
-  .consumasalud {
+  /* .consumasalud {
     font-size: 3rem;
   }
 
   .consumasalud p {
     font-size: 5rem;
-  }
+  } */
 
   /*-Contacto--------------------------------------------------*/
   .main-contacto {
     display: flex;
     flex-direction: column;
   }
-  .medios-de-pago i {
-    padding-left: 30%;
-  }
+
 }

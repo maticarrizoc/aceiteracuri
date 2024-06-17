@@ -7,74 +7,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/logo3.png" type="image/png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/><!--Agregar para que funcione en cada etiqueta: class="animate__animated animate__bounce +clase__que__de__estilo"-->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Iconos Bootstrap -->
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Iconos Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Estilos -->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav class="navbar">
-            <a href="../index.html">
-                <img class="img-logo" src="../img/logo.png" alt="">
-            </a>
-            <ul class="menu">
-                <li class="menu-opcion active">
-                    <a href="./sobrenosotros.html">Sobre Nosotros</a>
+        <nav class="navbar navbar-expand-md container">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="img-logo" src="../img/logo.png" alt=""></a>
+            <button class="navbar-toggler boton-navbar" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav menu ms-auto">
+                <li class="nav-item menu-opcion">
+                  <a class="nav-link active" href="./sobrenosotros.html">Sobre Nosotros</a>
                 </li>
-                <li class="menu-opcion">
-                    <a href="./productos.html">Productos</a>
+                <li class="nav-item menu-opcion">
+                  <a class="nav-link " href="./productos.html">Productos</a>
                 </li>
-                <li class="menu-opcion">
-                    <a href="./envases.html">Envases</a>
+                <li class="nav-item menu-opcion">
+                  <a class="nav-link " href="./envases.html">Envases</a>
                 </li>
-                <li class="menu-opcion">
-                    <a href="./contacto.html">Contacto</a>
+                <li class="nav-item menu-opcion">
+                  <a class="nav-link " href="./contacto.html">Contacto</a>
                 </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="main-sobre-nosotros">
-            <div class="contenedor__sn consumasalud ">
-                <p class="p-invertido ">!</p><h2 class="animate__animated animate__bounce animate__pulse">Consuma Salud</h2><p>!</p>
-                <!-- El simbolo ¡ funciona mal, capaz hay que colocar entre etiquetas ! y rotarlo -->
+              </ul>
             </div>
-            <div class="contenedor__sn parrafo1">
+          </div>
+        </nav>
+      </header>
+    <main>
+        <section class="main-sobre-nosotros container-fluid text-center">
+            <div class="row justify-content-md-center">
+              <div class="contenedor__sn consumasalud col-md-6 d-flex flex-row justify-content-center align-items-center p-0" >
+                <p class="p-invertido ">!</p>
+                <h2 class="animate__animated animate__bounce animate__pulse">Consuma Salud</h2>
+                <p>!</p>
+                <!-- El simbolo ¡ funciona mal, coloqué ! y roté -->
+              </div>
+              <div class="contenedor__sn img1 col-md-6" aria-label="Manejo cuidadoso del aceite comestible en el llenado del envase"
+                title="Manejo cuidadoso del aceite comestible en el llenado del envase">
+              </div>
+            </div>
+            <div class="row justify-content-md-center">
+              <div class="contenedor__sn img2 col-md-6">
+              </div>
+              <div class="contenedor__sn parrafo1 col-md-6 p-0">
                 <h1>Sobre Nosotros</h1>
                 <p>
-                    Hace más de 48 años el Sr. Hardan Curi y su esposa Amelia Azar abrieron al público un negocio único
-                    en su tipo.
+                  Hace más de 48 años el Sr. Hardan Curi y su esposa Amelia Azar abrieron al público un negocio único
+                  en su tipo.
                 </p>
+              </div>
             </div>
-            <div class="contenedor__sn img1" aria-label="Manejo cuidadoso del aceite comestible en el llenado del envase"
-            title="Manejo cuidadoso del aceite comestible en el llenado del envase">
-            </div>    
-            <div class="contenedor__sn parrafo2">
+            <div class="row justify-content-md-center">
+              <div class="contenedor__sn parrafo2 col-md-6 p-0">
                 <p>
-                    Aceitera Curi, un verdadero emprendimiento familiar, abrió sus puertas el 30 de junio de 1975 en el
-                    corazón de la 5ta Sección de la Ciudad de Mendoza.
-                    Desde entonces, hasta hoy hemos brindado la calidad distintiva de nuestros aceites de Girasol, Uva y
-                    Oliva en toda la gama Premium que se venden a partir de 1/2 litro en adelante, posicionándose con sus cortes especiales en la primera en su ramo en la Ciudad de Mendoza realizando enviós a todo el país.
+                  Aceitera Curi, un verdadero emprendimiento familiar, abrió sus puertas el 30 de junio de 1975 en el
+                  corazón de la 5ta Sección de la Ciudad de Mendoza.
+                  Desde entonces, hasta hoy hemos brindado la calidad distintiva de nuestros aceites de Girasol, Uva y
+                  Oliva en toda la gama Premium que se venden a partir de 1/2 litro en adelante, posicionándose con sus cortes
+                  especiales en la primera en su ramo en la Ciudad de Mendoza realizando enviós a todo el país.
                 </p>
+              </div>
+              <div class="contenedor__sn img3 col-md-6">
+              </div>
             </div>
-            <div class="contenedor__sn img2">
-            </div>
-            <div class="contenedor__sn img3">
-            </div>
-            <div class="contenedor__sn img4">
-            </div>
-            <div class="contenedor__sn parrafo3">
+            <div class="row justify-content-md-center">
+              <div class="contenedor__sn img4 col-md-6">
+              </div>
+              <div class="contenedor__sn parrafo3 col-md-6 p-0">
                 <p>
-                    En la actualidad y siempre con la distinción de la calidad premium de nuestros productos;
-                    preservando la honestidad, responsabilidad e ineludible compromiso con la gente,
-                    esta empresa familiar dirigida por Hardan Curi y sus familiares directos hemos incorporado hace
-                    tiempo venta de productos regionales para seguir acompañando la mesa de nuestros clientes.
+                  En la actualidad y siempre con la distinción de la calidad premium de nuestros productos;
+                  preservando la honestidad, responsabilidad e ineludible compromiso con la gente,
+                  esta empresa familiar dirigida por Hardan Curi y sus familiares directos hemos incorporado hace
+                  tiempo venta de productos regionales para seguir acompañando la mesa de nuestros clientes.
                 </p>
+              </div>
             </div>
-        </section>
+          </section>
     </main>
-    <footer class="footer">
+    <footer class="footer d-flex flex-wrap justify-content-between">
         <section class="footer-logo">
             <a href="../index.html">
                 <img class="footer-logo-img" src="../img/logo.png" alt="">
@@ -99,18 +119,18 @@
             </a>
         </section>
         <section class="informacion2">
-            <p>Horarios de mañana: Lunes a Sabados de 10hs a 14hs</p>
-            <p>Horarios de tarde: Lunes a Viernes de 17hs a 20hs</p>
+            <p class="m-0">Horarios de mañana: Lunes a Sabados de 10hs a 14hs</p>
+            <p class="m-0">Horarios de tarde: Lunes a Viernes de 17hs a 20hs</p>
         </section>
         <section class="informacion3">
-            <p>Desde el 30 de JUNIO de 1975 OFRECIENDO LA MEJOR CALIDAD.</p>
-            <a href="https://maps.app.goo.gl/fgG6EUMHjFZSFZ8L8" target="_blank">
-                <p><i class="bi bi-geo-alt-fill"></i> Paso de los Andes 223, Ciudad de Mendoza, Mendoza,
+            <p class="m-0">Desde el 30 de JUNIO de 1975 OFRECIENDO LA MEJOR CALIDAD.</p>
+            <a class="m-0" href="https://maps.app.goo.gl/fgG6EUMHjFZSFZ8L8" target="_blank">
+                <p class="m-0"><i class="bi bi-geo-alt-fill"></i> Paso de los Andes 223, Ciudad de Mendoza, Mendoza,
                     Argentina.</p>
             </a>
         </section>
         <section class="footer-copyright">
-            <p>Coderhouse |
+            <p class="m-0">Coderhouse |
                 <a href="https://github.com/maticarrizoc" target="_blank">
                     Matías Carrizo Conti <i class="bi bi-github"></i>
                 </a>
@@ -122,7 +142,8 @@
             </p>
         </section>
     </footer>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> -->
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 
 </html>
