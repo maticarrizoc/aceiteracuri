@@ -14,5 +14,8 @@ Paleta de colores:
 
 Tipografías:
 Truculenta: https://fonts.google.com/specimen/Truculenta para subtítulos descripciones y texto continuo, tiene mil cuerpos y pesos está buena
+<<<<<<< HEAD
 Become Choice: https://www.onlinewebfonts.com/download/ad4c3cd73550e13c224f699237ab4c5c 
 K?nigsberg Bold font: https://www.whatfontis.com/CF_Knigsberg-Bold.font?text=ACEITERA 
+=======
+>>>>>>> e828c3dbe847155e077dea96ca5f27871b0309f4
