@@ -71,9 +71,9 @@ h1::after{
 .main-inicio {
   height: 100vh;
   font-family: "Truculenta", sans-serif;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
   background: var(--clr-principal);
   background-image: url("../img/tanques.png");
   background-size: contain;
