@@ -1,0 +1,81 @@
+.main-sobre-nosotros {
+    font-family: $fontTruculenta;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: $clrAzul;
+    background: $clrPrincipal;
+
+    .contenedor__sn {
+        height: 70vh;
+        align-content: center;
+    }
+
+    .consumasalud {
+        font-family: $fontBecome;
+        font-size: 4rem;
+        text-shadow:
+            -0.05rem -0.05rem 0 $clrPrincipal,
+            0.05rem -0.05rem 0 $clrPrincipal,
+            -0.05rem 0.05rem 0 $clrPrincipal,
+            0.05rem 0.05rem 0 $clrPrincipal;
+        background-image: url("../img/bgsn3.jpg");
+        background-position: top left;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h2 {
+            font-size: 6rem;
+            font-weight: 700;
+        }
+
+        p {
+            font-size: 6rem;
+            font-weight: 300;
+            transform: rotate(10deg);
+        }
+
+        .p-invertido {
+            transform: rotate(190deg);
+        }
+    }
+
+    .parrafo1,
+    .parrafo2,
+    .parrafo3 {
+        font-size: 1.2rem;
+        text-align: center;
+        padding: 1rem;
+        background-image: url("../img/bgsn.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .img1 {
+        background-image: url("../img/sirviendo1.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .img2 {
+        background-image: url("../img/sirviendo2.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .img3 {
+        background-image: url("../img/hardanylautaro4.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .img4 {
+        background-image: url("../img/distincionsenadores.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}

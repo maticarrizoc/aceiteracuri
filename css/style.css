@@ -1,6 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Truculenta:opsz,wght@12..72,100..900&display=swap');
-@import url('https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@import url('https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice');
+/* @font-face {
+  font-family: "Become Choice";
+  src: url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.eot");
+  src: url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.svg#Become Choice")format("svg");
+} */
+
 
 *,
 *::before,
@@ -11,6 +21,7 @@
   list-style: none;
   text-decoration: none;
 }
+
 /* *body{
   box-sizing: border-box;
   padding: 0;
@@ -38,7 +49,24 @@ a {
   --clr-azul: #181B34;
   --clr-gris: #3A3A39;
 }
-body{
+
+body {
+  background: var(--clr-principal);
+}
+/*Funciona para varios navegadores menos firefox*/
+body::-webkit-scrollbar {
+  width: 4px;     /* Tamaño del scroll en vertical */
+  height: 4px;    /* Tamaño del scroll en horizontal */
+ /* display: none; /* Ocultar scroll */
+}
+body::-webkit-scrollbar-thumb {
+  background: var(--clr-azul);
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--clr-oliva);
+}
+body::-webkit-scrollbar-track {
   background: var(--clr-principal);
 }
 /* h1{
@@ -68,47 +96,17 @@ h1::after{
 } */
 
 /*-Index-------------------------------------------------------*/
-.main-inicio {
+.body-inicio {
   height: 100vh;
   font-family: "Truculenta", sans-serif;
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; */
   background: var(--clr-principal);
   background-image: url("../img/tanques.png");
   background-size: contain;
   /*contain: encuentra tamaño mas chico / cover: encuentra tamaño mas grande*/
   background-repeat: no-repeat;
   background-position: bottom right;
-  padding: 1rem 1rem 0.5rem 0.5rem;
+  padding: 1.5rem 1rem 0.5rem 1rem;
   /*background-attachment: fixed; //fixed:imagen fija cuando scrolleamos*/
-}
-
-.inicio {
-  width: 100%;
-  text-align: left;
-}
-
-.menu-inicio li a {
-  color: var(--clr-azul);
-  text-shadow:
-    -0.05rem -0.05rem 0 var(--clr-principal),
-    0.05rem -0.05rem 0 var(--clr-principal),
-    -0.05rem 0.05rem 0 var(--clr-principal),
-    0.05rem 0.05rem 0 var(--clr-principal);
-}
-
-.informacion p {
-  color: var(--clr-rojo);
-  font-size: 1.5rem;
-  font-weight: 600;
-  text-align: right;
-  text-shadow:
-    -0.05rem -0.05rem 0 var(--clr-oliva),
-    0.05rem -0.05rem 0 var(--clr-oliva),
-    -0.05rem 0.05rem 0 var(--clr-oliva),
-    0.05rem 0.05rem 0 var(--clr-oliva);
-  margin-top: auto;
 }
 
 .inicio-logo {
@@ -119,15 +117,23 @@ h1::after{
   font-size: 2rem;
   font-weight: bold;
   padding: 1rem;
+  margin: 0;
 }
 
 .menu-inicio li {
-  padding: 1.1rem;
+  padding: 0.75rem;
 }
 
 .menu-inicio li a {
   color: var(--clr-azul);
-  border-radius: 10px;
+  list-style: none;
+  line-height: 2.3rem;
+  text-decoration: none;
+  text-shadow:
+    -0.05rem -0.05rem 0 var(--clr-principal),
+    0.05rem -0.05rem 0 var(--clr-principal),
+    -0.05rem 0.05rem 0 var(--clr-principal),
+    0.05rem 0.05rem 0 var(--clr-principal);
 }
 
 .menu-inicio li a:hover {
@@ -138,17 +144,19 @@ h1::after{
 }
 
 .informacion,
+.informacion p,
 .informacion a {
   color: var(--clr-rojo);
-  font-size: 1.5rem;
+  list-style: none;
+  text-decoration: none;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-align: right;
   text-shadow:
     -0.05rem -0.05rem 0 var(--clr-oliva),
     0.05rem -0.05rem 0 var(--clr-oliva),
     -0.05rem 0.05rem 0 var(--clr-oliva),
     0.05rem 0.05rem 0 var(--clr-oliva);
-  margin-top: auto;
+  margin: 0;
 }
 
 .ubicacion {
@@ -163,7 +171,6 @@ h1::after{
 }
 
 .ubicacion:hover .bi-geo-alt-fill {
-  /*order: 2; Para que pase el icono con una animacion a la derecha de la ubicacion*/
   color: var(--clr-azul);
   transition: transform 0.5s ease;
   transform: rotate(-25deg);
@@ -171,7 +178,7 @@ h1::after{
 
 /*-Header------------------------------------------------------*/
 
-header {
+.header {
   border-bottom: 0.15rem solid var(--clr-azul);
   background: var(--clr-principal);
 }
@@ -180,7 +187,7 @@ header {
   font-size: 1.5rem;
   font-family: "Truculenta", sans-serif;
   padding: 0;
-  min-width: 90%;
+  min-width: 95%;
 }
 
 .img-logo {
@@ -199,18 +206,28 @@ header {
 .boton-navbar .navbar-toggler-icon {
   background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(24, 27, 52, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E');
 }
+.collapse{
+  max-width: 550px;
+}
 .menu {
-  margin-bottom: 2px;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 0 2px 0;
 }
 
 .menu li {
-  margin-left: 1.4rem;
-  margin-right: auto;
+  text-align: center;
+  min-width: 120px;
+}
+
+.menu .li-sobrenosotros {
+  min-width: 150px;
 }
 
 .menu li a {
   color: var(--clr-azul);
   font-weight: bold;
+  line-height: 1.9rem;
 }
 
 .menu-opcion a:hover {
@@ -229,6 +246,7 @@ header {
   font-weight: 600;
   /* text-align: center; */
   text-transform: uppercase;
+  text-align: center;
   text-shadow:
     -0.05rem -0.05rem 0 var(--clr-oliva),
     0.05rem -0.05rem 0 var(--clr-oliva),
@@ -650,10 +668,12 @@ form button {
   font-size: 1rem;
   /* gap: auto; */
 }
+
 .medios-de-pago ul {
   padding-left: auto;
   margin-bottom: 2px;
 }
+
 .medios-de-pago i {
   font-size: 1.3rem;
 }
@@ -806,13 +826,6 @@ form button {
 
 @media (width <=800px) {
 
-  /*-Index-----------------------------------------------------*/
-  .informacion,
-  .informacion a {
-    font-size: 1rem;
-    /*Que vaya al final*/
-  }
-
   /*-Sobre-Nosotros-------------------------------------------*/
   .consumasalud h2,
   .consumasalud p {
@@ -885,6 +898,23 @@ form button {
 
 @media (width <=768px) {
 
+  /*-Header------------------------------------------------------*/
+
+  .collapse{
+    max-width: none;
+  }
+  .menu li a {
+    text-align: start;
+    margin-left: 1rem;
+  }
+  .menu .active {
+    width: 125px;
+    margin-left: 0;
+    padding: auto 0;
+  }
+  .menu .li-sobrenosotros .active {
+    width: 175px;
+  }
   /*-Sobre-Nosotros----------------------------------------------*/
   .main-sobre-nosotros {
     font-size: 1.2rem;
@@ -936,11 +966,10 @@ form button {
 
 @media (width <=700px) {
 
-  /*-Index-----------------------------------------------------*/
-  .informacion p,
-  .informacion a p {
-    font-size: 1.2rem;
-  }
+  /*-Index-------------------------------------------------------*/
+  /* .inicio-logo {
+    width: 12rem;
+  } */
 
   /*-Footer-----------------------------------------------------*/
   .footer {
@@ -975,10 +1004,12 @@ form button {
 @media (width <=550px) {
 
   /*-Index-----------------------------------------------------*/
+  .informacion,
   .informacion p,
-  .informacion a p {
+  .informacion a {
     font-size: 0.9rem;
   }
+
 
   /*-Sobre-Nosotros--------------------------------------------*/
   /* .consumasalud {

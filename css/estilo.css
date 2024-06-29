@@ -1,0 +1,509 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice");
+/* @font-face {
+  font-family: "Become Choice";
+  src: url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.eot");
+  src: url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.eot?#iefix")format("embedded-opentype"),
+      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.woff2")format("woff2"),
+      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.woff")format("woff"),
+      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.ttf")format("truetype"),
+      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.svg#Become Choice")format("svg");
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: #DED9C9;
+  /*No funcionan*/
+}
+body::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  /* display: none; /* Ocultar scroll */
+}
+body::-webkit-scrollbar-thumb {
+  background: #181B34;
+  border-radius: 4px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #C6B866;
+}
+body::-webkit-scrollbar-track {
+  background: #DED9C9;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  border-bottom: 0.15rem solid #181B34;
+}
+header .navbar {
+  font-size: 1.5rem;
+  font-family: "Truculenta", sans-serif;
+  padding: 0;
+  min-width: 95%;
+}
+header .navbar .img-logo {
+  width: 7rem;
+}
+header .navbar .boton-navbar {
+  border: solid #181B34;
+}
+header .navbar .boton-navbar:focus {
+  outline: none;
+  box-shadow: none;
+}
+header .navbar .boton-navbar .navbar-toggler-icon {
+  background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(24, 27, 52, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22" /%3E%3C/svg%3E');
+}
+header .navbar .collapse {
+  max-width: 550px;
+}
+header .navbar .menu {
+  width: 100%;
+  justify-content: space-between;
+  margin: 0 0 2px 0;
+}
+header .navbar .menu li {
+  text-align: center;
+  min-width: 120px;
+}
+header .navbar .menu li a {
+  color: #181B34;
+  font-weight: bold;
+  line-height: 1.9rem;
+}
+header .navbar .menu li a:hover {
+  color: #181B34;
+  font-family: "Become Choice";
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+header .navbar .menu .li-sobrenosotros {
+  min-width: 150px;
+}
+header .navbar .menu .active {
+  color: #911714 !important;
+  background: #1DBFAF;
+  font-family: "Fredoka";
+  font-size: 1.2rem;
+  font-weight: 600;
+  /* text-align: center; */
+  text-transform: uppercase;
+  text-shadow: -0.05rem -0.05rem 0 #C6B866, 0.05rem -0.05rem 0 #C6B866, -0.05rem 0.05rem 0 #C6B866, 0.05rem 0.05rem 0 #C6B866, 0.1rem 0.1rem 0 #181B34;
+  border: 0.2rem solid #199E8E;
+  border-radius: 12.5px;
+}
+header .navbar .menu .active:hover {
+  color: #911714;
+  font-family: "Fredoka";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.body-inicio {
+  height: 100vh;
+  font-family: "Truculenta", sans-serif;
+  background: #DED9C9;
+  background-image: url("../img/tanques.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  padding: 1.5rem 1rem 0.5rem 1rem;
+}
+.body-inicio .header-index {
+  border-bottom: none;
+}
+.body-inicio .header-index .inicio-logo {
+  width: 16rem;
+}
+.body-inicio .header-index .menu-inicio {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin: 0;
+}
+.body-inicio .header-index .menu-inicio li {
+  padding: 0.75rem;
+}
+.body-inicio .header-index .menu-inicio li a {
+  color: #181B34;
+  list-style: none;
+  line-height: 2.3rem;
+  text-shadow: -0.05rem -0.05rem 0 #DED9C9, 0.05rem -0.05rem 0 #DED9C9, -0.05rem 0.05rem 0 #DED9C9, 0.05rem 0.05rem 0 #DED9C9;
+}
+.body-inicio .header-index .menu-inicio li a:hover {
+  font-family: "Become Choice";
+  font-style: italic;
+  font-size: 2.3rem;
+  font-weight: 900;
+}
+.body-inicio .main-index .informacion,
+.body-inicio .main-index .informacion p,
+.body-inicio .main-index .informacion a {
+  color: #911714;
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-shadow: -0.05rem -0.05rem 0 #C6B866, 0.05rem -0.05rem 0 #C6B866, -0.05rem 0.05rem 0 #C6B866, 0.05rem 0.05rem 0 #C6B866;
+  margin: 0;
+}
+.body-inicio .main-index .ubicacion {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  gap: 0.5rem;
+}
+.body-inicio .main-index .ubicacion p:hover {
+  color: #181B34;
+}
+.body-inicio .main-index .ubicacion:hover .bi-geo-alt-fill {
+  color: #181B34;
+  transition: transform 0.5s ease;
+  transform: rotate(-25deg);
+}
+
+.main-sobre-nosotros {
+  font-family: "Truculenta", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #181B34;
+  background: #DED9C9;
+}
+.main-sobre-nosotros .contenedor__sn {
+  height: 70vh;
+  align-content: center;
+}
+.main-sobre-nosotros .consumasalud {
+  font-family: "Become Choice";
+  font-size: 4rem;
+  text-shadow: -0.05rem -0.05rem 0 #DED9C9, 0.05rem -0.05rem 0 #DED9C9, -0.05rem 0.05rem 0 #DED9C9, 0.05rem 0.05rem 0 #DED9C9;
+  background-image: url("../img/bgsn3.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-sobre-nosotros .consumasalud h2 {
+  font-size: 6rem;
+  font-weight: 700;
+}
+.main-sobre-nosotros .consumasalud p {
+  font-size: 6rem;
+  font-weight: 300;
+  transform: rotate(10deg);
+}
+.main-sobre-nosotros .consumasalud .p-invertido {
+  transform: rotate(190deg);
+}
+.main-sobre-nosotros .parrafo1,
+.main-sobre-nosotros .parrafo2,
+.main-sobre-nosotros .parrafo3 {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 1rem;
+  background-image: url("../img/bgsn.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-sobre-nosotros .img1 {
+  background-image: url("../img/sirviendo1.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-sobre-nosotros .img2 {
+  background-image: url("../img/sirviendo2.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-sobre-nosotros .img3 {
+  background-image: url("../img/hardanylautaro4.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-sobre-nosotros .img4 {
+  background-image: url("../img/distincionsenadores.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main-productos {
+  font-family: "Truculenta", sans-serif;
+  background-color: #DED9C9;
+  padding: 1rem;
+}
+.main-productos .productos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-productos .productos .producto {
+  flex: 1;
+  background: #D9D3C3;
+  border: 0.15rem solid #181B34;
+  border-radius: 15px;
+  padding: 10px;
+  margin: 0.5rem;
+  min-width: 20rem;
+  text-align: center;
+}
+.main-productos .productos .producto .imagen-producto {
+  max-width: 100%;
+  max-height: 15rem;
+}
+.main-productos .productos .producto h2 {
+  text-shadow: -0.5px -0.5px 0 #C6B866, 0.5px -0.5px 0 #C6B866, -0.5px 0.5px 0 #C6B866, 0.5px 0.5px 0 #C6B866;
+}
+.main-productos .productos .producto h3 {
+  color: #911714;
+  /*Si funciona*/
+}
+.main-productos .productos .aceite-oliva,
+.main-productos .productos .aceite-uva,
+.main-productos .productos .aceite-girasol {
+  display: block;
+}
+.main-productos .productos .titulo-producto {
+  font-size: 2rem;
+}
+.main-productos .productos .subtitulo-producto {
+  font-size: 1.2rem;
+}
+.main-productos .productos .hide {
+  display: none;
+}
+.main-productos .productos .producto.aceite:hover .hide {
+  display: block;
+}
+
+.main-envases {
+  font-family: "Truculenta", sans-serif;
+  background-color: #DED9C9;
+}
+.main-envases div {
+  display: flex;
+}
+.main-envases .img-envase {
+  width: 200px;
+}
+
+.main-contacto {
+  font-family: "Truculenta", sans-serif;
+  background-color: #DED9C9;
+  color: #181B34;
+  grid-template-areas: "contactanos contactanos encontranos" "envios promociones encontranos" "mediosdepago promociones encontranos";
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 20px;
+  min-width: 95%;
+}
+.main-contacto h1,
+.main-contacto h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.main-contacto .contactanos {
+  grid-area: contactanos;
+  font-size: 1rem;
+}
+.main-contacto .contactanos a {
+  color: #181B34;
+  font-weight: 600;
+  gap: 10px;
+  align-items: center;
+}
+.main-contacto .contactanos .icono-contacto i {
+  font-size: 1.3rem;
+}
+.main-contacto .contactanos form input,
+.main-contacto .contactanos form textarea,
+.main-contacto .contactanos form button {
+  width: 100%;
+  font-family: "Truculenta", sans-serif;
+  font-size: 0.9rem;
+  background: #D9D3C3;
+  color: #181B34;
+  border: 1px solid #181B34;
+  border-radius: 5px;
+  margin-top: 1px;
+}
+.main-contacto .contactanos form button {
+  width: auto;
+  font-weight: bold;
+  padding: 1px;
+  color: #DED9C9;
+  background: #181B34;
+}
+.main-contacto .encontranos {
+  grid-area: encontranos;
+}
+.main-contacto .encontranos a {
+  color: #181B34;
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.main-contacto .encontranos a i {
+  font-size: 1.3rem;
+}
+.main-contacto .encontranos img {
+  width: 100%;
+  border-radius: 15px;
+}
+.main-contacto .encontranos .mapa2 {
+  display: none;
+}
+.main-contacto .envios {
+  grid-area: envios;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2px;
+}
+.main-contacto .camion {
+  text-align: start;
+  position: relative;
+  height: 1.5rem;
+  border-bottom: 0.01rem solid var(-clr-azul);
+}
+.main-contacto .camion i {
+  font-size: 1.5rem;
+  width: 100%;
+  position: absolute;
+}
+.main-contacto .camion .bi-shop {
+  font-size: 1.3rem;
+}
+.main-contacto .camion .bi-truck {
+  transform: translateX(1.5rem);
+}
+.main-contacto .camion .bi-house {
+  font-size: 1.35rem;
+  text-align: end;
+}
+.main-contacto .envios:hover .bi-truck {
+  transform: translateX(calc(100% - 3rem));
+  transition: transform 5s ease;
+}
+.main-contacto .envio-gratis {
+  background: #1DBFAF;
+}
+.main-contacto .medios-de-pago {
+  grid-area: mediosdepago;
+  font-size: 1rem;
+  /* gap: auto; */
+}
+.main-contacto .medios-de-pago ul {
+  padding-left: auto;
+  margin-bottom: 2px;
+}
+.main-contacto .medios-de-pago i {
+  font-size: 1.3rem;
+}
+.main-contacto .promociones {
+  grid-area: promociones;
+  margin-bottom: 2px;
+}
+.main-contacto .img-promocion {
+  width: 100%;
+  border-radius: 15px;
+}
+.main-contacto .img-promocion-horizontal {
+  display: none;
+}
+
+.footer {
+  padding: 1.5vh 1vh 1vh 1vh;
+  align-items: space-around;
+  color: #181B34;
+  background-color: #DED9C9;
+  border-top: 0.15rem solid #181B34;
+  font-family: "Truculenta", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer .footer-logo {
+  order: 1;
+  text-align: center;
+  width: 100%;
+}
+.footer .footer-logo .footer-logo-img {
+  width: 10rem;
+}
+.footer .informacion1 {
+  order: 2;
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+}
+.footer .informacion1 .icono-footer {
+  color: #181B34;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+.footer .informacion1 .icono-footer .bi-telephone {
+  font-weight: 900;
+}
+.footer .informacion1 .icono-footer .bi-envelope-at {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.footer .informacion2 {
+  align-content: space-around;
+  color: #911714;
+  font-weight: 700;
+  text-shadow: -0.01rem -0.01rem 0 #C6B866, 0.01rem -0.01rem 0 #C6B866, -0.01rem 0.01rem 0 #C6B866, 0.01rem 0.01rem 0 #C6B866;
+  margin-top: auto;
+  padding-bottom: 1vh;
+  order: 3;
+  text-align: left;
+}
+.footer .informacion3 {
+  align-content: space-around;
+  color: #911714;
+  font-weight: 700;
+  text-shadow: -0.01rem -0.01rem 0 #C6B866, 0.01rem -0.01rem 0 #C6B866, -0.01rem 0.01rem 0 #C6B866, 0.01rem 0.01rem 0 #C6B866;
+  margin-top: auto;
+  padding-bottom: 1vh;
+  order: 4;
+  text-align: right;
+}
+.footer .informacion3 a {
+  color: #911714;
+}
+.footer .informacion3 a:hover {
+  color: #181B34;
+}
+.footer .informacion3 a:hover .bi-geo-alt-fill { /*No funciona*/
+  transition: transform 0.5s ease;
+  transform: rotate(-25deg);
+}
+.footer a i:hover {
+  color: #911714;
+}
+.footer .footer-copyright {
+  order: 5;
+  width: 100%;
+  text-align: center;
+  border-top: 0.1rem solid #181B34;
+  padding-top: 1vh;
+}
+.footer .footer-copyright a {
+  color: #181B34;
+}
+.footer .footer-copyright i {
+  font-size: 1.1rem;
+}/*# sourceMappingURL=estilo.css.map */

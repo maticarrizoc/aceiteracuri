@@ -1,0 +1,12 @@
+.main-envases {
+    font-family: $fontTruculenta;
+    background-color: $clrPrincipal;
+
+    div {
+        display: flex;
+    }
+
+    .img-envase {
+        width: 200px;
+    }
+}

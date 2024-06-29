@@ -1,0 +1,109 @@
+.footer {
+    padding: 1.5vh 1vh 1vh 1vh;
+    align-items: space-around;
+    color: $clrAzul;
+    background-color: $clrPrincipal;
+    border-top: 0.15rem solid $clrAzul;
+    font-family: $fontTruculenta;
+    font-size: 1rem;
+    font-weight: 500;
+
+    .footer-logo {
+        order: 1;
+        text-align: center;
+        width: 100%;
+
+        .footer-logo-img {
+            width: 10rem;
+        }
+
+    }
+
+    .informacion1 {
+        order: 2;
+        margin-top: auto;
+        text-align: center;
+        width: 100%;
+
+        .icono-footer {
+            color: $clrAzul;
+            font-size: 1.8rem;
+            font-weight: 900;
+        }
+
+        .icono-footer .bi-telephone {
+            font-weight: 900;
+        }
+
+        .icono-footer .bi-envelope-at {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+    }
+
+    .informacion2 {
+        align-content: space-around;
+        color: $clrRojo;
+        font-weight: 700;
+        text-shadow:
+            -0.01rem -0.01rem 0 $clrOliva,
+            0.01rem -0.01rem 0 $clrOliva,
+            -0.01rem 0.01rem 0 $clrOliva,
+            0.01rem 0.01rem 0 $clrOliva;
+        margin-top: auto;
+        padding-bottom: 1vh;
+        order: 3;
+        text-align: left;
+    }
+
+    .informacion3 {
+        align-content: space-around;
+        color: $clrRojo;
+        font-weight: 700;
+        text-shadow:
+            -0.01rem -0.01rem 0 $clrOliva,
+            0.01rem -0.01rem 0 $clrOliva,
+            -0.01rem 0.01rem 0 $clrOliva,
+            0.01rem 0.01rem 0 $clrOliva;
+        margin-top: auto;
+        padding-bottom: 1vh;
+        order: 4;
+        text-align: right;
+
+        a {
+            color: $clrRojo;
+
+            &:hover {
+                color: $clrAzul;
+
+                .bi-geo-alt-fill {/*No funciona*/
+                    transition: transform 0.5s ease;
+                    transform: rotate(-25deg);
+                }
+            }
+        }
+    }
+
+    a {
+
+        i:hover {
+            color: $clrRojo;
+        }
+    }
+
+    .footer-copyright {
+        order: 5;
+        width: 100%;
+        text-align: center;
+        border-top: 0.10rem solid $clrAzul;
+        padding-top: 1vh;
+
+        a {
+            color: $clrAzul;
+        }
+
+        i {
+            font-size: 1.1rem;
+        }
+    }
+}

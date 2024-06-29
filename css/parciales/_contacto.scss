@@ -1,0 +1,156 @@
+.main-contacto {
+    font-family: $fontTruculenta;
+    background-color: $clrPrincipal;
+    color: $clrAzul;
+    grid-template-areas: "contactanos contactanos encontranos"
+        "envios promociones encontranos"
+        "mediosdepago promociones encontranos";
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 20px;
+    min-width: 95%;
+
+    h1,
+    h2 {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .contactanos {
+        grid-area: contactanos;
+        font-size: 1rem;
+
+        a {
+            color: $clrAzul;
+            font-weight: 600;
+            gap: 10px;
+            align-items: center;
+        }
+
+
+        .icono-contacto i {
+            font-size: 1.3rem;
+
+        }
+
+        form {
+
+            input,
+            textarea,
+            button {
+                width: 100%;
+                font-family: $fontTruculenta;
+                font-size: 0.9rem;
+                background: $clrSecundario;
+                color: $clrAzul;
+                border: 1px solid $clrAzul;
+                border-radius: 5px;
+                margin-top: 1px;
+            }
+
+            button {
+                width: auto;
+                font-weight: bold;
+                padding: 1px;
+                color: $clrPrincipal;
+                background: $clrAzul;
+            }
+        }
+    }
+
+    .encontranos {
+        grid-area: encontranos;
+    }
+
+    .encontranos a {
+        color: $clrAzul;
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .encontranos a i {
+        font-size: 1.3rem;
+    }
+
+    .encontranos img {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .encontranos .mapa2 {
+        display: none;
+    }
+
+    .envios {
+        grid-area: envios;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+
+    .camion {
+        text-align: start;
+        position: relative;
+        height: 1.5rem;
+        border-bottom: 0.01rem solid var(-clr-azul);
+    }
+
+    .camion i {
+        font-size: 1.5rem;
+        width: 100%;
+        position: absolute;
+    }
+
+    .camion .bi-shop {
+        font-size: 1.3rem;
+    }
+
+    .camion .bi-truck {
+        transform: translateX(1.5rem);
+    }
+
+    .camion .bi-house {
+        font-size: 1.35rem;
+        text-align: end;
+    }
+
+    .envios:hover .bi-truck {
+        transform: translateX(calc(100% - 3rem));
+        transition: transform 5s ease;
+    }
+
+    .envio-gratis {
+        background: $clrVerdeAgua;
+
+    }
+
+    .medios-de-pago {
+        grid-area: mediosdepago;
+        font-size: 1rem;
+        /* gap: auto; */
+    }
+
+    .medios-de-pago ul {
+        padding-left: auto;
+        margin-bottom: 2px;
+    }
+
+    .medios-de-pago i {
+        font-size: 1.3rem;
+    }
+
+    .promociones {
+        grid-area: promociones;
+        margin-bottom: 2px;
+    }
+
+    .img-promocion {
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .img-promocion-horizontal {
+        display: none;
+    }
+}

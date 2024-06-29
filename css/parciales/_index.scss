@@ -1,0 +1,83 @@
+.body-inicio {
+    height: 100vh;
+    font-family: $fontTruculenta;
+    background: $clrPrincipal;
+    background-image: url("../img/tanques.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 1.5rem 1rem 0.5rem 1rem;
+
+    .header-index {
+        border-bottom: none;
+
+        .inicio-logo {
+            width: 16rem;
+        }
+
+        .menu-inicio {
+            font-size: 2rem;
+            font-weight: bold;
+            padding: 1rem;
+            margin: 0;
+
+            li {
+                padding: 0.75rem;
+
+                a {
+                    color: $clrAzul;
+                    list-style: none;
+                    line-height: 2.3rem;
+
+                    text-shadow:
+                        -0.05rem -0.05rem 0 $clrPrincipal,
+                        0.05rem -0.05rem 0 $clrPrincipal,
+                        -0.05rem 0.05rem 0 $clrPrincipal,
+                        0.05rem 0.05rem 0 $clrPrincipal;
+
+                    &:hover {
+                        font-family: $fontBecome;
+                        font-style: italic;
+                        font-size: 2.3rem;
+                        font-weight: 900;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-index {
+
+        .informacion,
+        .informacion p,
+        .informacion a {
+            color: $clrRojo;
+            list-style: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-shadow:
+                -0.05rem -0.05rem 0 $clrOliva,
+                0.05rem -0.05rem 0 $clrOliva,
+                -0.05rem 0.05rem 0 $clrOliva,
+                0.05rem 0.05rem 0 $clrOliva;
+            margin: 0;
+        }
+
+        .ubicacion {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            gap: 0.5rem;
+
+            p:hover {
+                color: $clrAzul;
+            }
+
+            &:hover .bi-geo-alt-fill {
+                color: $clrAzul;
+                transition: transform 0.5s ease;
+                transform: rotate(-25deg);
+            }
+        }
+    }
+}
