@@ -43,6 +43,12 @@
                     }
                 }
             }
+
+            @for $item from 1 through 4 {
+                .menu-item:nth-child(#{$item}) {
+                    animation-delay: $item*0.2s;
+                }
+            }
         }
     }
 
@@ -61,6 +67,10 @@
                 -0.05rem 0.05rem 0 $clrOliva,
                 0.05rem 0.05rem 0 $clrOliva;
             margin: 0;
+
+            @include mediaquerie6 {
+                font-size: 0.9rem;
+            }
         }
 
         .ubicacion {

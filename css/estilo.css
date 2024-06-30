@@ -10,7 +10,6 @@
       url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.ttf")format("truetype"),
       url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.svg#Become Choice")format("svg");
 } */
-
 * {
   box-sizing: border-box;
   padding: 0;
@@ -68,6 +67,11 @@ header .navbar .boton-navbar .navbar-toggler-icon {
 header .navbar .collapse {
   max-width: 550px;
 }
+@media (width <= 768px) {
+  header .navbar .collapse {
+    max-width: none;
+  }
+}
 header .navbar .menu {
   width: 100%;
   justify-content: space-between;
@@ -89,8 +93,19 @@ header .navbar .menu li a:hover {
   font-size: 1.8rem;
   font-weight: 900;
 }
+@media (width <= 768px) {
+  header .navbar .menu li a {
+    text-align: start;
+    margin-left: 1rem;
+  }
+}
 header .navbar .menu .li-sobrenosotros {
   min-width: 150px;
+}
+@media (width <= 768px) {
+  header .navbar .menu .li-sobrenosotros .active {
+    width: 175px;
+  }
 }
 header .navbar .menu .active {
   color: #911714 !important;
@@ -110,6 +125,13 @@ header .navbar .menu .active:hover {
   font-style: normal;
   font-weight: 600;
   font-size: 1.2rem;
+}
+@media (width <= 768px) {
+  header .navbar .menu .active {
+    width: 125px;
+    margin-left: 0;
+    padding: auto 0;
+  }
 }
 
 .body-inicio {
@@ -149,6 +171,18 @@ header .navbar .menu .active:hover {
   font-size: 2.3rem;
   font-weight: 900;
 }
+.body-inicio .header-index .menu-inicio .menu-item:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.body-inicio .header-index .menu-inicio .menu-item:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.body-inicio .header-index .menu-inicio .menu-item:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.body-inicio .header-index .menu-inicio .menu-item:nth-child(4) {
+  animation-delay: 0.8s;
+}
 .body-inicio .main-index .informacion,
 .body-inicio .main-index .informacion p,
 .body-inicio .main-index .informacion a {
@@ -158,6 +192,13 @@ header .navbar .menu .active:hover {
   font-weight: bold;
   text-shadow: -0.05rem -0.05rem 0 #C6B866, 0.05rem -0.05rem 0 #C6B866, -0.05rem 0.05rem 0 #C6B866, 0.05rem 0.05rem 0 #C6B866;
   margin: 0;
+}
+@media (width <= 550px) {
+  .body-inicio .main-index .informacion,
+  .body-inicio .main-index .informacion p,
+  .body-inicio .main-index .informacion a {
+    font-size: 0.9rem;
+  }
 }
 .body-inicio .main-index .ubicacion {
   display: flex;
@@ -181,9 +222,24 @@ header .navbar .menu .active:hover {
   color: #181B34;
   background: #DED9C9;
 }
+@media (width <= 768px) {
+  .main-sobre-nosotros {
+    font-size: 1.2rem;
+  }
+}
 .main-sobre-nosotros .contenedor__sn {
   height: 70vh;
   align-content: center;
+}
+@media (width < 1200px) {
+  .main-sobre-nosotros .contenedor__sn {
+    height: 60vh;
+  }
+}
+@media (width <= 768px) {
+  .main-sobre-nosotros .contenedor__sn {
+    height: 50vh;
+  }
 }
 .main-sobre-nosotros .consumasalud {
   font-family: "Become Choice";
@@ -194,12 +250,32 @@ header .navbar .menu .active:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main-sobre-nosotros .consumasalud h2 {
+@media (width <= 768px) {
+  .main-sobre-nosotros .consumasalud {
+    order: 1;
+  }
+}
+.main-sobre-nosotros .consumasalud h2,
+.main-sobre-nosotros .consumasalud p {
   font-size: 6rem;
+}
+@media (width < 1020px) {
+  .main-sobre-nosotros .consumasalud h2,
+  .main-sobre-nosotros .consumasalud p {
+    font-size: 5rem;
+    font-weight: 400;
+  }
+}
+@media (width <= 800px) {
+  .main-sobre-nosotros .consumasalud h2,
+  .main-sobre-nosotros .consumasalud p {
+    font-size: 4.5rem;
+  }
+}
+.main-sobre-nosotros .consumasalud h2 {
   font-weight: 700;
 }
 .main-sobre-nosotros .consumasalud p {
-  font-size: 6rem;
   font-weight: 300;
   transform: rotate(10deg);
 }
@@ -217,11 +293,31 @@ header .navbar .menu .active:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (width <= 768px) {
+  .main-sobre-nosotros .parrafo1 {
+    order: 3;
+  }
+}
+@media (width <= 768px) {
+  .main-sobre-nosotros .parrafo2 {
+    order: 5;
+  }
+}
+@media (width <= 768px) {
+  .main-sobre-nosotros .parrafo3 {
+    order: 7;
+  }
+}
 .main-sobre-nosotros .img1 {
   background-image: url("../img/sirviendo1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (width <= 768px) {
+  .main-sobre-nosotros .img1 {
+    order: 2;
+  }
 }
 .main-sobre-nosotros .img2 {
   background-image: url("../img/sirviendo2.jpg");
@@ -229,17 +325,32 @@ header .navbar .menu .active:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (width <= 768px) {
+  .main-sobre-nosotros .img2 {
+    order: 4;
+  }
+}
 .main-sobre-nosotros .img3 {
   background-image: url("../img/hardanylautaro4.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media (width <= 768px) {
+  .main-sobre-nosotros .img3 {
+    order: 6;
+  }
+}
 .main-sobre-nosotros .img4 {
   background-image: url("../img/distincionsenadores.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+@media (width <= 768px) {
+  .main-sobre-nosotros .img4 {
+    order: 8;
+  }
 }
 
 .main-productos {
@@ -310,10 +421,43 @@ header .navbar .menu .active:hover {
   gap: 20px;
   min-width: 95%;
 }
+@media (width < 1020px) {
+  .main-contacto {
+    display: grid;
+    grid-template-areas: "contactanos contactanos encontranos" "mediosdepago envios promociones ";
+  }
+}
+@media (width <= 800px) {
+  .main-contacto {
+    display: grid;
+    grid-template-areas: "contactanos contactanos" "encontranos encontranos" "envios mediosdepago" "promociones promociones";
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+@media (width <= 550px) {
+  .main-contacto {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .main-contacto h1,
 .main-contacto h2 {
   text-align: center;
   font-size: 2rem;
+}
+@media (width < 1020px) {
+  .main-contacto h1,
+  .main-contacto h2 {
+    font-size: 1.8rem;
+  }
+}
+@media (width < 1020px) {
+  .main-contacto h1,
+  .main-contacto h2 {
+    font-size: 1.6rem;
+  }
 }
 .main-contacto .contactanos {
   grid-area: contactanos;
@@ -324,6 +468,9 @@ header .navbar .menu .active:hover {
   font-weight: 600;
   gap: 10px;
   align-items: center;
+}
+.main-contacto .contactanos a p {
+  margin: 0;
 }
 .main-contacto .contactanos .icono-contacto i {
   font-size: 1.3rem;
@@ -350,12 +497,22 @@ header .navbar .menu .active:hover {
 .main-contacto .encontranos {
   grid-area: encontranos;
 }
+@media (width < 1200px) {
+  .main-contacto .encontranos {
+    text-wrap: stable;
+  }
+}
 .main-contacto .encontranos a {
   color: #181B34;
   text-align: center;
   padding-bottom: 10px;
   font-size: 1rem;
   font-weight: 600;
+}
+@media (width < 1020px) {
+  .main-contacto .encontranos a {
+    padding-bottom: 1px;
+  }
 }
 .main-contacto .encontranos a i {
   font-size: 1.3rem;
@@ -364,14 +521,41 @@ header .navbar .menu .active:hover {
   width: 100%;
   border-radius: 15px;
 }
+@media (width < 1020px) {
+  .main-contacto .encontranos img {
+    width: 100%;
+    border-radius: 15px;
+  }
+}
+@media (width <= 800px) {
+  .main-contacto .encontranos img {
+    width: 60%;
+    transform: translate(40%, 0);
+  }
+}
+@media (width < 1020px) {
+  .main-contacto .encontranos .mapa1 {
+    display: none;
+  }
+}
 .main-contacto .encontranos .mapa2 {
   display: none;
+}
+@media (width < 1020px) {
+  .main-contacto .encontranos .mapa2 {
+    display: block;
+  }
 }
 .main-contacto .envios {
   grid-area: envios;
   font-size: 1rem;
   text-align: center;
   margin-bottom: 2px;
+}
+@media (width < 1020px) {
+  .main-contacto .envios {
+    font-size: 0.9rem;
+  }
 }
 .main-contacto .camion {
   text-align: start;
@@ -406,9 +590,20 @@ header .navbar .menu .active:hover {
   font-size: 1rem;
   /* gap: auto; */
 }
+@media (width < 1020px) {
+  .main-contacto .medios-de-pago {
+    font-size: 0.9rem;
+    padding: 0;
+  }
+}
 .main-contacto .medios-de-pago ul {
   padding-left: auto;
   margin-bottom: 2px;
+}
+@media (width < 1020px) {
+  .main-contacto .medios-de-pago ul {
+    padding-left: 0.1rem;
+  }
 }
 .main-contacto .medios-de-pago i {
   font-size: 1.3rem;
@@ -421,8 +616,20 @@ header .navbar .menu .active:hover {
   width: 100%;
   border-radius: 15px;
 }
+@media (width < 1020px) {
+  .main-contacto .img-promocion {
+    display: none;
+  }
+}
 .main-contacto .img-promocion-horizontal {
   display: none;
+}
+@media (width < 1020px) {
+  .main-contacto .img-promocion-horizontal {
+    display: block;
+    width: 100%;
+    border-radius: 15px;
+  }
 }
 
 .footer {
@@ -435,6 +642,11 @@ header .navbar .menu .active:hover {
   font-size: 1rem;
   font-weight: 500;
 }
+@media (width <= 768px) {
+  .footer {
+    justify-items: center;
+  }
+}
 .footer .footer-logo {
   order: 1;
   text-align: center;
@@ -443,16 +655,39 @@ header .navbar .menu .active:hover {
 .footer .footer-logo .footer-logo-img {
   width: 10rem;
 }
+@media (width <= 700px) {
+  .footer .footer-logo .footer-logo-img {
+    width: 7.5rem;
+  }
+}
 .footer .informacion1 {
   order: 2;
   margin-top: auto;
   text-align: center;
   width: 100%;
 }
+@media (width <= 768px) {
+  .footer .informacion1 {
+    justify-items: center;
+  }
+}
+@media (width <= 700px) {
+  .footer .informacion1 {
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    font-size: 0.8rem;
+  }
+}
 .footer .informacion1 .icono-footer {
   color: #181B34;
   font-size: 1.8rem;
   font-weight: 900;
+}
+@media (width <= 800px) {
+  .footer .informacion1 .icono-footer {
+    font-size: 1.5rem;
+  }
 }
 .footer .informacion1 .icono-footer .bi-telephone {
   font-weight: 900;
@@ -460,6 +695,11 @@ header .navbar .menu .active:hover {
 .footer .informacion1 .icono-footer .bi-envelope-at {
   font-size: 2rem;
   font-weight: 900;
+}
+@media (width <= 800px) {
+  .footer .informacion1 .icono-footer .bi-envelope-at {
+    font-size: 1.7rem;
+  }
 }
 .footer .informacion2 {
   align-content: space-around;
@@ -471,6 +711,15 @@ header .navbar .menu .active:hover {
   order: 3;
   text-align: left;
 }
+@media (width <= 700px) {
+  .footer .informacion2 {
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    font-size: 0.8rem;
+    order: 4;
+  }
+}
 .footer .informacion3 {
   align-content: space-around;
   color: #911714;
@@ -481,15 +730,33 @@ header .navbar .menu .active:hover {
   order: 4;
   text-align: right;
 }
+@media (width <= 700px) {
+  .footer .informacion3 {
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    font-size: 0.8rem;
+    order: 3;
+    padding-bottom: 0.5vh;
+  }
+}
 .footer .informacion3 a {
   color: #911714;
 }
 .footer .informacion3 a:hover {
   color: #181B34;
 }
-.footer .informacion3 a:hover .bi-geo-alt-fill { /*No funciona*/
+.footer .informacion3 a:hover .bi-geo-alt-fill {
+  /*No funciona*/
   transition: transform 0.5s ease;
   transform: rotate(-25deg);
+}
+@media (width <= 800px) {
+  .footer .informacion2,
+  .footer .informacion3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
 }
 .footer a i:hover {
   color: #911714;
@@ -501,9 +768,19 @@ header .navbar .menu .active:hover {
   border-top: 0.1rem solid #181B34;
   padding-top: 1vh;
 }
+@media (width <= 800px) {
+  .footer .footer-copyright {
+    font-size: 0.9rem;
+  }
+}
 .footer .footer-copyright a {
   color: #181B34;
 }
 .footer .footer-copyright i {
   font-size: 1.1rem;
+}
+@media (width <= 800px) {
+  .footer .footer-copyright i {
+    font-size: 1rem;
+  }
 }/*# sourceMappingURL=estilo.css.map */

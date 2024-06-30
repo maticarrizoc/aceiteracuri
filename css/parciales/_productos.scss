@@ -21,6 +21,7 @@
                 max-width: 100%;
                 max-height: 15rem;
             }
+
             h2 {
                 text-shadow:
                     -0.5px -0.5px 0 $clrOliva,
@@ -28,6 +29,7 @@
                     -0.5px 0.5px 0 $clrOliva,
                     0.5px 0.5px 0 $clrOliva;
             }
+
             h3 {
                 color: $clrRojo;
                 /*Si funciona*/
@@ -57,5 +59,11 @@
         .producto.aceite:hover .hide {
             display: block;
         }
+
+        // @each $color in oliva, uva, girasol {
+        //     .aceite-#{$color} {
+        //         background-color: $color;
+        //     }
+        // }
     }
 }

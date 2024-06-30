@@ -9,10 +9,40 @@
     gap: 20px;
     min-width: 95%;
 
+    @include mediaquerie2 {
+        display: grid;
+        grid-template-areas: "contactanos contactanos encontranos"
+            "mediosdepago envios promociones ";
+    }
+
+    @include mediaquerie3 {
+        display: grid;
+        grid-template-areas: "contactanos contactanos"
+            "encontranos encontranos"
+            "envios mediosdepago"
+            "promociones promociones";
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    @include mediaquerie6 {
+        display: flex;
+        flex-direction: column;
+    }
+
     h1,
     h2 {
         text-align: center;
         font-size: 2rem;
+
+        @include mediaquerie2 {
+            font-size: 1.8rem;
+        }
+
+        @include mediaquerie2 {
+            font-size: 1.6rem;
+        }
     }
 
     .contactanos {
@@ -24,12 +54,16 @@
             font-weight: 600;
             gap: 10px;
             align-items: center;
+
+            p {
+                margin: 0;
+            }
+
         }
 
 
         .icono-contacto i {
             font-size: 1.3rem;
-
         }
 
         form {
@@ -59,27 +93,57 @@
 
     .encontranos {
         grid-area: encontranos;
-    }
 
-    .encontranos a {
-        color: $clrAzul;
-        text-align: center;
-        padding-bottom: 10px;
-        font-size: 1rem;
-        font-weight: 600;
-    }
+        @include mediaquerie1 {
+            text-wrap: stable;
+        }
 
-    .encontranos a i {
-        font-size: 1.3rem;
-    }
 
-    .encontranos img {
-        width: 100%;
-        border-radius: 15px;
-    }
+        a {
+            color: $clrAzul;
+            text-align: center;
+            padding-bottom: 10px;
+            font-size: 1rem;
+            font-weight: 600;
 
-    .encontranos .mapa2 {
-        display: none;
+            @include mediaquerie2 {
+                padding-bottom: 1px;
+            }
+        }
+
+        a i {
+            font-size: 1.3rem;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15px;
+
+            @include mediaquerie2 {
+                width: 100%;
+                border-radius: 15px;
+            }
+
+            @include mediaquerie3 {
+                width: 60%;
+                transform: translate(40%, 0);
+            }
+        }
+
+        .mapa1 {
+
+            @include mediaquerie2 {
+                display: none;
+            }
+        }
+
+        .mapa2 {
+            display: none;
+
+            @include mediaquerie2 {
+                display: block;
+            }
+        }
     }
 
     .envios {
@@ -87,6 +151,10 @@
         font-size: 1rem;
         text-align: center;
         margin-bottom: 2px;
+
+        @include mediaquerie2 {
+            font-size: 0.9rem;
+        }
     }
 
     .camion {
@@ -128,12 +196,21 @@
     .medios-de-pago {
         grid-area: mediosdepago;
         font-size: 1rem;
+
         /* gap: auto; */
+        @include mediaquerie2 {
+            font-size: 0.9rem;
+            padding: 0;
+        }
     }
 
     .medios-de-pago ul {
         padding-left: auto;
         margin-bottom: 2px;
+
+        @include mediaquerie2 {
+            padding-left: 0.1rem;
+        }
     }
 
     .medios-de-pago i {
@@ -148,9 +225,19 @@
     .img-promocion {
         width: 100%;
         border-radius: 15px;
+
+        @include mediaquerie2 {
+            display: none;
+        }
     }
 
     .img-promocion-horizontal {
         display: none;
+
+        @include mediaquerie2 {
+            display: block;
+            width: 100%;
+            border-radius: 15px;
+        }
     }
 }

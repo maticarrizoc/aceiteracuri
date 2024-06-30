@@ -5,9 +5,21 @@
     color: $clrAzul;
     background: $clrPrincipal;
 
+    @include mediaquerie4 {
+        font-size: 1.2rem;
+    }
+
     .contenedor__sn {
         height: 70vh;
         align-content: center;
+
+        @include mediaquerie1 {
+            height: 60vh;
+        }
+
+        @include mediaquerie4 {
+            height: 50vh;
+        }
     }
 
     .consumasalud {
@@ -23,13 +35,29 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        h2 {
+        @include mediaquerie4 {
+            order: 1;
+        }
+
+        h2,
+        p {
             font-size: 6rem;
+
+            @include mediaquerie2 {
+                font-size: 5rem;
+                font-weight: 400;
+            }
+
+            @include mediaquerie3 {
+                font-size: 4.5rem;
+            }
+        }
+
+        h2 {
             font-weight: 700;
         }
 
         p {
-            font-size: 6rem;
             font-weight: 300;
             transform: rotate(10deg);
         }
@@ -51,11 +79,33 @@
         background-size: cover;
     }
 
+    .parrafo1 {
+        @include mediaquerie4 {
+            order: 3;
+        }
+    }
+
+    .parrafo2 {
+        @include mediaquerie4 {
+            order: 5;
+        }
+    }
+
+    .parrafo3 {
+        @include mediaquerie4 {
+            order: 7;
+        }
+    }
+
     .img1 {
         background-image: url("../img/sirviendo1.jpg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include mediaquerie4 {
+            order: 2;
+        }
     }
 
     .img2 {
@@ -63,6 +113,10 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include mediaquerie4 {
+            order: 4;
+        }
     }
 
     .img3 {
@@ -70,6 +124,10 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
+
+        @include mediaquerie4 {
+            order: 6;
+        }
     }
 
     .img4 {
@@ -77,5 +135,9 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
+
+        @include mediaquerie4 {
+            order: 8;
+        }
     }
 }

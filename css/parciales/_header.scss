@@ -26,6 +26,10 @@ header {
 
         .collapse {
             max-width: 550px;
+
+            @include mediaquerie4 {
+                max-width: none;
+            }
         }
 
         .menu {
@@ -49,11 +53,22 @@ header {
                         font-size: 1.8rem;
                         font-weight: 900;
                     }
+
+                    @include mediaquerie4 {
+                        text-align: start;
+                        margin-left: 1rem;
+                    }
                 }
             }
 
             .li-sobrenosotros {
                 min-width: 150px;
+
+                .active {
+                    @include mediaquerie4 {
+                        width: 175px;
+                    }
+                }
             }
 
             .active {
@@ -79,6 +94,12 @@ header {
                     font-style: normal;
                     font-weight: 600;
                     font-size: 1.2rem;
+                }
+
+                @include mediaquerie4 {
+                    width: 125px;
+                    margin-left: 0;
+                    padding: auto 0;
                 }
             }
         }
