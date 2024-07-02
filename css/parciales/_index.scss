@@ -13,6 +13,9 @@
 
         .inicio-logo {
             width: 16rem;
+            @include mediaquerie5 {
+                width: 14rem;
+            }
         }
 
         .menu-inicio {

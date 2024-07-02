@@ -14,6 +14,7 @@
         display: grid;
         grid-template-areas: "contactanos contactanos encontranos"
             "mediosdepago envios promociones ";
+        padding: 0;
     }
 
     @include mediaquerie3 {
@@ -199,47 +200,75 @@
         grid-area: mediosdepago;
         font-size: 1rem;
 
-        /* gap: auto; */
         @include mediaquerie2 {
             font-size: 0.9rem;
-            padding: 0;
         }
-    }
 
-    .medios-de-pago ul {
-        padding-left: auto;
-        margin-bottom: 2px;
+        ul {
+            padding-left: auto;
+            margin-bottom: 2px;
 
-        @include mediaquerie2 {
-            padding-left: 0.1rem;
+            @include mediaquerie2 {
+                padding-left: 0.1rem;
+            }
+
+            i {
+                font-size: 1.3rem;
+
+                @include mediaquerie4 {
+                    padding-left: 3rem;
+                }
+            }
         }
-    }
-
-    .medios-de-pago i {
-        font-size: 1.3rem;
     }
 
     .promociones {
         grid-area: promociones;
         margin-bottom: 2px;
-    }
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
 
-    .img-promocion {
-        width: 100%;
-        border-radius: 15px;
-
-        @include mediaquerie2 {
-            display: none;
-        }
-    }
-
-    .img-promocion-horizontal {
-        display: none;
-
-        @include mediaquerie2 {
-            display: block;
-            width: 100%;
+        .carrusel {
+            max-height: 430px;
             border-radius: 15px;
+
+            @include mediaquerie2 {
+                max-height: 200px;
+            }
+
+            .img-promocion {
+                display: block;
+                margin: 0 auto;
+                max-height: 430px;
+                border-radius: 15px;
+
+                @include mediaquerie2 {
+                    display: none;
+                }
+            }
+
+            .img-promocion-horizontal {
+                display: none;
+
+                @include mediaquerie2 {
+                    display: block;
+                    margin: 0 auto;
+                    max-height: 200px;
+                    border-radius: 15px;
+
+                }
+            }
         }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: $clrAzul;
+            border-radius: 10px;
+        }
+
     }
+
+
 }

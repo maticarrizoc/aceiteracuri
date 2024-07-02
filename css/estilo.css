@@ -150,6 +150,11 @@ header .navbar .menu .active:hover {
 .body-inicio .header-index .inicio-logo {
   width: 16rem;
 }
+@media (width <= 700px) {
+  .body-inicio .header-index .inicio-logo {
+    width: 14rem;
+  }
+}
 .body-inicio .header-index .menu-inicio {
   font-size: 2rem;
   font-weight: bold;
@@ -268,7 +273,7 @@ header .navbar .menu .active:hover {
 @media (width < 1020px) {
   .main-sobre-nosotros .consumasalud h2,
   .main-sobre-nosotros .consumasalud p {
-    font-size: 5rem;
+    font-size: 4.8rem;
     font-weight: 400;
   }
 }
@@ -363,29 +368,28 @@ header .navbar .menu .active:hover {
   font-weight: 500;
   background-color: #DED9C9;
   padding: 1rem;
+  min-width: 90%;
 }
 .main-productos h1 {
   font-weight: 700;
 }
 .main-productos .productos {
-  display: grid;
-  align-items: stretch;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 400px;
-  justify-self: center;
-  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   gap: 1rem;
 }
-.main-productos .productos .producto__item {
+.main-productos .productos .producto-item {
   background: #D9D3C3;
   border-radius: 15px;
   padding: 0px;
-  margin: 0.5rem;
   text-align: center;
   position: relative;
   overflow: hidden;
+  min-width: 320px;
+  height: 380px;
 }
-.main-productos .productos .producto__item .producto__show {
+.main-productos .productos .producto-item .producto-show {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -393,15 +397,15 @@ header .navbar .menu .active:hover {
   align-items: center;
   padding: 5px;
 }
-.main-productos .productos .producto__item .producto__show .imagen-producto {
+.main-productos .productos .producto-item .producto-show .imagen-producto {
   max-width: 5rem;
 }
-.main-productos .productos .producto__item .producto__show .titulo-producto {
+.main-productos .productos .producto-item .producto-show .titulo-producto {
   font-size: 1.8rem;
   font-weight: 700;
   text-shadow: -0.5px -0.5px 0 #C6B866, 0.5px -0.5px 0 #C6B866, -0.5px 0.5px 0 #C6B866, 0.5px 0.5px 0 #C6B866;
 }
-.main-productos .productos .producto__item .producto__overlay {
+.main-productos .productos .producto-item .producto-overlay {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -409,7 +413,7 @@ header .navbar .menu .active:hover {
   align-items: center;
   text-align: start;
   padding-top: 2rem;
-  padding-left: 4rem;
+  padding-left: 3.5rem;
   bottom: 0;
   left: 0;
   right: 0;
@@ -417,16 +421,17 @@ header .navbar .menu .active:hover {
   transform: translateY(100%);
   transition: transform 0.5s ease;
 }
-.main-productos .productos .producto__item .producto__overlay .subtitulo-producto {
+.main-productos .productos .producto-item .producto-overlay .subtitulo-producto {
   font-size: 1.2rem;
   color: #911714;
   font-weight: 700;
   text-shadow: -0.5px -0.5px 0 #C6B866, 0.5px -0.5px 0 #C6B866, -0.5px 0.5px 0 #C6B866, 0.5px 0.5px 0 #C6B866;
+  margin-bottom: 0;
 }
-.main-productos .productos .producto__item .producto__overlay .propiedades-producto {
-  font-weight: 700;
+.main-productos .productos .producto-item .producto-overlay .propiedades-producto {
+  font-weight: 500;
 }
-.main-productos .productos .producto__item:hover .producto__overlay {
+.main-productos .productos .producto-item:hover .producto-overlay {
   transform: translateY(0%);
 }
 .main-productos .productos .producto-aceite:hover .imagen-producto {
@@ -474,6 +479,7 @@ header .navbar .menu .active:hover {
   .main-contacto {
     display: grid;
     grid-template-areas: "contactanos contactanos encontranos" "mediosdepago envios promociones ";
+    padding: 0;
   }
 }
 @media (width <= 800px) {
@@ -639,12 +645,10 @@ header .navbar .menu .active:hover {
 .main-contacto .medios-de-pago {
   grid-area: mediosdepago;
   font-size: 1rem;
-  /* gap: auto; */
 }
 @media (width < 1020px) {
   .main-contacto .medios-de-pago {
     font-size: 0.9rem;
-    padding: 0;
   }
 }
 .main-contacto .medios-de-pago ul {
@@ -656,31 +660,57 @@ header .navbar .menu .active:hover {
     padding-left: 0.1rem;
   }
 }
-.main-contacto .medios-de-pago i {
+.main-contacto .medios-de-pago ul i {
   font-size: 1.3rem;
+}
+@media (width <= 768px) {
+  .main-contacto .medios-de-pago ul i {
+    padding-left: 3rem;
+  }
 }
 .main-contacto .promociones {
   grid-area: promociones;
   margin-bottom: 2px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
-.main-contacto .img-promocion {
-  width: 100%;
+.main-contacto .promociones .carrusel {
+  max-height: 430px;
   border-radius: 15px;
 }
 @media (width < 1020px) {
-  .main-contacto .img-promocion {
+  .main-contacto .promociones .carrusel {
+    max-height: 200px;
+  }
+}
+.main-contacto .promociones .carrusel .img-promocion {
+  display: block;
+  margin: 0 auto;
+  max-height: 430px;
+  border-radius: 15px;
+}
+@media (width < 1020px) {
+  .main-contacto .promociones .carrusel .img-promocion {
     display: none;
   }
 }
-.main-contacto .img-promocion-horizontal {
+.main-contacto .promociones .carrusel .img-promocion-horizontal {
   display: none;
 }
 @media (width < 1020px) {
-  .main-contacto .img-promocion-horizontal {
+  .main-contacto .promociones .carrusel .img-promocion-horizontal {
     display: block;
-    width: 100%;
+    margin: 0 auto;
+    max-height: 200px;
     border-radius: 15px;
   }
+}
+.main-contacto .promociones .carousel-control-prev-icon,
+.main-contacto .promociones .carousel-control-next-icon {
+  background-color: #181B34;
+  border-radius: 10px;
 }
 
 .footer {
