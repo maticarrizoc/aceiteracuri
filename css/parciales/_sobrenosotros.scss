@@ -1,9 +1,13 @@
 .main-sobre-nosotros {
     font-family: $fontTruculenta;
     font-size: 1.2rem;
-    font-weight: 700;
+    font-weight: 600;
     color: $clrAzul;
     background: $clrPrincipal;
+
+    h1 {
+        font-weight: 700;
+    }
 
     @include mediaquerie4 {
         font-size: 1.2rem;
@@ -12,13 +16,16 @@
     .contenedor__sn {
         height: 70vh;
         align-content: center;
+        padding: 0 5rem;
 
         @include mediaquerie1 {
             height: 60vh;
+            padding: 0 2rem;
         }
 
         @include mediaquerie4 {
             height: 50vh;
+            padding: 0 3rem;
         }
     }
 
@@ -72,7 +79,6 @@
     .parrafo3 {
         font-size: 1.2rem;
         text-align: center;
-        padding: 1rem;
         background-image: url("../img/bgsn.png");
         background-position: center center;
         background-repeat: no-repeat;

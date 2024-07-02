@@ -1,5 +1,6 @@
 .main-contacto {
     font-family: $fontTruculenta;
+    font-weight: 500;
     background-color: $clrPrincipal;
     color: $clrAzul;
     grid-template-areas: "contactanos contactanos encontranos"
@@ -35,6 +36,7 @@
     h2 {
         text-align: center;
         font-size: 2rem;
+        font-weight: 700;
 
         @include mediaquerie2 {
             font-size: 1.8rem;
@@ -189,8 +191,8 @@
     }
 
     .envio-gratis {
-        background: $clrVerdeAgua;
-
+        background: $clrAzul;
+        color: $clrPrincipal;
     }
 
     .medios-de-pago {

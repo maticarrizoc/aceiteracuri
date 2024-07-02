@@ -218,9 +218,12 @@ header .navbar .menu .active:hover {
 .main-sobre-nosotros {
   font-family: "Truculenta", sans-serif;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #181B34;
   background: #DED9C9;
+}
+.main-sobre-nosotros h1 {
+  font-weight: 700;
 }
 @media (width <= 768px) {
   .main-sobre-nosotros {
@@ -230,15 +233,18 @@ header .navbar .menu .active:hover {
 .main-sobre-nosotros .contenedor__sn {
   height: 70vh;
   align-content: center;
+  padding: 0 5rem;
 }
 @media (width < 1200px) {
   .main-sobre-nosotros .contenedor__sn {
     height: 60vh;
+    padding: 0 2rem;
   }
 }
 @media (width <= 768px) {
   .main-sobre-nosotros .contenedor__sn {
     height: 50vh;
+    padding: 0 3rem;
   }
 }
 .main-sobre-nosotros .consumasalud {
@@ -287,7 +293,6 @@ header .navbar .menu .active:hover {
 .main-sobre-nosotros .parrafo3 {
   font-size: 1.2rem;
   text-align: center;
-  padding: 1rem;
   background-image: url("../img/bgsn.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -355,65 +360,109 @@ header .navbar .menu .active:hover {
 
 .main-productos {
   font-family: "Truculenta", sans-serif;
+  font-weight: 500;
   background-color: #DED9C9;
   padding: 1rem;
 }
+.main-productos h1 {
+  font-weight: 700;
+}
 .main-productos .productos {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  align-items: stretch;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  justify-self: center;
+  justify-content: center;
+  gap: 1rem;
 }
-.main-productos .productos .producto {
-  flex: 1;
+.main-productos .productos .producto__item {
   background: #D9D3C3;
-  border: 0.15rem solid #181B34;
   border-radius: 15px;
-  padding: 10px;
+  padding: 0px;
   margin: 0.5rem;
-  min-width: 20rem;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
-.main-productos .productos .producto .imagen-producto {
-  max-width: 100%;
-  max-height: 15rem;
+.main-productos .productos .producto__item .producto__show {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
 }
-.main-productos .productos .producto h2 {
+.main-productos .productos .producto__item .producto__show .imagen-producto {
+  max-width: 5rem;
+}
+.main-productos .productos .producto__item .producto__show .titulo-producto {
+  font-size: 1.8rem;
+  font-weight: 700;
   text-shadow: -0.5px -0.5px 0 #C6B866, 0.5px -0.5px 0 #C6B866, -0.5px 0.5px 0 #C6B866, 0.5px 0.5px 0 #C6B866;
 }
-.main-productos .productos .producto h3 {
-  color: #911714;
-  /*Si funciona*/
+.main-productos .productos .producto__item .producto__overlay {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  padding-top: 2rem;
+  padding-left: 4rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
 }
-.main-productos .productos .aceite-oliva,
-.main-productos .productos .aceite-uva,
-.main-productos .productos .aceite-girasol {
-  display: block;
-}
-.main-productos .productos .titulo-producto {
-  font-size: 2rem;
-}
-.main-productos .productos .subtitulo-producto {
+.main-productos .productos .producto__item .producto__overlay .subtitulo-producto {
   font-size: 1.2rem;
+  color: #911714;
+  font-weight: 700;
+  text-shadow: -0.5px -0.5px 0 #C6B866, 0.5px -0.5px 0 #C6B866, -0.5px 0.5px 0 #C6B866, 0.5px 0.5px 0 #C6B866;
 }
-.main-productos .productos .hide {
-  display: none;
+.main-productos .productos .producto__item .producto__overlay .propiedades-producto {
+  font-weight: 700;
 }
-.main-productos .productos .producto.aceite:hover .hide {
-  display: block;
+.main-productos .productos .producto__item:hover .producto__overlay {
+  transform: translateY(0%);
+}
+.main-productos .productos .producto-aceite:hover .imagen-producto {
+  transform: translateX(-150%);
+  transition: transform 0.5s ease;
 }
 
 .main-envases {
   font-family: "Truculenta", sans-serif;
+  font-weight: 500;
   background-color: #DED9C9;
+  color: #181B34;
 }
-.main-envases div {
+.main-envases h1 {
+  font-weight: 700;
+}
+.main-envases ol > li {
+  list-style: decimal;
+  font-size: 1.2rem;
+}
+.main-envases ul > li {
+  list-style: disc;
+}
+.main-envases .envase {
   display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 .main-envases .img-envase {
-  width: 200px;
+  width: 100px;
 }
 
 .main-contacto {
   font-family: "Truculenta", sans-serif;
+  font-weight: 500;
   background-color: #DED9C9;
   color: #181B34;
   grid-template-areas: "contactanos contactanos encontranos" "envios promociones encontranos" "mediosdepago promociones encontranos";
@@ -446,6 +495,7 @@ header .navbar .menu .active:hover {
 .main-contacto h2 {
   text-align: center;
   font-size: 2rem;
+  font-weight: 700;
 }
 @media (width < 1020px) {
   .main-contacto h1,
@@ -583,7 +633,8 @@ header .navbar .menu .active:hover {
   transition: transform 5s ease;
 }
 .main-contacto .envio-gratis {
-  background: #1DBFAF;
+  background: #181B34;
+  color: #DED9C9;
 }
 .main-contacto .medios-de-pago {
   grid-area: mediosdepago;

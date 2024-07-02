@@ -1,12 +1,32 @@
 .main-envases {
     font-family: $fontTruculenta;
+    font-weight: 500;
     background-color: $clrPrincipal;
+    color: $clrAzul;
 
-    div {
+    h1 {
+        font-weight: 700;
+    }
+
+    ol>li {
+        list-style: decimal;
+        font-size: 1.2rem;
+    }
+
+    ul>li {
+        list-style: disc;
+    }
+
+    .envases {}
+
+    .envase {
         display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
     .img-envase {
-        width: 200px;
+        width: 100px;
     }
 }
