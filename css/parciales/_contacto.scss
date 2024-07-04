@@ -58,6 +58,10 @@
             gap: 10px;
             align-items: center;
 
+            &:hover i {
+                color: $clrRojo;
+            }
+
             p {
                 margin: 0;
             }
@@ -103,6 +107,10 @@
 
 
         a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 0.5rem;
             color: $clrAzul;
             text-align: center;
             padding-bottom: 10px;
@@ -112,10 +120,18 @@
             @include mediaquerie2 {
                 padding-bottom: 1px;
             }
-        }
 
-        a i {
-            font-size: 1.3rem;
+            i {
+                font-size: 1.3rem;
+            }
+
+            &:hover .bi-geo-alt-fill {
+                color: $clrRojo;
+                transition: transform 0.5s ease;
+                transform: rotate(-25deg);
+            }
+
+
         }
 
         img {

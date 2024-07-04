@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
-@import url("https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice");
-/* @font-face {
-  font-family: "Become Choice";
-  src: url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.eot");
-  src: url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.eot?#iefix")format("embedded-opentype"),
-      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.woff2")format("woff2"),
-      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.woff")format("woff"),
-      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.ttf")format("truetype"),
-      url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.svg#Become Choice")format("svg");
-} */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -138,7 +128,7 @@ header .navbar .menu .active:hover {
   height: 100vh;
   font-family: "Truculenta", sans-serif;
   background: #DED9C9;
-  background-image: url("../img/tanques.png");
+  background-image: url("../img/tanques.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -298,7 +288,7 @@ header .navbar .menu .active:hover {
 .main-sobre-nosotros .parrafo3 {
   font-size: 1.2rem;
   text-align: center;
-  background-image: url("../img/bgsn.png");
+  background-image: url("../img/bgsn2.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -525,6 +515,9 @@ header .navbar .menu .active:hover {
   gap: 10px;
   align-items: center;
 }
+.main-contacto .contactanos a:hover i {
+  color: #911714;
+}
 .main-contacto .contactanos a p {
   margin: 0;
 }
@@ -559,6 +552,10 @@ header .navbar .menu .active:hover {
   }
 }
 .main-contacto .encontranos a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
   color: #181B34;
   text-align: center;
   padding-bottom: 10px;
@@ -572,6 +569,11 @@ header .navbar .menu .active:hover {
 }
 .main-contacto .encontranos a i {
   font-size: 1.3rem;
+}
+.main-contacto .encontranos a:hover .bi-geo-alt-fill {
+  color: #911714;
+  transition: transform 0.5s ease;
+  transform: rotate(-25deg);
 }
 .main-contacto .encontranos img {
   width: 100%;
@@ -822,6 +824,10 @@ header .navbar .menu .active:hover {
   }
 }
 .footer .informacion3 a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.25rem;
   color: #911714;
 }
 .footer .informacion3 a:hover {
