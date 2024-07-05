@@ -1,0 +1,4 @@
+User-agent: *
+
+Disallow: /aceiteracuri/pages/envases.html
+

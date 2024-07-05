@@ -17,16 +17,17 @@
         list-style: disc;
     }
 
-    .envases {}
+    .envases {
 
-    .envase {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
+        .envase {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
 
-    .img-envase {
-        width: 100px;
+        .img-envase {
+            width: 100px;
+        }
     }
 }

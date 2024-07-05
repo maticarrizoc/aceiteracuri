@@ -27,7 +27,7 @@
 
     }
 
-    .informacion1 {
+    .informacion-1 {
         order: 2;
         margin-top: auto;
         text-align: center;
@@ -69,7 +69,7 @@
 
     }
 
-    .informacion2 {
+    .informacion-2 {
         align-content: space-around;
         color: $clrRojo;
         font-weight: 700;
@@ -92,7 +92,7 @@
         }
     }
 
-    .informacion3 {
+    .informacion-3 {
         align-content: space-around;
         color: $clrRojo;
         font-weight: 700;
@@ -134,8 +134,8 @@
         }
     }
 
-    .informacion2,
-    .informacion3 {
+    .informacion-2,
+    .informacion-3 {
         @include mediaquerie3 {
             font-size: 0.9rem;
             font-weight: 600;

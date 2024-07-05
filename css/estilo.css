@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
-@font-face {
-  font-family: "Become Choice";
-  src: url("../../fonts/Become Choice.ttf");
-}
+@import url(https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice);
 * {
   box-sizing: border-box;
   padding: 0;
@@ -226,19 +223,19 @@ header .navbar .menu .active:hover {
     font-size: 1.2rem;
   }
 }
-.main-sobre-nosotros .contenedor__sn {
+.main-sobre-nosotros .contenedor-sn {
   height: 70vh;
   align-content: center;
   padding: 0 5rem;
 }
 @media (width < 1200px) {
-  .main-sobre-nosotros .contenedor__sn {
+  .main-sobre-nosotros .contenedor-sn {
     height: 60vh;
     padding: 0 2rem;
   }
 }
 @media (width <= 768px) {
-  .main-sobre-nosotros .contenedor__sn {
+  .main-sobre-nosotros .contenedor-sn {
     height: 50vh;
     padding: 0 1rem;
   }
@@ -285,9 +282,9 @@ header .navbar .menu .active:hover {
 .main-sobre-nosotros .consumasalud .p-invertido {
   transform: rotate(190deg);
 }
-.main-sobre-nosotros .parrafo1,
-.main-sobre-nosotros .parrafo2,
-.main-sobre-nosotros .parrafo3 {
+.main-sobre-nosotros .parrafo-1,
+.main-sobre-nosotros .parrafo-2,
+.main-sobre-nosotros .parrafo-3 {
   font-size: 1.2rem;
   text-align: center;
   background-image: url("../img/bgsn3.svg");
@@ -296,17 +293,17 @@ header .navbar .menu .active:hover {
   background-size: cover;
 }
 @media (width <= 768px) {
-  .main-sobre-nosotros .parrafo1 {
+  .main-sobre-nosotros .parrafo-1 {
     order: 3;
   }
 }
 @media (width <= 768px) {
-  .main-sobre-nosotros .parrafo2 {
+  .main-sobre-nosotros .parrafo-2 {
     order: 5;
   }
 }
 @media (width <= 768px) {
-  .main-sobre-nosotros .parrafo3 {
+  .main-sobre-nosotros .parrafo-3 {
     order: 7;
   }
 }
@@ -487,13 +484,13 @@ header .navbar .menu .active:hover {
 .main-envases ul > li {
   list-style: disc;
 }
-.main-envases .envase {
+.main-envases .envases .envase {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
 }
-.main-envases .img-envase {
+.main-envases .envases .img-envase {
   width: 100px;
 }
 
@@ -783,48 +780,48 @@ header .navbar .menu .active:hover {
     width: 7.5rem;
   }
 }
-.footer .informacion1 {
+.footer .informacion-1 {
   order: 2;
   margin-top: auto;
   text-align: center;
   width: 100%;
 }
 @media (width <= 768px) {
-  .footer .informacion1 {
+  .footer .informacion-1 {
     justify-items: center;
   }
 }
 @media (width <= 700px) {
-  .footer .informacion1 {
+  .footer .informacion-1 {
     width: 100%;
     text-align: center;
     justify-items: center;
     font-size: 0.8rem;
   }
 }
-.footer .informacion1 .icono-footer {
+.footer .informacion-1 .icono-footer {
   color: #181B34;
   font-size: 1.8rem;
   font-weight: 900;
 }
 @media (width <= 800px) {
-  .footer .informacion1 .icono-footer {
+  .footer .informacion-1 .icono-footer {
     font-size: 1.5rem;
   }
 }
-.footer .informacion1 .icono-footer .bi-telephone {
+.footer .informacion-1 .icono-footer .bi-telephone {
   font-weight: 900;
 }
-.footer .informacion1 .icono-footer .bi-envelope-at {
+.footer .informacion-1 .icono-footer .bi-envelope-at {
   font-size: 2rem;
   font-weight: 900;
 }
 @media (width <= 800px) {
-  .footer .informacion1 .icono-footer .bi-envelope-at {
+  .footer .informacion-1 .icono-footer .bi-envelope-at {
     font-size: 1.7rem;
   }
 }
-.footer .informacion2 {
+.footer .informacion-2 {
   align-content: space-around;
   color: #911714;
   font-weight: 700;
@@ -835,7 +832,7 @@ header .navbar .menu .active:hover {
   text-align: left;
 }
 @media (width <= 700px) {
-  .footer .informacion2 {
+  .footer .informacion-2 {
     width: 100%;
     text-align: center;
     justify-items: center;
@@ -843,7 +840,7 @@ header .navbar .menu .active:hover {
     order: 4;
   }
 }
-.footer .informacion3 {
+.footer .informacion-3 {
   align-content: space-around;
   color: #911714;
   font-weight: 700;
@@ -854,7 +851,7 @@ header .navbar .menu .active:hover {
   text-align: right;
 }
 @media (width <= 700px) {
-  .footer .informacion3 {
+  .footer .informacion-3 {
     width: 100%;
     text-align: center;
     justify-items: center;
@@ -863,24 +860,24 @@ header .navbar .menu .active:hover {
     padding-bottom: 0.5vh;
   }
 }
-.footer .informacion3 a {
+.footer .informacion-3 a {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 0.25rem;
   color: #911714;
 }
-.footer .informacion3 a:hover {
+.footer .informacion-3 a:hover {
   color: #181B34;
 }
-.footer .informacion3 a:hover .bi-geo-alt-fill {
+.footer .informacion-3 a:hover .bi-geo-alt-fill {
   /*No funciona*/
   transition: transform 0.5s ease;
   transform: rotate(-25deg);
 }
 @media (width <= 800px) {
-  .footer .informacion2,
-  .footer .informacion3 {
+  .footer .informacion-2,
+  .footer .informacion-3 {
     font-size: 0.9rem;
     font-weight: 600;
   }
