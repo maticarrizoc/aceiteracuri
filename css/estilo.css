@@ -1,5 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400&family=Truculenta:opsz,wght@12..72,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@font-face {
+  font-family: "Become Choice";
+  src: url("../../fonts/Become Choice.ttf");
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -10,12 +14,10 @@
 
 body {
   background-color: #DED9C9;
-  /*No funcionan*/
 }
 body::-webkit-scrollbar {
   width: 4px;
   height: 4px;
-  /* display: none; /* Ocultar scroll */
 }
 body::-webkit-scrollbar-thumb {
   background: #181B34;
@@ -103,7 +105,6 @@ header .navbar .menu .active {
   font-family: "Fredoka";
   font-size: 1.2rem;
   font-weight: 600;
-  /* text-align: center; */
   text-transform: uppercase;
   text-shadow: -0.05rem -0.05rem 0 #C6B866, 0.05rem -0.05rem 0 #C6B866, -0.05rem 0.05rem 0 #C6B866, 0.05rem 0.05rem 0 #C6B866, 0.1rem 0.1rem 0 #181B34;
   border: 0.2rem solid #199E8E;
@@ -239,7 +240,7 @@ header .navbar .menu .active:hover {
 @media (width <= 768px) {
   .main-sobre-nosotros .contenedor__sn {
     height: 50vh;
-    padding: 0 3rem;
+    padding: 0 1rem;
   }
 }
 .main-sobre-nosotros .consumasalud {
@@ -259,12 +260,13 @@ header .navbar .menu .active:hover {
 .main-sobre-nosotros .consumasalud h2,
 .main-sobre-nosotros .consumasalud p {
   font-size: 6rem;
+  font-weight: normal;
 }
 @media (width < 1020px) {
   .main-sobre-nosotros .consumasalud h2,
   .main-sobre-nosotros .consumasalud p {
     font-size: 4.8rem;
-    font-weight: 400;
+    font-weight: normal;
   }
 }
 @media (width <= 800px) {
@@ -288,7 +290,7 @@ header .navbar .menu .active:hover {
 .main-sobre-nosotros .parrafo3 {
   font-size: 1.2rem;
   text-align: center;
-  background-image: url("../img/bgsn2.png");
+  background-image: url("../img/bgsn3.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -309,10 +311,20 @@ header .navbar .menu .active:hover {
   }
 }
 .main-sobre-nosotros .img1 {
+  position: relative;
   background-image: url("../img/sirviendo1.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main-sobre-nosotros .img1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 27, 52, 0.5);
 }
 @media (width <= 768px) {
   .main-sobre-nosotros .img1 {
@@ -320,10 +332,20 @@ header .navbar .menu .active:hover {
   }
 }
 .main-sobre-nosotros .img2 {
+  position: relative;
   background-image: url("../img/sirviendo2.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main-sobre-nosotros .img2::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 27, 52, 0.5);
 }
 @media (width <= 768px) {
   .main-sobre-nosotros .img2 {
@@ -331,10 +353,20 @@ header .navbar .menu .active:hover {
   }
 }
 .main-sobre-nosotros .img3 {
-  background-image: url("../img/hardanylautaro4.png");
+  position: relative;
+  background-image: url("../img/hardan-lautaro.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.main-sobre-nosotros .img3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 27, 52, 0.5);
 }
 @media (width <= 768px) {
   .main-sobre-nosotros .img3 {
@@ -342,10 +374,20 @@ header .navbar .menu .active:hover {
   }
 }
 .main-sobre-nosotros .img4 {
-  background-image: url("../img/distincionsenadores.jpg");
+  position: relative;
+  background-image: url("../img/distincion-senadores.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+.main-sobre-nosotros .img4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 27, 52, 0.2);
 }
 @media (width <= 768px) {
   .main-sobre-nosotros .img4 {
@@ -553,7 +595,6 @@ header .navbar .menu .active:hover {
 }
 .main-contacto .encontranos a {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   gap: 0.5rem;
   color: #181B34;
@@ -587,20 +628,19 @@ header .navbar .menu .active:hover {
 }
 @media (width <= 800px) {
   .main-contacto .encontranos img {
-    width: 60%;
-    transform: translate(40%, 0);
+    width: 80%;
   }
 }
 @media (width < 1020px) {
-  .main-contacto .encontranos .mapa1 {
+  .main-contacto .encontranos .mapa {
     display: none;
   }
 }
-.main-contacto .encontranos .mapa2 {
+.main-contacto .encontranos .mapa-cuadrado {
   display: none;
 }
 @media (width < 1020px) {
-  .main-contacto .encontranos .mapa2 {
+  .main-contacto .encontranos .mapa-cuadrado {
     display: block;
   }
 }

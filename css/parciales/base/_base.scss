@@ -1,0 +1,24 @@
+body {
+    background-color: $clrPrincipal;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+        height: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $clrAzul;
+        border-radius: 4px;
+
+        &:hover {
+            background: $clrOliva;
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background: $clrPrincipal;
+    }
+}
+a{
+    text-decoration: none;
+}

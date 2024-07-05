@@ -1,10 +1,11 @@
-@import "./parciales/mediaqueries";
-@import "./parciales/variables";
-@import "./parciales/reset";
-@import "./parciales/header";
+@import "./parciales/utilidades/mediaqueries";
+@import "./parciales/utilidades/variables";
+@import "./parciales/base/reset";
+@import "./parciales/base/base";
+@import "./parciales/layout/header";
 @import "./parciales/index";
 @import "./parciales/sobrenosotros";
 @import "./parciales/productos";
 @import "./parciales/envases";
 @import "./parciales/contacto";
-@import "./parciales/footer";
+@import "./parciales/layout/footer";

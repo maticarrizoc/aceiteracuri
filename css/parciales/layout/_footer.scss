@@ -1,0 +1,175 @@
+.footer {
+    padding: 1.5vh 1vh 1vh 1vh;
+    align-items: space-around;
+    color: $clrAzul;
+    background-color: $clrPrincipal;
+    border-top: 0.15rem solid $clrAzul;
+    font-family: $fontTruculenta;
+    font-size: 1rem;
+    font-weight: 500;
+
+    @include mediaquerie4 {
+        justify-items: center;
+    }
+
+    .footer-logo {
+        order: 1;
+        text-align: center;
+        width: 100%;
+
+        .footer-logo-img {
+            width: 10rem;
+
+            @include mediaquerie5 {
+                width: 7.5rem;
+            }
+        }
+
+    }
+
+    .informacion1 {
+        order: 2;
+        margin-top: auto;
+        text-align: center;
+        width: 100%;
+
+        @include mediaquerie4 {
+            justify-items: center;
+        }
+
+        @include mediaquerie5 {
+            width: 100%;
+            text-align: center;
+            justify-items: center;
+            font-size: 0.8rem;
+        }
+
+        .icono-footer {
+            color: $clrAzul;
+            font-size: 1.8rem;
+            font-weight: 900;
+
+            @include mediaquerie3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        .icono-footer .bi-telephone {
+            font-weight: 900;
+        }
+
+        .icono-footer .bi-envelope-at {
+            font-size: 2rem;
+            font-weight: 900;
+
+            @include mediaquerie3 {
+                font-size: 1.7rem;
+            }
+        }
+
+    }
+
+    .informacion2 {
+        align-content: space-around;
+        color: $clrRojo;
+        font-weight: 700;
+        text-shadow:
+            -0.01rem -0.01rem 0 $clrOliva,
+            0.01rem -0.01rem 0 $clrOliva,
+            -0.01rem 0.01rem 0 $clrOliva,
+            0.01rem 0.01rem 0 $clrOliva;
+        margin-top: auto;
+        padding-bottom: 1vh;
+        order: 3;
+        text-align: left;
+
+        @include mediaquerie5 {
+            width: 100%;
+            text-align: center;
+            justify-items: center;
+            font-size: 0.8rem;
+            order: 4;
+        }
+    }
+
+    .informacion3 {
+        align-content: space-around;
+        color: $clrRojo;
+        font-weight: 700;
+        text-shadow:
+            -0.01rem -0.01rem 0 $clrOliva,
+            0.01rem -0.01rem 0 $clrOliva,
+            -0.01rem 0.01rem 0 $clrOliva,
+            0.01rem 0.01rem 0 $clrOliva;
+        margin-top: auto;
+        padding-bottom: 1vh;
+        order: 4;
+        text-align: right;
+
+        @include mediaquerie5 {
+            width: 100%;
+            text-align: center;
+            justify-items: center;
+            font-size: 0.8rem;
+            order: 3;
+            padding-bottom: 0.5vh;
+        }
+
+        a {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 0.25rem;
+            color: $clrRojo;
+
+            &:hover {
+                color: $clrAzul;
+
+                .bi-geo-alt-fill {
+                    /*No funciona*/
+                    transition: transform 0.5s ease;
+                    transform: rotate(-25deg);
+                }
+            }
+        }
+    }
+
+    .informacion2,
+    .informacion3 {
+        @include mediaquerie3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+    }
+
+    a {
+
+        i:hover {
+            color: $clrRojo;
+        }
+    }
+
+    .footer-copyright {
+        order: 5;
+        width: 100%;
+        text-align: center;
+        border-top: 0.10rem solid $clrAzul;
+        padding-top: 1vh;
+
+        @include mediaquerie3 {
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: $clrAzul;
+        }
+
+        i {
+            font-size: 1.1rem;
+
+            @include mediaquerie3 {
+                font-size: 1rem;
+            }
+        }
+    }
+}

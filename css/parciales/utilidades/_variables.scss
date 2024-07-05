@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+@font-face {
+    font-family: 'Become Choice';
+    src: url("../../fonts/Become\ Choice.ttf");
+}
+
+$fontTruculenta: 'Truculenta', sans-serif;
+$fontBecome: 'Become Choice';
+$fontFredoka: 'Fredoka';
+
+$clrPrincipal: #DED9C9;
+$clrSecundario: #D9D3C3;
+$clrCrema: #E3E0D5;
+$clrOliva: #C6B866;
+$clrOliva-claro: #D6C476;
+$clrRojo: #911714;
+$clrRojoClaro: #9C332F;
+$clrVerdeAgua: #1DBFAF;
+$clrVerdeAguaClaro: #49C7BA;
+$clrVerdeAguaOscuro: #199E8E;
+$clrAzul: #181B34;
+$clrGris: #3A3A39;
