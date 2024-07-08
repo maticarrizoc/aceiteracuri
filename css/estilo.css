@@ -1,6 +1,11 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
-@import url(https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice);
+@import url("https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice");
+@font-face {
+  font-family: "Become Choice";
+  src: url("../../fonts/Become Choice.ttf");
+}
 * {
   box-sizing: border-box;
   padding: 0;
@@ -21,7 +26,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 4px;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background: #C6B866;
+  background: #3A3A39;
 }
 body::-webkit-scrollbar-track {
   background: #DED9C9;
@@ -122,90 +127,96 @@ header .navbar .menu .active:hover {
   }
 }
 
-.body-inicio {
-  height: 100vh;
+.main-inicio {
+  height: 90vh;
   font-family: "Truculenta", sans-serif;
   background: #DED9C9;
   background-image: url("../img/tanques.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
-  padding: 1.5rem 1rem 0.5rem 1rem;
 }
-.body-inicio .header-index {
-  border-bottom: none;
+.main-inicio .title {
+  font-family: "Become Choice";
+  color: #181B34;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding-top: 2.5vh;
+  width: 40%;
 }
-.body-inicio .header-index .inicio-logo {
-  width: 16rem;
-}
-@media (width <= 700px) {
-  .body-inicio .header-index .inicio-logo {
-    width: 14rem;
+@media (width < 1020px) {
+  .main-inicio .title {
+    width: 100%;
   }
 }
-.body-inicio .header-index .menu-inicio {
-  font-size: 2rem;
-  font-weight: bold;
-  padding: 1rem;
+.main-inicio .title h2,
+.main-inicio .title p {
   margin: 0;
-}
-.body-inicio .header-index .menu-inicio li {
-  padding: 0.75rem;
-}
-.body-inicio .header-index .menu-inicio li a {
-  color: #181B34;
-  list-style: none;
-  line-height: 2.3rem;
+  font-size: 5rem;
+  font-weight: normal;
   text-shadow: -0.05rem -0.05rem 0 #DED9C9, 0.05rem -0.05rem 0 #DED9C9, -0.05rem 0.05rem 0 #DED9C9, 0.05rem 0.05rem 0 #DED9C9;
 }
-.body-inicio .header-index .menu-inicio li a:hover {
-  font-family: "Become Choice";
-  font-style: italic;
-  font-size: 2.3rem;
-  font-weight: 900;
-}
-.body-inicio .header-index .menu-inicio .menu-item:nth-child(1) {
-  animation-delay: 0.2s;
-}
-.body-inicio .header-index .menu-inicio .menu-item:nth-child(2) {
-  animation-delay: 0.4s;
-}
-.body-inicio .header-index .menu-inicio .menu-item:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.body-inicio .header-index .menu-inicio .menu-item:nth-child(4) {
-  animation-delay: 0.8s;
-}
-.body-inicio .main-index .informacion,
-.body-inicio .main-index .informacion p,
-.body-inicio .main-index .informacion a {
-  color: #911714;
-  list-style: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-shadow: -0.05rem -0.05rem 0 #C6B866, 0.05rem -0.05rem 0 #C6B866, -0.05rem 0.05rem 0 #C6B866, 0.05rem 0.05rem 0 #C6B866;
-  margin: 0;
-}
-@media (width <= 550px) {
-  .body-inicio .main-index .informacion,
-  .body-inicio .main-index .informacion p,
-  .body-inicio .main-index .informacion a {
-    font-size: 0.9rem;
+@media (width <= 700px) {
+  .main-inicio .title h2,
+  .main-inicio .title p {
+    font-size: 5rem;
   }
 }
-.body-inicio .main-index .ubicacion {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  gap: 0.5rem;
+.main-inicio .title h2 {
+  font-weight: 700;
 }
-.body-inicio .main-index .ubicacion p:hover {
-  color: #181B34;
+.main-inicio .title p {
+  font-weight: 300;
+  transform: rotate(10deg);
 }
-.body-inicio .main-index .ubicacion:hover .bi-geo-alt-fill {
-  color: #181B34;
-  transition: transform 0.5s ease;
-  transform: rotate(-25deg);
+.main-inicio .title .p-invertido {
+  transform: rotate(190deg);
+}
+.main-inicio .desde-texto {
+  color: #911714;
+  font-family: "Truculenta", sans-serif;
+  font-weight: 900;
+  font-size: 2rem;
+  width: 40%;
+  padding-bottom: 5vh;
+  text-shadow: -0.05rem -0.05rem 0 #DED9C9, 0.05rem -0.05rem 0 #DED9C9, -0.05rem 0.05rem 0 #DED9C9, 0.05rem 0.05rem 0 #DED9C9;
+}
+@media (width < 1020px) {
+  .main-inicio .desde-texto {
+    width: 100%;
+  }
+}
+@media (width <= 800px) {
+  .main-inicio .desde-texto {
+    font-size: 1.5rem;
+    padding-bottom: 2vh;
+  }
+}
+.main-inicio .desde-texto p {
+  margin: 0;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: 1.5px;
+}
+.main-inicio .venta-texto {
+  color: #C6B866;
+  font-family: "Truculenta", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  width: 40%;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+@media (width < 1020px) {
+  .main-inicio .venta-texto {
+    width: 100%;
+  }
+}
+.main-inicio .venta-texto p {
+  display: inline;
+  background: #181B34;
+  padding: 0 5px;
 }
 
 .main-sobre-nosotros {
@@ -363,7 +374,7 @@ header .navbar .menu .active:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(24, 27, 52, 0.5);
+  background: rgba(24, 27, 52, 0.6);
 }
 @media (width <= 768px) {
   .main-sobre-nosotros .img3 {
@@ -428,6 +439,7 @@ header .navbar .menu .active:hover {
 }
 .main-productos .productos .producto-item .producto-show .imagen-producto {
   max-width: 5rem;
+  position: relative;
 }
 .main-productos .productos .producto-item .producto-show .titulo-producto {
   font-size: 1.8rem;
@@ -466,6 +478,51 @@ header .navbar .menu .active:hover {
 .main-productos .productos .producto-aceite:hover .imagen-producto {
   transform: translateX(-150%);
   transition: transform 0.5s ease;
+}
+.main-productos .productos .producto-aceite:hover .imagen-producto::before {
+  content: "";
+}
+.main-productos .productos .aceite-oliva {
+  position: relative;
+}
+.main-productos .productos .aceite-oliva::before {
+  content: "1° prensada en frío";
+  text-transform: uppercase;
+  position: absolute;
+  z-index: 10;
+  color: #C6B866;
+  background-color: #181B34;
+  padding: 0 10px;
+  rotate: 20deg;
+  top: 50%;
+  left: 27.5%;
+}
+.main-productos .productos .aceite-oliva:hover::before {
+  transform: translateX(-100%) rotate(-60deg);
+  transition: transform 0.5s ease;
+}
+.main-productos .productos .imagen-producto-regional {
+  width: 7.5rem;
+}
+.main-productos .productos .producto-regional:hover .imagen-producto-regional {
+  transform: scale(1.3) translateY(-20%);
+  transition: transform 0.5s ease;
+}
+
+.aceite-oliva:hover {
+  box-shadow: -3px -3px 5px #C6B866, 3px -3px 5px #C6B866, -3px 3px 5px #C6B866, 3px 3px 5px #C6B866;
+}
+
+.aceite-uva:hover {
+  box-shadow: -3px -3px 5px #4e6200, 3px -3px 5px #4e6200, -3px 3px 5px #4e6200, 3px 3px 5px #4e6200;
+}
+
+.aceite-girasol:hover {
+  box-shadow: -3px -3px 5px #cec937, 3px -3px 5px #cec937, -3px 3px 5px #cec937, 3px 3px 5px #cec937;
+}
+
+.producto-regional:hover {
+  box-shadow: -3px -3px 5px #181B34, 3px -3px 5px #181B34, -3px 3px 5px #181B34, 3px 3px 5px #181B34;
 }
 
 .main-envases {

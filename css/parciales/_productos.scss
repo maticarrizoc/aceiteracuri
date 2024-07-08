@@ -35,6 +35,7 @@
 
                 .imagen-producto {
                     max-width: 5rem;
+                    position: relative;
                 }
 
                 .titulo-producto {
@@ -86,14 +87,63 @@
                 transform: translateY(0%);
             }
 
-
         }
 
         .producto-aceite:hover .imagen-producto {
             transform: translateX(-150%);
             transition: transform 0.5s ease;
+
+            &::before {
+                content: "";
+            }
+        }
+
+        .aceite-oliva {
+            position: relative;
+
+            &::before {
+                content: "1° prensada en frío";
+                text-transform: uppercase;
+                position: absolute;
+                z-index: 10;
+                color: $clrOliva;
+                background-color: $clrAzul;
+                padding: 0 10px;
+                rotate: 20deg;
+                top: 50%;
+                left: 27.5%;
+            }
+
+            &:hover::before {
+                transform: translateX(-100%) rotate(-60deg);
+                transition: transform 0.5s ease;
+            }
+        }
+
+        .imagen-producto-regional {
+            width: 7.5rem;
+        }
+        .producto-regional:hover .imagen-producto-regional {
+            transform: scale(1.3) translateY(-20%);
+            transition: transform 0.5s ease;
         }
 
     }
 
+}
+
+$productos: (
+    aceite-oliva: $clrOliva,
+    aceite-uva: $clrUva,
+    aceite-girasol: $clrGirasol,
+    producto-regional: $clrAzul
+);
+
+@each $producto, $color in $productos {
+    .#{$producto}:hover {
+        box-shadow: -3px -3px 5px $color,
+            3px -3px 5px $color,
+            -3px 3px 5px $color,
+            3px 3px 5px $color;
+    }
 }

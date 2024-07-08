@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
-// @font-face {
-//     font-family: 'Become Choice';
-//     src: url("../../fonts/Become\ Choice.ttf");
-// }
-@import url(https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice);
+@font-face {
+    font-family: 'Become Choice';
+    src: url("../../fonts/Become\ Choice.ttf");
+}
+@import url('https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice');
 
 $fontTruculenta: 'Truculenta', sans-serif;
 $fontBecome: 'Become Choice';
@@ -15,6 +15,8 @@ $clrSecundario: #D9D3C3;
 $clrCrema: #E3E0D5;
 $clrOliva: #C6B866;
 $clrOliva-claro: #D6C476;
+$clrUva: #4e6200;
+$clrGirasol: #cec937;
 $clrRojo: #911714;
 $clrRojoClaro: #9C332F;
 $clrVerdeAgua: #1DBFAF;
