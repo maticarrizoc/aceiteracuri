@@ -37,7 +37,7 @@
             0.05rem -0.05rem 0 $clrPrincipal,
             -0.05rem 0.05rem 0 $clrPrincipal,
             0.05rem 0.05rem 0 $clrPrincipal;
-        background-image: url("../img/bgsn3.jpg");
+        background-image: url("../img/bgsn.svg");
         background-position: top left;
         background-repeat: no-repeat;
         background-size: cover;
@@ -79,8 +79,9 @@
     .parrafo-2,
     .parrafo-3 {
         font-size: 1.2rem;
+        font-weight: 800;
         text-align: center;
-        background-image: url("../img/bgsn3.svg");
+        background-image: url("../img/bgsn.svg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -111,16 +112,6 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgb(24, 27, 52, 0.5);
-        }
-
         @include mediaquerie4 {
             order: 2;
         }
@@ -133,16 +124,6 @@
         background-repeat: no-repeat;
         background-size: cover;
 
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgb(24, 27, 52, 0.5);
-        }
-
         @include mediaquerie4 {
             order: 4;
         }
@@ -150,20 +131,10 @@
 
     .img3 {
         position: relative;
-        background-image: url("../img/hardan-lautaro.svg");
+        background-image: url("../img/hardan-lautaro2.svg");
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
-
-        &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgb(24, 27, 52, 0.6);
-        }
 
         @include mediaquerie4 {
             order: 6;
@@ -178,6 +149,12 @@
         background-repeat: no-repeat;
         background-size: contain;
 
+        @include mediaquerie4 {
+            order: 8;
+        }
+    }
+
+    .img {
         &::before {
             content: "";
             position: absolute;
@@ -185,11 +162,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgb(24, 27, 52, 0.2);
+            background: rgb(34, 34, 34, 0.5);
         }
 
-        @include mediaquerie4 {
-            order: 8;
-        }
     }
 }

@@ -38,6 +38,7 @@ a {
 
 header {
   border-bottom: 0.15rem solid #181B34;
+  background: #DED9C9;
 }
 header .navbar {
   font-size: 1.5rem;
@@ -127,16 +128,23 @@ header .navbar .menu .active:hover {
   }
 }
 
-.main-inicio {
+.body-inicio {
+  background-image: url("../img/bg-index.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.body-inicio .main-inicio {
   height: 90vh;
   font-family: "Truculenta", sans-serif;
-  background: #DED9C9;
   background-image: url("../img/tanques.svg");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
 }
-.main-inicio .title {
+.body-inicio .main-inicio .section-titulo {
+  background: transparent;
+}
+.body-inicio .main-inicio .titulo {
   font-family: "Become Choice";
   color: #181B34;
   text-align: center;
@@ -146,34 +154,40 @@ header .navbar .menu .active:hover {
   width: 40%;
 }
 @media (width < 1020px) {
-  .main-inicio .title {
+  .body-inicio .main-inicio .titulo {
     width: 100%;
   }
 }
-.main-inicio .title h2,
-.main-inicio .title p {
+.body-inicio .main-inicio .titulo h2,
+.body-inicio .main-inicio .titulo p {
   margin: 0;
   font-size: 5rem;
   font-weight: normal;
   text-shadow: -0.05rem -0.05rem 0 #DED9C9, 0.05rem -0.05rem 0 #DED9C9, -0.05rem 0.05rem 0 #DED9C9, 0.05rem 0.05rem 0 #DED9C9;
 }
 @media (width <= 700px) {
-  .main-inicio .title h2,
-  .main-inicio .title p {
-    font-size: 5rem;
+  .body-inicio .main-inicio .titulo h2,
+  .body-inicio .main-inicio .titulo p {
+    font-size: 4.5rem;
   }
 }
-.main-inicio .title h2 {
+@media (width <= 550px) {
+  .body-inicio .main-inicio .titulo h2,
+  .body-inicio .main-inicio .titulo p {
+    font-size: 4rem;
+  }
+}
+.body-inicio .main-inicio .titulo h2 {
   font-weight: 700;
 }
-.main-inicio .title p {
+.body-inicio .main-inicio .titulo p {
   font-weight: 300;
   transform: rotate(10deg);
 }
-.main-inicio .title .p-invertido {
+.body-inicio .main-inicio .titulo .p-invertido {
   transform: rotate(190deg);
 }
-.main-inicio .desde-texto {
+.body-inicio .main-inicio .desde-texto {
   color: #911714;
   font-family: "Truculenta", sans-serif;
   font-weight: 900;
@@ -183,23 +197,23 @@ header .navbar .menu .active:hover {
   text-shadow: -0.05rem -0.05rem 0 #DED9C9, 0.05rem -0.05rem 0 #DED9C9, -0.05rem 0.05rem 0 #DED9C9, 0.05rem 0.05rem 0 #DED9C9;
 }
 @media (width < 1020px) {
-  .main-inicio .desde-texto {
+  .body-inicio .main-inicio .desde-texto {
     width: 100%;
   }
 }
 @media (width <= 800px) {
-  .main-inicio .desde-texto {
+  .body-inicio .main-inicio .desde-texto {
     font-size: 1.5rem;
     padding-bottom: 2vh;
   }
 }
-.main-inicio .desde-texto p {
+.body-inicio .main-inicio .desde-texto p {
   margin: 0;
   text-align: center;
   line-height: 2rem;
   letter-spacing: 1.5px;
 }
-.main-inicio .venta-texto {
+.body-inicio .main-inicio .venta-texto {
   color: #C6B866;
   font-family: "Truculenta", sans-serif;
   font-weight: 500;
@@ -209,11 +223,11 @@ header .navbar .menu .active:hover {
   letter-spacing: 1.5px;
 }
 @media (width < 1020px) {
-  .main-inicio .venta-texto {
+  .body-inicio .main-inicio .venta-texto {
     width: 100%;
   }
 }
-.main-inicio .venta-texto p {
+.body-inicio .main-inicio .venta-texto p {
   display: inline;
   background: #181B34;
   padding: 0 5px;
@@ -255,7 +269,7 @@ header .navbar .menu .active:hover {
   font-family: "Become Choice";
   font-size: 4rem;
   text-shadow: -0.05rem -0.05rem 0 #DED9C9, 0.05rem -0.05rem 0 #DED9C9, -0.05rem 0.05rem 0 #DED9C9, 0.05rem 0.05rem 0 #DED9C9;
-  background-image: url("../img/bgsn3.jpg");
+  background-image: url("../img/bgsn.svg");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -297,8 +311,9 @@ header .navbar .menu .active:hover {
 .main-sobre-nosotros .parrafo-2,
 .main-sobre-nosotros .parrafo-3 {
   font-size: 1.2rem;
+  font-weight: 800;
   text-align: center;
-  background-image: url("../img/bgsn3.svg");
+  background-image: url("../img/bgsn.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -325,15 +340,6 @@ header .navbar .menu .active:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main-sobre-nosotros .img1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(24, 27, 52, 0.5);
-}
 @media (width <= 768px) {
   .main-sobre-nosotros .img1 {
     order: 2;
@@ -346,15 +352,6 @@ header .navbar .menu .active:hover {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.main-sobre-nosotros .img2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(24, 27, 52, 0.5);
-}
 @media (width <= 768px) {
   .main-sobre-nosotros .img2 {
     order: 4;
@@ -362,19 +359,10 @@ header .navbar .menu .active:hover {
 }
 .main-sobre-nosotros .img3 {
   position: relative;
-  background-image: url("../img/hardan-lautaro.svg");
+  background-image: url("../img/hardan-lautaro2.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.main-sobre-nosotros .img3::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(24, 27, 52, 0.6);
 }
 @media (width <= 768px) {
   .main-sobre-nosotros .img3 {
@@ -388,19 +376,19 @@ header .navbar .menu .active:hover {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.main-sobre-nosotros .img4::before {
+@media (width <= 768px) {
+  .main-sobre-nosotros .img4 {
+    order: 8;
+  }
+}
+.main-sobre-nosotros .img::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(24, 27, 52, 0.2);
-}
-@media (width <= 768px) {
-  .main-sobre-nosotros .img4 {
-    order: 8;
-  }
+  background: rgba(34, 34, 34, 0.5);
 }
 
 .main-productos {

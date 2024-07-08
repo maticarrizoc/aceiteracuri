@@ -1,14 +1,20 @@
+.body-inicio{
+    background-image: url("../img/bg-index.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+
 
 .main-inicio {
     height: 90vh;
     font-family: $fontTruculenta;
-    background: $clrPrincipal;
     background-image: url("../img/tanques.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
-
-    .title {
+    .section-titulo {
+        background: transparent;
+    }
+    .titulo {
         font-family: $fontBecome;
         color: $clrAzul;
         text-align: center;
@@ -34,7 +40,10 @@
                 0.05rem 0.05rem 0 $clrPrincipal;
 
             @include mediaquerie5 {
-                font-size: 5rem;
+                font-size: 4.5rem;
+            }
+            @include mediaquerie6 {
+                font-size: 4rem;
             }
         }
 
@@ -93,12 +102,6 @@
     text-align: center;
     letter-spacing: 1.5px;
 
-    // text-shadow:
-    //     -0.01rem -0.01rem 0 $clrAzul,
-    //     0.01rem -0.01rem 0 $clrAzul,
-    //     -0.01rem 0.01rem 0 $clrAzul,
-    //     0.01rem 0.01rem 0 $clrAzul;
-
     @include mediaquerie2 {
         width: 100%;
     }
@@ -109,4 +112,4 @@
     }
 }
 
-}
+}}
