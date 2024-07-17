@@ -1,0 +1,68 @@
+.main-envases {
+    font-family: $fontTruculenta;
+    font-weight: 500;
+    background-color: $clrPrincipal;
+    color: $clrAzul;
+    font-size: 1.2rem;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: 700;
+    }
+
+    ol>li {
+        list-style: decimal;
+        font-size: 1.2rem;
+    }
+
+    ul>li {
+        list-style: disc;
+    }
+
+    .maridajes {
+        .maridaje-oliva, .maridaje-uva, .maridaje-girasol {
+            margin-left: 20px;
+            text-align: left;
+            h4{
+                margin-left: 10px;
+            }
+        }
+        .carousel {
+            width: 500px;
+            margin: 0 auto;
+            @include mediaquerie6 {
+                width: 350px;
+            }
+
+            .carousel-item {
+                .carousel-caption {
+                    font-size: 20px;
+                    line-height: 20px;
+                    color: $clrCrema;
+                    text-shadow:
+                        -1px -1px 0 $clrGris,
+                        1px -1px 0 $clrGris,
+                        -1px 1px 0 $clrGris,
+                        1px 1px 0 $clrGris;
+                }
+            }
+        }
+    }
+
+    .envases {
+
+        .envase {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-envase {
+            rotate: 90deg;
+            width: 100px;
+        }
+    }
+}

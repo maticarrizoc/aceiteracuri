@@ -7,7 +7,7 @@
 }
 @font-face {
   font-family: "Tongari";
-  src: url("../../../fonts/Tongari-ExtraBold-Italic.ttf") format("truetype");
+  src: url("./../../../fonts/Tongari-ExtraBold-Italic.ttf") format("truetype");
 }
 * {
   box-sizing: border-box;
@@ -125,9 +125,10 @@ header .navbar .menu .active:hover {
 }
 @media (width <= 768px) {
   header .navbar .menu .active {
-    width: 125px;
+    width: 135px;
     margin-left: 0;
-    padding: auto 0;
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -357,6 +358,15 @@ header .navbar .menu .active:hover {
   height: 100%;
   background: rgba(34, 34, 34, 0.6);
 }
+.main-sobre-nosotros .img4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(34, 34, 34, 0.2);
+}
 
 .main-productos {
   font-family: "Truculenta", sans-serif;
@@ -514,8 +524,12 @@ header .navbar .menu .active:hover {
   font-weight: 500;
   background-color: #dfd9c9;
   color: #181B34;
+  font-size: 1.2rem;
 }
-.main-envases h1 {
+.main-envases h1,
+.main-envases h2,
+.main-envases h3,
+.main-envases h4 {
   font-weight: 700;
 }
 .main-envases ol > li {
@@ -524,6 +538,28 @@ header .navbar .menu .active:hover {
 }
 .main-envases ul > li {
   list-style: disc;
+}
+.main-envases .maridajes .maridaje-oliva, .main-envases .maridajes .maridaje-uva, .main-envases .maridajes .maridaje-girasol {
+  margin-left: 20px;
+  text-align: left;
+}
+.main-envases .maridajes .maridaje-oliva h4, .main-envases .maridajes .maridaje-uva h4, .main-envases .maridajes .maridaje-girasol h4 {
+  margin-left: 10px;
+}
+.main-envases .maridajes .carousel {
+  width: 500px;
+  margin: 0 auto;
+}
+@media (width <= 550px) {
+  .main-envases .maridajes .carousel {
+    width: 350px;
+  }
+}
+.main-envases .maridajes .carousel .carousel-item .carousel-caption {
+  font-size: 20px;
+  line-height: 20px;
+  color: #E3E0D5;
+  text-shadow: -1px -1px 0 #3A3A39, 1px -1px 0 #3A3A39, -1px 1px 0 #3A3A39, 1px 1px 0 #3A3A39;
 }
 .main-envases .envases .envase {
   display: flex;

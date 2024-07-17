@@ -97,9 +97,10 @@ header {
                 }
 
                 @include mediaquerie4 {
-                    width: 125px;
+                    width: 135px;
                     margin-left: 0;
-                    padding: auto 0;
+                    display: flex;
+                    justify-content: center;
                 }
             }
         }
