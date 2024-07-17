@@ -3,12 +3,12 @@
 
 @font-face {
     font-family: 'Become Choice';
-    src: url("./../../../fonts/Become-Choice.ttf");
+    src: url("./../../../fonts/Become-Choice.ttf") format('truetype');
 }
 
 @font-face {
     font-family: 'Tongari';
-    src: url("./../../../fonts/Tongari-ExtraBold-Italic.ttf");
+    src: url("../../../fonts/Tongari-ExtraBold-Italic.ttf") format('truetype');
 }
 
 $fontTruculenta: 'Truculenta', sans-serif;
