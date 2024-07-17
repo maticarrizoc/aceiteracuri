@@ -3,11 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 @font-face {
   font-family: "Become Choice";
-  src: url("../../../fonts/Become Choice.ttf");
+  src: url("../../../fonts/Become-Choice.ttf") format("truetype");
 }
 @font-face {
   font-family: "Tongari";
-  src: url("../../../fonts/Tongari-ExtraBold-Italic.ttf");
+  src: url("../../../fonts/Tongari-ExtraBold-Italic.ttf") format("truetype");
 }
 * {
   box-sizing: border-box;
@@ -151,6 +151,9 @@ header .navbar .menu .active:hover {
   gap: 5%;
   max-width: 450px;
   border: 5px solid #181B34;
+}
+.body-inicio .main-inicio .section-titulo .img-titulo {
+  max-width: 100%;
 }
 .body-inicio .main-inicio .section-titulo .titulo {
   margin: 0;
