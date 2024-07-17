@@ -32,6 +32,7 @@
         .carousel {
             width: 500px;
             margin: 0 auto;
+
             @include mediaquerie6 {
                 width: 350px;
             }
@@ -46,7 +47,13 @@
                         1px -1px 0 $clrGris,
                         -1px 1px 0 $clrGris,
                         1px 1px 0 $clrGris;
+                        @include mediaquerie6 {
+                            font-size: 16px;
+                            line-height: 16px;
+                            
+                        }
                 }
+
             }
         }
     }

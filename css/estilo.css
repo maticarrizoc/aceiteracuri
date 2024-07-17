@@ -561,6 +561,12 @@ header .navbar .menu .active:hover {
   color: #E3E0D5;
   text-shadow: -1px -1px 0 #3A3A39, 1px -1px 0 #3A3A39, -1px 1px 0 #3A3A39, 1px 1px 0 #3A3A39;
 }
+@media (width <= 550px) {
+  .main-envases .maridajes .carousel .carousel-item .carousel-caption {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
 .main-envases .envases .envase {
   display: flex;
   flex-direction: column-reverse;
