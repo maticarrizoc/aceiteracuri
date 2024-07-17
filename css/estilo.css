@@ -3,11 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
 @font-face {
   font-family: "Become Choice";
-  src: url("../../../fonts/Become-Choice.ttf") format("truetype");
+  src: url("./../../../fonts/Become-Choice.ttf");
 }
 @font-face {
   font-family: "Tongari";
-  src: url("../../../fonts/Tongari-ExtraBold-Italic.ttf") format("truetype");
+  src: url("./../../../fonts/Tongari-ExtraBold-Italic.ttf");
 }
 * {
   box-sizing: border-box;
@@ -302,7 +302,7 @@ header .navbar .menu .active:hover {
 }
 .main-sobre-nosotros .img1 {
   position: relative;
-  background-image: url("../img/sirviendo1.jpg");
+  background-image: url("../img/sirviendo1.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -314,7 +314,7 @@ header .navbar .menu .active:hover {
 }
 .main-sobre-nosotros .img2 {
   position: relative;
-  background-image: url("../img/sirviendo2.jpg");
+  background-image: url("../img/sirviendo2.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -355,7 +355,7 @@ header .navbar .menu .active:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(34, 34, 34, 0.5);
+  background: rgba(34, 34, 34, 0.6);
 }
 
 .main-productos {
@@ -393,14 +393,17 @@ header .navbar .menu .active:hover {
   align-items: center;
   padding: 5px;
 }
-.main-productos .productos .producto-item .producto-show .titulo-producto, .main-productos .productos .producto-item .producto-show .titulo-subtitulo-producto {
+.main-productos .productos .producto-item .producto-show .titulo-producto,
+.main-productos .productos .producto-item .producto-show .titulo-subtitulo-producto {
   font-size: 1.8rem;
   font-weight: 700;
   z-index: 10;
 }
-.main-productos .productos .producto-item .producto-show .titulo-producto .subtitulo-producto, .main-productos .productos .producto-item .producto-show .titulo-subtitulo-producto .subtitulo-producto {
+.main-productos .productos .producto-item .producto-show .titulo-producto .subtitulo-producto,
+.main-productos .productos .producto-item .producto-show .titulo-subtitulo-producto .subtitulo-producto {
   display: flex;
   flex-wrap: wrap;
+  text-shadow: -0.5px -0.5px 0 #bdac67, 0.5px -0.5px 0 #bdac67, -0.5px 0.5px 0 #bdac67, 0.5px 0.5px 0 #bdac67;
 }
 .main-productos .productos .producto-item .producto-show .imagen-producto {
   max-width: 80px;
