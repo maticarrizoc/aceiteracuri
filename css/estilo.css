@@ -1,10 +1,13 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
-@import url("https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice");
 @font-face {
   font-family: "Become Choice";
-  src: url("../../fonts/Become Choice.ttf");
+  src: url("../../../fonts/Become Choice.ttf");
+}
+@font-face {
+  font-family: "Tongari";
+  src: url("../../../fonts/Tongari-ExtraBold-Italic.ttf");
 }
 * {
   box-sizing: border-box;
@@ -15,7 +18,7 @@
 }
 
 body {
-  background-color: #DED9C9;
+  background-color: #dfd9c9;
 }
 body::-webkit-scrollbar {
   width: 4px;
@@ -29,7 +32,7 @@ body::-webkit-scrollbar-thumb:hover {
   background: #3A3A39;
 }
 body::-webkit-scrollbar-track {
-  background: #DED9C9;
+  background: #dfd9c9;
 }
 
 a {
@@ -37,8 +40,8 @@ a {
 }
 
 header {
-  border-bottom: 0.15rem solid #181B34;
-  background: #DED9C9;
+  border-bottom: 2.5px solid #181B34;
+  background: #dfd9c9;
 }
 header .navbar {
   font-size: 1.5rem;
@@ -47,7 +50,7 @@ header .navbar {
   min-width: 95%;
 }
 header .navbar .img-logo {
-  width: 7rem;
+  height: 8.5vh;
 }
 header .navbar .boton-navbar {
   border: solid #181B34;
@@ -91,7 +94,7 @@ header .navbar .menu li a:hover {
 @media (width <= 768px) {
   header .navbar .menu li a {
     text-align: start;
-    margin-left: 1rem;
+    margin-left: 16px;
   }
 }
 header .navbar .menu .li-sobrenosotros {
@@ -109,8 +112,8 @@ header .navbar .menu .active {
   font-size: 1.2rem;
   font-weight: 600;
   text-transform: uppercase;
-  text-shadow: -0.05rem -0.05rem 0 #C6B866, 0.05rem -0.05rem 0 #C6B866, -0.05rem 0.05rem 0 #C6B866, 0.05rem 0.05rem 0 #C6B866, 0.1rem 0.1rem 0 #181B34;
-  border: 0.2rem solid #199E8E;
+  text-shadow: -0.5px -0.5px 0 #bdac67, 0.5px -0.5px 0 #bdac67, -0.5px 0.5px 0 #bdac67, 0.5px 0.5px 0 #bdac67, 2px 2px 0 #181B34;
+  border: 3px solid #199E8E;
   border-radius: 12.5px;
 }
 header .navbar .menu .active:hover {
@@ -130,8 +133,8 @@ header .navbar .menu .active:hover {
 
 .body-inicio {
   background-image: url("../img/bg-index.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: auto;
+  background-repeat: repeat;
 }
 .body-inicio .main-inicio {
   height: 90vh;
@@ -142,95 +145,56 @@ header .navbar .menu .active:hover {
   background-position: bottom right;
 }
 .body-inicio .main-inicio .section-titulo {
-  background: transparent;
+  background: rgba(223, 217, 201, 0.5137254902);
+  margin: 5%;
+  padding: 3.5%;
+  gap: 5%;
+  max-width: 450px;
+  border: 5px solid #181B34;
 }
-.body-inicio .main-inicio .titulo {
+.body-inicio .main-inicio .section-titulo .titulo {
+  margin: 0;
+  padding-top: 2.5%;
+  font-size: 22px;
+  font-family: "Fredoka";
+  font-weight: 800;
+  color: #181B34;
+  gap: 2px;
+}
+.body-inicio .main-inicio .section-titulo .titulo .apostrofe-invertido {
+  font-size: 20px;
+  font-family: "Tongari";
+  transform: rotate(180deg) translate(-5px, 20px);
+}
+.body-inicio .main-inicio .section-titulo .titulo .curi {
+  font-size: 20px;
+  font-family: "Tongari";
+}
+.body-inicio .main-inicio .section-titulo .subtitulo {
+  display: inline;
   font-family: "Become Choice";
   color: #181B34;
   text-align: center;
   justify-content: center;
   margin: 0;
-  padding-top: 2.5vh;
-  width: 40%;
+  padding-top: 2.5%;
+  max-width: 50%;
 }
-@media (width < 1020px) {
-  .body-inicio .main-inicio .titulo {
-    width: 100%;
-  }
-}
-.body-inicio .main-inicio .titulo h2,
-.body-inicio .main-inicio .titulo p {
+.body-inicio .main-inicio .section-titulo .subtitulo h2,
+.body-inicio .main-inicio .section-titulo .subtitulo p {
   margin: 0;
-  font-size: 5rem;
-  font-weight: normal;
-  text-shadow: -0.05rem -0.05rem 0 #DED9C9, 0.05rem -0.05rem 0 #DED9C9, -0.05rem 0.05rem 0 #DED9C9, 0.05rem 0.05rem 0 #DED9C9;
+  font-size: 24px;
 }
-@media (width <= 700px) {
-  .body-inicio .main-inicio .titulo h2,
-  .body-inicio .main-inicio .titulo p {
-    font-size: 4.5rem;
-  }
-}
-@media (width <= 550px) {
-  .body-inicio .main-inicio .titulo h2,
-  .body-inicio .main-inicio .titulo p {
-    font-size: 4rem;
-  }
-}
-.body-inicio .main-inicio .titulo h2 {
+.body-inicio .main-inicio .section-titulo .subtitulo h2 {
   font-weight: 700;
+  font-size: 26px;
 }
-.body-inicio .main-inicio .titulo p {
+.body-inicio .main-inicio .section-titulo .subtitulo p {
   font-weight: 300;
-  transform: rotate(10deg);
+  transform: rotate(10deg) translateY(-5px);
 }
-.body-inicio .main-inicio .titulo .p-invertido {
+.body-inicio .main-inicio .section-titulo .subtitulo .p-invertido {
   transform: rotate(190deg);
-}
-.body-inicio .main-inicio .desde-texto {
-  color: #911714;
-  font-family: "Truculenta", sans-serif;
-  font-weight: 900;
-  font-size: 2rem;
-  width: 40%;
-  padding-bottom: 5vh;
-  text-shadow: -0.05rem -0.05rem 0 #DED9C9, 0.05rem -0.05rem 0 #DED9C9, -0.05rem 0.05rem 0 #DED9C9, 0.05rem 0.05rem 0 #DED9C9;
-}
-@media (width < 1020px) {
-  .body-inicio .main-inicio .desde-texto {
-    width: 100%;
-  }
-}
-@media (width <= 800px) {
-  .body-inicio .main-inicio .desde-texto {
-    font-size: 1.5rem;
-    padding-bottom: 2vh;
-  }
-}
-.body-inicio .main-inicio .desde-texto p {
-  margin: 0;
-  text-align: center;
-  line-height: 2rem;
-  letter-spacing: 1.5px;
-}
-.body-inicio .main-inicio .venta-texto {
-  color: #C6B866;
-  font-family: "Truculenta", sans-serif;
-  font-weight: 500;
-  font-size: 1rem;
-  width: 40%;
-  text-align: center;
-  letter-spacing: 1.5px;
-}
-@media (width < 1020px) {
-  .body-inicio .main-inicio .venta-texto {
-    width: 100%;
-  }
-}
-.body-inicio .main-inicio .venta-texto p {
-  display: inline;
-  background: #181B34;
-  padding: 0 5px;
 }
 
 .main-sobre-nosotros {
@@ -238,7 +202,7 @@ header .navbar .menu .active:hover {
   font-size: 1.2rem;
   font-weight: 600;
   color: #181B34;
-  background: #DED9C9;
+  background: #dfd9c9;
 }
 .main-sobre-nosotros h1 {
   font-weight: 700;
@@ -251,24 +215,24 @@ header .navbar .menu .active:hover {
 .main-sobre-nosotros .contenedor-sn {
   height: 70vh;
   align-content: center;
-  padding: 0 5rem;
+  padding: 0 80px;
 }
 @media (width < 1200px) {
   .main-sobre-nosotros .contenedor-sn {
     height: 60vh;
-    padding: 0 2rem;
+    padding: 0 32px;
   }
 }
 @media (width <= 768px) {
   .main-sobre-nosotros .contenedor-sn {
     height: 50vh;
-    padding: 0 1rem;
+    padding: 0 16px;
   }
 }
 .main-sobre-nosotros .consumasalud {
   font-family: "Become Choice";
   font-size: 4rem;
-  text-shadow: -0.05rem -0.05rem 0 #DED9C9, 0.05rem -0.05rem 0 #DED9C9, -0.05rem 0.05rem 0 #DED9C9, 0.05rem 0.05rem 0 #DED9C9;
+  text-shadow: -0.1px -0.1px 0 #dfd9c9, 0.1px -0.1px 0 #dfd9c9, -0.1px 0.1px 0 #dfd9c9, 0.1px 0.1px 0 #dfd9c9;
   background-image: url("../img/bgsn.svg");
   background-position: top left;
   background-repeat: no-repeat;
@@ -394,8 +358,8 @@ header .navbar .menu .active:hover {
 .main-productos {
   font-family: "Truculenta", sans-serif;
   font-weight: 500;
-  background-color: #DED9C9;
-  padding: 1rem;
+  background-color: #dfd9c9;
+  padding: 16px;
   min-width: 90%;
 }
 .main-productos h1 {
@@ -405,7 +369,7 @@ header .navbar .menu .active:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 1rem;
+  gap: 16px;
 }
 .main-productos .productos .producto-item {
   background: #D9D3C3;
@@ -414,8 +378,9 @@ header .navbar .menu .active:hover {
   text-align: center;
   position: relative;
   overflow: hidden;
-  min-width: 320px;
+  width: 320px;
   height: 380px;
+  z-index: 1;
 }
 .main-productos .productos .producto-item .producto-show {
   height: 100%;
@@ -425,14 +390,20 @@ header .navbar .menu .active:hover {
   align-items: center;
   padding: 5px;
 }
-.main-productos .productos .producto-item .producto-show .imagen-producto {
-  max-width: 5rem;
-  position: relative;
-}
-.main-productos .productos .producto-item .producto-show .titulo-producto {
+.main-productos .productos .producto-item .producto-show .titulo-producto, .main-productos .productos .producto-item .producto-show .titulo-subtitulo-producto {
   font-size: 1.8rem;
   font-weight: 700;
-  text-shadow: -0.5px -0.5px 0 #C6B866, 0.5px -0.5px 0 #C6B866, -0.5px 0.5px 0 #C6B866, 0.5px 0.5px 0 #C6B866;
+  z-index: 10;
+}
+.main-productos .productos .producto-item .producto-show .titulo-producto .subtitulo-producto, .main-productos .productos .producto-item .producto-show .titulo-subtitulo-producto .subtitulo-producto {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-productos .productos .producto-item .producto-show .imagen-producto {
+  max-width: 80px;
+  position: relative;
+  justify-content: end;
+  align-items: end;
 }
 .main-productos .productos .producto-item .producto-overlay {
   position: absolute;
@@ -441,8 +412,8 @@ header .navbar .menu .active:hover {
   justify-content: center;
   align-items: center;
   text-align: start;
-  padding-top: 2rem;
-  padding-left: 3.5rem;
+  padding-top: 32px;
+  padding-left: 56px;
   bottom: 0;
   left: 0;
   right: 0;
@@ -454,11 +425,14 @@ header .navbar .menu .active:hover {
   font-size: 1.2rem;
   color: #911714;
   font-weight: 700;
-  text-shadow: -0.5px -0.5px 0 #C6B866, 0.5px -0.5px 0 #C6B866, -0.5px 0.5px 0 #C6B866, 0.5px 0.5px 0 #C6B866;
+  text-shadow: -0.5px -0.5px 0 #bdac67, 0.5px -0.5px 0 #bdac67, -0.5px 0.5px 0 #bdac67, 0.5px 0.5px 0 #bdac67;
   margin-bottom: 0;
 }
 .main-productos .productos .producto-item .producto-overlay .propiedades-producto {
   font-weight: 500;
+}
+.main-productos .productos .producto-item:hover {
+  box-shadow: -1px -1px 10px #3A3A39, 1px -1px 10px #3A3A39, -1px 1px 10px #3A3A39, 1px 1px 10px #3A3A39;
 }
 .main-productos .productos .producto-item:hover .producto-overlay {
   transform: translateY(0%);
@@ -478,7 +452,7 @@ header .navbar .menu .active:hover {
   text-transform: uppercase;
   position: absolute;
   z-index: 10;
-  color: #C6B866;
+  color: #bdac67;
   background-color: #181B34;
   padding: 0 10px;
   rotate: 20deg;
@@ -490,33 +464,49 @@ header .navbar .menu .active:hover {
   transition: transform 0.5s ease;
 }
 .main-productos .productos .imagen-producto-regional {
-  width: 7.5rem;
+  width: 120px;
 }
 .main-productos .productos .producto-regional:hover .imagen-producto-regional {
   transform: scale(1.3) translateY(-20%);
   transition: transform 0.5s ease;
 }
 
-.aceite-oliva:hover {
-  box-shadow: -3px -3px 5px #C6B866, 3px -3px 5px #C6B866, -3px 3px 5px #C6B866, 3px 3px 5px #C6B866;
+.aceite-oliva .titulo-producto {
+  text-shadow: -0.5px -0.5px 0 #bdac67, 0.5px -0.5px 0 #bdac67, -0.5px 0.5px 0 #bdac67, 0.5px 0.5px 0 #bdac67;
 }
 
-.aceite-uva:hover {
-  box-shadow: -3px -3px 5px #4e6200, 3px -3px 5px #4e6200, -3px 3px 5px #4e6200, 3px 3px 5px #4e6200;
+.imagen-aceite-oliva {
+  filter: drop-shadow(8px 8px 4px #bdac67);
 }
 
-.aceite-girasol:hover {
-  box-shadow: -3px -3px 5px #cec937, 3px -3px 5px #cec937, -3px 3px 5px #cec937, 3px 3px 5px #cec937;
+.aceite-uva .titulo-producto {
+  text-shadow: -0.5px -0.5px 0 rgba(78, 98, 0, 0.6352941176), 0.5px -0.5px 0 rgba(78, 98, 0, 0.6352941176), -0.5px 0.5px 0 rgba(78, 98, 0, 0.6352941176), 0.5px 0.5px 0 rgba(78, 98, 0, 0.6352941176);
 }
 
-.producto-regional:hover {
-  box-shadow: -3px -3px 5px #181B34, 3px -3px 5px #181B34, -3px 3px 5px #181B34, 3px 3px 5px #181B34;
+.imagen-aceite-uva {
+  filter: drop-shadow(8px 8px 4px rgba(78, 98, 0, 0.6352941176));
+}
+
+.aceite-girasol .titulo-producto {
+  text-shadow: -0.5px -0.5px 0 rgba(206, 201, 55, 0.6431372549), 0.5px -0.5px 0 rgba(206, 201, 55, 0.6431372549), -0.5px 0.5px 0 rgba(206, 201, 55, 0.6431372549), 0.5px 0.5px 0 rgba(206, 201, 55, 0.6431372549);
+}
+
+.imagen-aceite-girasol {
+  filter: drop-shadow(8px 8px 4px rgba(206, 201, 55, 0.6431372549));
+}
+
+.producto-regional .titulo-producto {
+  text-shadow: -0.5px -0.5px 0 #3A3A39, 0.5px -0.5px 0 #3A3A39, -0.5px 0.5px 0 #3A3A39, 0.5px 0.5px 0 #3A3A39;
+}
+
+.imagen-producto-regional {
+  filter: drop-shadow(8px 8px 4px #3A3A39);
 }
 
 .main-envases {
   font-family: "Truculenta", sans-serif;
   font-weight: 500;
-  background-color: #DED9C9;
+  background-color: #dfd9c9;
   color: #181B34;
 }
 .main-envases h1 {
@@ -536,13 +526,14 @@ header .navbar .menu .active:hover {
   align-items: center;
 }
 .main-envases .envases .img-envase {
+  rotate: 90deg;
   width: 100px;
 }
 
 .main-contacto {
   font-family: "Truculenta", sans-serif;
-  font-weight: 500;
-  background-color: #DED9C9;
+  font-weight: 700;
+  background-color: #dfd9c9;
   color: #181B34;
   grid-template-areas: "contactanos contactanos encontranos" "envios promociones encontranos" "mediosdepago promociones encontranos";
   grid-template-columns: 1fr 1fr 2fr;
@@ -595,7 +586,6 @@ header .navbar .menu .active:hover {
 }
 .main-contacto .contactanos a {
   color: #181B34;
-  font-weight: 600;
   gap: 10px;
   align-items: center;
 }
@@ -612,6 +602,7 @@ header .navbar .menu .active:hover {
 .main-contacto .contactanos form textarea,
 .main-contacto .contactanos form button {
   width: 100%;
+  min-height: 30px;
   font-family: "Truculenta", sans-serif;
   font-size: 0.9rem;
   background: #D9D3C3;
@@ -620,11 +611,18 @@ header .navbar .menu .active:hover {
   border-radius: 5px;
   margin-top: 1px;
 }
+@media (width <= 550px) {
+  .main-contacto .contactanos form input,
+  .main-contacto .contactanos form textarea,
+  .main-contacto .contactanos form button {
+    min-height: 20px;
+  }
+}
 .main-contacto .contactanos form button {
   width: auto;
   font-weight: bold;
   padding: 1px;
-  color: #DED9C9;
+  color: #dfd9c9;
   background: #181B34;
 }
 .main-contacto .encontranos {
@@ -643,7 +641,6 @@ header .navbar .menu .active:hover {
   text-align: center;
   padding-bottom: 10px;
   font-size: 1rem;
-  font-weight: 600;
 }
 @media (width < 1020px) {
   .main-contacto .encontranos a {
@@ -697,34 +694,35 @@ header .navbar .menu .active:hover {
     font-size: 0.9rem;
   }
 }
-.main-contacto .camion {
+.main-contacto .envios .camion {
   text-align: start;
   position: relative;
-  height: 1.5rem;
-  border-bottom: 0.01rem solid var(-clr-azul);
+  height: 24px;
+  border-bottom: 0.15px solid var(-clr-azul);
 }
-.main-contacto .camion i {
-  font-size: 1.5rem;
+.main-contacto .envios .camion i {
+  font-size: 24px;
   width: 100%;
   position: absolute;
 }
-.main-contacto .camion .bi-shop {
-  font-size: 1.3rem;
+.main-contacto .envios .camion .bi-shop {
+  font-size: 20px;
 }
-.main-contacto .camion .bi-truck {
-  transform: translateX(1.5rem);
+.main-contacto .envios .camion .bi-truck {
+  transform: translateX(24px);
 }
-.main-contacto .camion .bi-house {
-  font-size: 1.35rem;
+.main-contacto .envios .camion .bi-house {
+  font-size: 22px;
   text-align: end;
 }
 .main-contacto .envios:hover .bi-truck {
-  transform: translateX(calc(100% - 3rem));
+  transform: translateX(calc(100% - 48px));
   transition: transform 5s ease;
 }
-.main-contacto .envio-gratis {
+.main-contacto .envios .envio-gratis {
   background: #181B34;
-  color: #DED9C9;
+  color: #dfd9c9;
+  font-weight: 400;
 }
 .main-contacto .medios-de-pago {
   grid-area: mediosdepago;
@@ -741,7 +739,7 @@ header .navbar .menu .active:hover {
 }
 @media (width < 1020px) {
   .main-contacto .medios-de-pago ul {
-    padding-left: 0.1rem;
+    padding-left: 1.5px;
   }
 }
 .main-contacto .medios-de-pago ul i {
@@ -749,7 +747,7 @@ header .navbar .menu .active:hover {
 }
 @media (width <= 768px) {
   .main-contacto .medios-de-pago ul i {
-    padding-left: 3rem;
+    padding-left: 48px;
   }
 }
 .main-contacto .promociones {
@@ -801,8 +799,8 @@ header .navbar .menu .active:hover {
   padding: 1.5vh 1vh 1vh 1vh;
   align-items: space-around;
   color: #181B34;
-  background-color: #DED9C9;
-  border-top: 0.15rem solid #181B34;
+  background-color: #dfd9c9;
+  border-top: 2.5px solid #181B34;
   font-family: "Truculenta", sans-serif;
   font-size: 1rem;
   font-weight: 500;
@@ -818,11 +816,11 @@ header .navbar .menu .active:hover {
   width: 100%;
 }
 .footer .footer-logo .footer-logo-img {
-  width: 10rem;
+  width: 160px;
 }
 @media (width <= 700px) {
   .footer .footer-logo .footer-logo-img {
-    width: 7.5rem;
+    width: 120px;
   }
 }
 .footer .informacion-1 {
@@ -870,7 +868,7 @@ header .navbar .menu .active:hover {
   align-content: space-around;
   color: #911714;
   font-weight: 700;
-  text-shadow: -0.01rem -0.01rem 0 #C6B866, 0.01rem -0.01rem 0 #C6B866, -0.01rem 0.01rem 0 #C6B866, 0.01rem 0.01rem 0 #C6B866;
+  text-shadow: -0.15px -0.15px 0 #bdac67, 0.15px -0.15px 0 #bdac67, -0.15px 0.15px 0 #bdac67, 0.15px 0.15px 0 #bdac67;
   margin-top: auto;
   padding-bottom: 1vh;
   order: 3;
@@ -889,7 +887,7 @@ header .navbar .menu .active:hover {
   align-content: space-around;
   color: #911714;
   font-weight: 700;
-  text-shadow: -0.01rem -0.01rem 0 #C6B866, 0.01rem -0.01rem 0 #C6B866, -0.01rem 0.01rem 0 #C6B866, 0.01rem 0.01rem 0 #C6B866;
+  text-shadow: -0.15px -0.15px 0 #bdac67, 0.15px -0.15px 0 #bdac67, -0.15px 0.15px 0 #bdac67, 0.15px 0.15px 0 #bdac67;
   margin-top: auto;
   padding-bottom: 1vh;
   order: 4;
@@ -909,7 +907,7 @@ header .navbar .menu .active:hover {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 0.25rem;
+  gap: 4px;
   color: #911714;
 }
 .footer .informacion-3 a:hover {
@@ -934,7 +932,7 @@ header .navbar .menu .active:hover {
   order: 5;
   width: 100%;
   text-align: center;
-  border-top: 0.1rem solid #181B34;
+  border-top: 1.5px solid #181B34;
   padding-top: 1vh;
 }
 @media (width <= 800px) {

@@ -1,115 +1,78 @@
-.body-inicio{
-    background-image: url("../img/bg-index.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-
-.main-inicio {
-    height: 90vh;
-    font-family: $fontTruculenta;
-    background-image: url("../img/tanques.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom right;
-    .section-titulo {
-        background: transparent;
-    }
-    .titulo {
-        font-family: $fontBecome;
-        color: $clrAzul;
-        text-align: center;
-        justify-content: center;
-        margin: 0;
-        padding-top: 2.5vh;
-        width: 40%;
-
-
-        @include mediaquerie2 {
-            width: 100%;
-        }
-
-        h2,
-        p {
-            margin: 0;
-            font-size: 5rem;
-            font-weight: normal;
-            text-shadow:
-                -0.05rem -0.05rem 0 $clrPrincipal,
-                0.05rem -0.05rem 0 $clrPrincipal,
-                -0.05rem 0.05rem 0 $clrPrincipal,
-                0.05rem 0.05rem 0 $clrPrincipal;
-
-            @include mediaquerie5 {
-                font-size: 4.5rem;
-            }
-            @include mediaquerie6 {
-                font-size: 4rem;
-            }
-        }
-
-        h2 {
-            font-weight: 700;
-        }
-
-        p {
-            font-weight: 300;
-            transform: rotate(10deg);
-        }
-
-        .p-invertido {
-            transform: rotate(190deg);
-        }
-    }
-
-
-.desde-texto {
-    color: $clrRojo;
-    font-family: $fontTruculenta;
-    font-weight: 900;
-    font-size: 2rem;
-    width: 40%;
-    padding-bottom: 5vh;
-    text-shadow:
-        -0.05rem -0.05rem 0 $clrPrincipal,
-        0.05rem -0.05rem 0 $clrPrincipal,
-        -0.05rem 0.05rem 0 $clrPrincipal,
-        0.05rem 0.05rem 0 $clrPrincipal;
-
-    @include mediaquerie2 {
-        width: 100%;
-    }
-
-    @include mediaquerie3 {
-        font-size: 1.5rem;
-        padding-bottom: 2vh;
-    }
-
-    p {
-        margin: 0;
-        text-align: center;
-        line-height: 2rem;
-        letter-spacing: 1.5px;
-    }
-
+.body-inicio {
     
-}
-.venta-texto {
-    color: $clrOliva;
-    font-family: $fontTruculenta;
-    font-weight: 500;
-    font-size: 1rem;
-    width: 40%;
-    text-align: center;
-    letter-spacing: 1.5px;
+    background-image: url("../img/bg-index.svg");
+    background-size: auto;
+    background-repeat: repeat;
+    // background: $clrPrincipal;
 
-    @include mediaquerie2 {
-        width: 100%;
-    }
-    p {
-        display: inline;
-        background: $clrAzul;
-        padding: 0 5px;
+
+    .main-inicio {
+        height: 90vh;
+        font-family: $fontTruculenta;
+        background-image: url("../img/tanques.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+
+        .section-titulo {
+            background: #dfd9c983;
+            margin: 5%;
+            padding: 3.5%;
+            gap: 5%;
+            max-width: 450px;
+            border: 5px solid $clrAzul;
+
+            .titulo {
+                margin: 0;
+                padding-top: 2.5%;
+                font-size: 22px;
+                font-family: $fontFredoka;
+                font-weight: 800;
+                color: $clrAzul;
+                gap: 2px;
+
+                .apostrofe-invertido {
+                    font-size: 20px;
+                    font-family: $fontTongari;
+                    transform: rotate(180deg) translate(-5px, 20px);
+                }
+
+                .curi {
+                    font-size: 20px;
+                    font-family: $fontTongari;
+                }
+            }
+
+            .subtitulo {
+                display: inline;
+                font-family: $fontBecome;
+                color: $clrAzul;
+                text-align: center;
+                justify-content: center;
+                margin: 0;
+                padding-top: 2.5%;
+                max-width: 50%;
+
+                h2,
+                p {
+                    margin: 0;
+                    font-size: 24px;
+                }
+
+                h2 {
+                    font-weight: 700;
+                    font-size: 26px;
+                }
+
+                p {
+                    font-weight: 300;
+                    transform: rotate(10deg) translateY(-5px);
+                }
+
+                .p-invertido {
+                    transform: rotate(190deg);
+                }
+            }
+        }
     }
 }
-
-}}

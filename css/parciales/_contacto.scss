@@ -1,6 +1,6 @@
 .main-contacto {
     font-family: $fontTruculenta;
-    font-weight: 500;
+    font-weight: 700;
     background-color: $clrPrincipal;
     color: $clrAzul;
     grid-template-areas: "contactanos contactanos encontranos"
@@ -54,7 +54,6 @@
 
         a {
             color: $clrAzul;
-            font-weight: 600;
             gap: 10px;
             align-items: center;
 
@@ -79,6 +78,7 @@
             textarea,
             button {
                 width: 100%;
+                min-height: 30px;
                 font-family: $fontTruculenta;
                 font-size: 0.9rem;
                 background: $clrSecundario;
@@ -86,7 +86,12 @@
                 border: 1px solid $clrAzul;
                 border-radius: 5px;
                 margin-top: 1px;
+
+                @include mediaquerie6 {
+                    min-height: 20px;
+                }
             }
+
 
             button {
                 width: auto;
@@ -105,7 +110,6 @@
             text-wrap: stable;
         }
 
-
         a {
             display: flex;
             justify-content: center;
@@ -114,7 +118,6 @@
             text-align: center;
             padding-bottom: 10px;
             font-size: 1rem;
-            font-weight: 600;
 
             @include mediaquerie2 {
                 padding-bottom: 1px;
@@ -172,42 +175,44 @@
         @include mediaquerie2 {
             font-size: 0.9rem;
         }
-    }
 
-    .camion {
-        text-align: start;
-        position: relative;
-        height: 1.5rem;
-        border-bottom: 0.01rem solid var(-clr-azul);
-    }
 
-    .camion i {
-        font-size: 1.5rem;
-        width: 100%;
-        position: absolute;
-    }
+        .camion {
+            text-align: start;
+            position: relative;
+            height: 24px;
+            border-bottom: 0.15px solid var(-clr-azul);
+        }
 
-    .camion .bi-shop {
-        font-size: 1.3rem;
-    }
+        .camion i {
+            font-size: 24px;
+            width: 100%;
+            position: absolute;
+        }
 
-    .camion .bi-truck {
-        transform: translateX(1.5rem);
-    }
+        .camion .bi-shop {
+            font-size: 20px;
+        }
 
-    .camion .bi-house {
-        font-size: 1.35rem;
-        text-align: end;
-    }
+        .camion .bi-truck {
+            transform: translateX(24px);
+        }
 
-    .envios:hover .bi-truck {
-        transform: translateX(calc(100% - 3rem));
-        transition: transform 5s ease;
-    }
+        .camion .bi-house {
+            font-size: 22px;
+            text-align: end;
+        }
 
-    .envio-gratis {
-        background: $clrAzul;
-        color: $clrPrincipal;
+        &:hover .bi-truck {
+            transform: translateX(calc(100% - 48px));
+            transition: transform 5s ease;
+        }
+
+        .envio-gratis {
+            background: $clrAzul;
+            color: $clrPrincipal;
+            font-weight: 400;
+        }
     }
 
     .medios-de-pago {
@@ -223,14 +228,14 @@
             margin-bottom: 2px;
 
             @include mediaquerie2 {
-                padding-left: 0.1rem;
+                padding-left: 1.5px;
             }
 
             i {
                 font-size: 1.3rem;
 
                 @include mediaquerie4 {
-                    padding-left: 3rem;
+                    padding-left: 48px;
                 }
             }
         }
@@ -281,8 +286,5 @@
             background-color: $clrAzul;
             border-radius: 10px;
         }
-
     }
-
-
 }

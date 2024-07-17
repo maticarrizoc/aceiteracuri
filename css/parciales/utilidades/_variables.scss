@@ -2,23 +2,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
 @font-face {
     font-family: 'Become Choice';
-    src: url("../../fonts/Become\ Choice.ttf");
+    src: url("../../../fonts/Become\ Choice.ttf");
 }
-@import url('https://db.onlinewebfonts.com/c/ad4c3cd73550e13c224f699237ab4c5c?family=Become+Choice');
+
+@font-face {
+    font-family: 'Tongari';
+    src: url("../../../fonts/Tongari-ExtraBold-Italic.ttf");
+}
 
 $fontTruculenta: 'Truculenta', sans-serif;
 $fontBecome: 'Become Choice';
 $fontFredoka: 'Fredoka';
+$fontTongari: 'Tongari';
 
-$clrPrincipal: #DED9C9;
+$clrPrincipal: #dfd9c9;
 $clrSecundario: #D9D3C3;
 $clrCrema: #E3E0D5;
-$clrOliva: #C6B866;
+$clrOliva: #bdac67;
 $clrOliva-claro: #D6C476;
-$clrUva: #4e6200;
-$clrGirasol: #cec937;
+$clrUva: #4e6200a2;
+$clrGirasol: #cec937a4;
 $clrRojo: #911714;
-$clrRojoClaro: #9C332F;
+$clrRojoClaro: #0f645b;
 $clrVerdeAgua: #1DBFAF;
 $clrVerdeAguaClaro: #49C7BA;
 $clrVerdeAguaOscuro: #199E8E;

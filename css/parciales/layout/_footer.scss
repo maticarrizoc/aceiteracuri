@@ -3,7 +3,11 @@
     align-items: space-around;
     color: $clrAzul;
     background-color: $clrPrincipal;
-    border-top: 0.15rem solid $clrAzul;
+    // background-image: url("../img/bg-index.svg");
+    // background-size: contain;
+    // background-repeat: repeat;
+
+    border-top: 2.5px solid $clrAzul;
     font-family: $fontTruculenta;
     font-size: 1rem;
     font-weight: 500;
@@ -18,10 +22,10 @@
         width: 100%;
 
         .footer-logo-img {
-            width: 10rem;
+            width: 160px;
 
             @include mediaquerie5 {
-                width: 7.5rem;
+                width: 120px;
             }
         }
 
@@ -74,10 +78,10 @@
         color: $clrRojo;
         font-weight: 700;
         text-shadow:
-            -0.01rem -0.01rem 0 $clrOliva,
-            0.01rem -0.01rem 0 $clrOliva,
-            -0.01rem 0.01rem 0 $clrOliva,
-            0.01rem 0.01rem 0 $clrOliva;
+            -0.15px -0.15px 0 $clrOliva,
+            0.15px -0.15px 0 $clrOliva,
+            -0.15px 0.15px 0 $clrOliva,
+            0.15px 0.15px 0 $clrOliva;
         margin-top: auto;
         padding-bottom: 1vh;
         order: 3;
@@ -97,10 +101,10 @@
         color: $clrRojo;
         font-weight: 700;
         text-shadow:
-            -0.01rem -0.01rem 0 $clrOliva,
-            0.01rem -0.01rem 0 $clrOliva,
-            -0.01rem 0.01rem 0 $clrOliva,
-            0.01rem 0.01rem 0 $clrOliva;
+            -0.15px -0.15px 0 $clrOliva,
+            0.15px -0.15px 0 $clrOliva,
+            -0.15px 0.15px 0 $clrOliva,
+            0.15px 0.15px 0 $clrOliva;
         margin-top: auto;
         padding-bottom: 1vh;
         order: 4;
@@ -119,7 +123,7 @@
             display: flex;
             flex-direction: row;
             justify-content: center;
-            gap: 0.25rem;
+            gap: 4px;
             color: $clrRojo;
 
             &:hover {
@@ -153,7 +157,7 @@
         order: 5;
         width: 100%;
         text-align: center;
-        border-top: 0.10rem solid $clrAzul;
+        border-top: 1.5px solid $clrAzul;
         padding-top: 1vh;
 
         @include mediaquerie3 {
