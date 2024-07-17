@@ -8,7 +8,8 @@
     h1,
     h2,
     h3,
-    h4 {
+    h4,
+    h5 {
         font-weight: 700;
     }
 
@@ -22,13 +23,18 @@
     }
 
     .maridajes {
-        .maridaje-oliva, .maridaje-uva, .maridaje-girasol {
+
+        .maridaje-oliva,
+        .maridaje-uva,
+        .maridaje-girasol {
             margin-left: 20px;
             text-align: left;
-            h4{
+
+            h4 {
                 margin-left: 10px;
             }
         }
+
         .carousel {
             width: 500px;
             margin: 0 auto;
@@ -40,18 +46,20 @@
             .carousel-item {
                 .carousel-caption {
                     font-size: 20px;
+                    font-weight: 700;
                     line-height: 20px;
-                    color: $clrCrema;
+                    color: $clrAzul;
                     text-shadow:
-                        -1px -1px 0 $clrGris,
-                        1px -1px 0 $clrGris,
-                        -1px 1px 0 $clrGris,
-                        1px 1px 0 $clrGris;
-                        @include mediaquerie6 {
-                            font-size: 16px;
-                            line-height: 16px;
-                            
-                        }
+                        -1px -1px 0 $clrCrema,
+                        1px -1px 0 $clrCrema,
+                        -1px 1px 0 $clrCrema,
+                        1px 1px 0 $clrCrema;
+
+                    @include mediaquerie6 {
+                        font-size: 16px;
+                        line-height: 16px;
+
+                    }
                 }
 
             }
@@ -59,17 +67,32 @@
     }
 
     .envases {
+        padding-bottom: 5px;
 
-        .envase {
-            display: flex;
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-        }
+        .img-lista {
+            display: flex; 
+            justify-content:center;
 
-        .img-envase {
-            rotate: 90deg;
-            width: 100px;
+            .img-envase {
+                width: 250px;
+                border: 5px solid $clrAzul;
+            }
+
+            .lista {
+                margin: 0;
+                padding: 0;
+                width: 250px;
+                background: $clrAzul;
+                color: $clrPrincipal;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                li{
+                    list-style-type: square;
+                }
+            }
         }
     }
 }

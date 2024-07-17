@@ -529,7 +529,8 @@ header .navbar .menu .active:hover {
 .main-envases h1,
 .main-envases h2,
 .main-envases h3,
-.main-envases h4 {
+.main-envases h4,
+.main-envases h5 {
   font-weight: 700;
 }
 .main-envases ol > li {
@@ -539,11 +540,15 @@ header .navbar .menu .active:hover {
 .main-envases ul > li {
   list-style: disc;
 }
-.main-envases .maridajes .maridaje-oliva, .main-envases .maridajes .maridaje-uva, .main-envases .maridajes .maridaje-girasol {
+.main-envases .maridajes .maridaje-oliva,
+.main-envases .maridajes .maridaje-uva,
+.main-envases .maridajes .maridaje-girasol {
   margin-left: 20px;
   text-align: left;
 }
-.main-envases .maridajes .maridaje-oliva h4, .main-envases .maridajes .maridaje-uva h4, .main-envases .maridajes .maridaje-girasol h4 {
+.main-envases .maridajes .maridaje-oliva h4,
+.main-envases .maridajes .maridaje-uva h4,
+.main-envases .maridajes .maridaje-girasol h4 {
   margin-left: 10px;
 }
 .main-envases .maridajes .carousel {
@@ -557,9 +562,10 @@ header .navbar .menu .active:hover {
 }
 .main-envases .maridajes .carousel .carousel-item .carousel-caption {
   font-size: 20px;
+  font-weight: 700;
   line-height: 20px;
-  color: #E3E0D5;
-  text-shadow: -1px -1px 0 #3A3A39, 1px -1px 0 #3A3A39, -1px 1px 0 #3A3A39, 1px 1px 0 #3A3A39;
+  color: #181B34;
+  text-shadow: -1px -1px 0 #E3E0D5, 1px -1px 0 #E3E0D5, -1px 1px 0 #E3E0D5, 1px 1px 0 #E3E0D5;
 }
 @media (width <= 550px) {
   .main-envases .maridajes .carousel .carousel-item .carousel-caption {
@@ -567,15 +573,30 @@ header .navbar .menu .active:hover {
     line-height: 16px;
   }
 }
-.main-envases .envases .envase {
+.main-envases .envases {
+  padding-bottom: 5px;
+}
+.main-envases .envases .img-lista {
   display: flex;
-  flex-direction: column-reverse;
+  justify-content: center;
+}
+.main-envases .envases .img-lista .img-envase {
+  width: 250px;
+  border: 5px solid #181B34;
+}
+.main-envases .envases .img-lista .lista {
+  margin: 0;
+  padding: 0;
+  width: 250px;
+  background: #181B34;
+  color: #dfd9c9;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.main-envases .envases .img-envase {
-  rotate: 90deg;
-  width: 100px;
+.main-envases .envases .img-lista .lista li {
+  list-style-type: square;
 }
 
 .main-contacto {
