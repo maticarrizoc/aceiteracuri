@@ -1,13 +1,15 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Truculenta:opsz,wght@12..72,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
 @font-face {
-  font-family: "Become Choice";
+  font-family: "Become";
   src: url("./../../../fonts/Become-Choice.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Tongari";
-  src: url("./../../../fonts/Tongari-ExtraBold-Italic.ttf") format("truetype");
+  font-family: "Become Choice";
+  src: url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.eot");
+  src: url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.woff") format("woff"), url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/ad4c3cd73550e13c224f699237ab4c5c.svg#Become Choice") format("svg");
 }
 * {
   box-sizing: border-box;
@@ -86,7 +88,7 @@ header .navbar .menu li a {
 }
 header .navbar .menu li a:hover {
   color: #181B34;
-  font-family: "Become Choice";
+  font-family: "Become", "Become Choice";
   font-style: italic;
   font-size: 1.8rem;
   font-weight: 900;
@@ -165,18 +167,15 @@ header .navbar .menu .active:hover {
   color: #181B34;
   gap: 2px;
 }
-.body-inicio .main-inicio .section-titulo .titulo .apostrofe-invertido {
-  font-size: 20px;
-  font-family: "Tongari";
-  transform: rotate(180deg) translate(-5px, 20px);
-}
 .body-inicio .main-inicio .section-titulo .titulo .curi {
-  font-size: 20px;
-  font-family: "Tongari";
+  font-size: 24px;
+  font-family: "Vollkorn";
+  font-style: italic;
+  font-weight: 900;
 }
 .body-inicio .main-inicio .section-titulo .subtitulo {
   display: inline;
-  font-family: "Become Choice";
+  font-family: "Become", "Become Choice";
   color: #181B34;
   text-align: center;
   justify-content: center;
@@ -234,7 +233,7 @@ header .navbar .menu .active:hover {
   }
 }
 .main-sobre-nosotros .consumasalud {
-  font-family: "Become Choice";
+  font-family: "Become", "Become Choice";
   font-size: 4rem;
   text-shadow: -0.1px -0.1px 0 #dfd9c9, 0.1px -0.1px 0 #dfd9c9, -0.1px 0.1px 0 #dfd9c9, 0.1px 0.1px 0 #dfd9c9;
   background-image: url("../img/bgsn.svg");

@@ -1,9 +1,7 @@
 .body-inicio {
-    
     background-image: url("../img/bg-index.svg");
     background-size: auto;
     background-repeat: repeat;
-    // background: $clrPrincipal;
 
 
     .main-inicio {
@@ -35,21 +33,17 @@
                 color: $clrAzul;
                 gap: 2px;
 
-                .apostrofe-invertido {
-                    font-size: 20px;
-                    font-family: $fontTongari;
-                    transform: rotate(180deg) translate(-5px, 20px);
-                }
-
                 .curi {
-                    font-size: 20px;
-                    font-family: $fontTongari;
+                    font-size: 24px;
+                    font-family: $fontVollkorn;
+                    font-style: italic;
+                    font-weight: 900;
                 }
             }
 
             .subtitulo {
                 display: inline;
-                font-family: $fontBecome;
+                font-family: $fontBecome, $fontBecome2;
                 color: $clrAzul;
                 text-align: center;
                 justify-content: center;

@@ -49,7 +49,7 @@ header {
 
                     &:hover {
                         color: $clrAzul;
-                        font-family: $fontBecome;
+                        font-family: $fontBecome, $fontBecome2;
                         font-style: italic;
                         font-size: 1.8rem;
                         font-weight: 900;
