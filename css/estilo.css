@@ -412,7 +412,7 @@ header .navbar .menu .active:hover {
 .main-productos .productos .producto-item .producto-show .titulo-subtitulo-producto .subtitulo-producto {
   display: flex;
   flex-wrap: wrap;
-  text-shadow: -0.5px -0.5px 0 #bdac67, 0.5px -0.5px 0 #bdac67, -0.5px 0.5px 0 #bdac67, 0.5px 0.5px 0 #bdac67;
+  text-shadow: -0.5px -0.5px 0 #dfd9c9, 0.5px -0.5px 0 #dfd9c9, -0.5px 0.5px 0 #dfd9c9, 0.5px 0.5px 0 #dfd9c9;
 }
 .main-productos .productos .producto-item .producto-show .imagen-producto {
   max-width: 80px;
@@ -426,7 +426,7 @@ header .navbar .menu .active:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: start;
+  text-align: center;
   padding-top: 32px;
   padding-left: 56px;
   bottom: 0;
@@ -438,7 +438,6 @@ header .navbar .menu .active:hover {
 }
 .main-productos .productos .producto-item .producto-overlay .subtitulo-producto {
   font-size: 1.2rem;
-  color: #911714;
   font-weight: 700;
   text-shadow: -0.5px -0.5px 0 #bdac67, 0.5px -0.5px 0 #bdac67, -0.5px 0.5px 0 #bdac67, 0.5px 0.5px 0 #bdac67;
   margin-bottom: 0;
@@ -448,6 +447,9 @@ header .navbar .menu .active:hover {
 }
 .main-productos .productos .producto-item:hover {
   box-shadow: -1px -1px 10px #3A3A39, 1px -1px 10px #3A3A39, -1px 1px 10px #3A3A39, 1px 1px 10px #3A3A39;
+}
+.main-productos .productos .producto-item:hover .subtitulo-producto {
+  font-weight: 800;
 }
 .main-productos .productos .producto-item:hover .producto-overlay {
   transform: translateY(0%);
@@ -545,10 +547,24 @@ header .navbar .menu .active:hover {
   margin-left: 20px;
   text-align: left;
 }
+@media (width <= 550px) {
+  .main-envases .maridajes .maridaje-oliva,
+  .main-envases .maridajes .maridaje-uva,
+  .main-envases .maridajes .maridaje-girasol {
+    margin-left: 5px;
+  }
+}
 .main-envases .maridajes .maridaje-oliva h4,
 .main-envases .maridajes .maridaje-uva h4,
 .main-envases .maridajes .maridaje-girasol h4 {
   margin-left: 10px;
+}
+@media (width <= 550px) {
+  .main-envases .maridajes .maridaje-oliva h4,
+  .main-envases .maridajes .maridaje-uva h4,
+  .main-envases .maridajes .maridaje-girasol h4 {
+    margin-left: 5px;
+  }
 }
 .main-envases .maridajes .carousel {
   width: 500px;
@@ -593,6 +609,13 @@ header .navbar .menu .active:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media (width <= 550px) {
+  .main-envases .envases .img-lista .lista {
+    font-size: 14px;
+    padding: 20px;
+    align-items: start;
+  }
 }
 .main-envases .envases .img-lista .lista li {
   list-style-type: square;
@@ -816,6 +839,11 @@ header .navbar .menu .active:hover {
 @media (width <= 768px) {
   .main-contacto .medios-de-pago ul i {
     padding-left: 48px;
+  }
+}
+@media (width <= 550px) {
+  .main-contacto .medios-de-pago ul i {
+    padding-left: 16px;
   }
 }
 .main-contacto .promociones {

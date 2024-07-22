@@ -44,10 +44,10 @@
                         display: flex;
                         flex-wrap: wrap;
                         text-shadow:
-                            -0.5px -0.5px 0 $clrOliva,
-                            0.5px -0.5px 0 $clrOliva,
-                            -0.5px 0.5px 0 $clrOliva,
-                            0.5px 0.5px 0 $clrOliva;
+                            -0.5px -0.5px 0 $clrPrincipal,
+                            0.5px -0.5px 0 $clrPrincipal,
+                            -0.5px 0.5px 0 $clrPrincipal,
+                            0.5px 0.5px 0 $clrPrincipal;
                     }
 
                 }
@@ -70,7 +70,7 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
-                text-align: start;
+                text-align: center;
                 padding-top: 32px;
                 padding-left: 56px;
                 bottom: 0;
@@ -82,7 +82,6 @@
 
                 .subtitulo-producto {
                     font-size: 1.2rem;
-                    color: $clrRojo;
                     font-weight: 700;
                     text-shadow:
                         -0.5px -0.5px 0 $clrOliva,
@@ -103,12 +102,14 @@
                     -1px 1px 10px $clrGris,
                     1px 1px 10px $clrGris;
 
-            }
+                    .subtitulo-producto {
+                        font-weight: 800;
+                    }
+                    .producto-overlay {
+                        transform: translateY(0%);
+                    }
 
-            &:hover .producto-overlay {
-                transform: translateY(0%);
             }
-
         }
 
         .producto-aceite:hover .imagen-producto {

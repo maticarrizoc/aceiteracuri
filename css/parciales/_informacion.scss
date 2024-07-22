@@ -30,8 +30,16 @@
             margin-left: 20px;
             text-align: left;
 
+            @include mediaquerie6 {
+                margin-left: 5px;
+            }
+
             h4 {
                 margin-left: 10px;
+
+                @include mediaquerie6 {
+                    margin-left: 5px;
+                }
             }
         }
 
@@ -88,6 +96,11 @@
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+                @include mediaquerie6 {
+                    font-size: 14px;
+                    padding: 20px;
+                    align-items: start;
+                }
 
                 li{
                     list-style-type: square;

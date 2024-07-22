@@ -237,6 +237,10 @@
                 @include mediaquerie4 {
                     padding-left: 48px;
                 }
+
+                @include mediaquerie6 {
+                    padding-left: 16px;
+                }
             }
         }
     }
