@@ -142,7 +142,7 @@ header .navbar .menu .active:hover {
 .body-inicio .main-inicio {
   height: 90vh;
   font-family: "Truculenta", sans-serif;
-  background-image: url("../img/tanques.svg");
+  background-image: url("../img/tanques.avif");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom right;
@@ -236,7 +236,7 @@ header .navbar .menu .active:hover {
   font-family: "Become", "Become Choice";
   font-size: 4rem;
   text-shadow: -0.1px -0.1px 0 #dfd9c9, 0.1px -0.1px 0 #dfd9c9, -0.1px 0.1px 0 #dfd9c9, 0.1px 0.1px 0 #dfd9c9;
-  background-image: url("../img/bgsn.svg");
+  background-image: url("../img/bgsn.avif");
   background-position: top left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,7 +280,7 @@ header .navbar .menu .active:hover {
   font-size: 1.2rem;
   font-weight: 800;
   text-align: center;
-  background-image: url("../img/bgsn.svg");
+  background-image: url("../img/bgsn.avif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -302,7 +302,7 @@ header .navbar .menu .active:hover {
 }
 .main-sobre-nosotros .img1 {
   position: relative;
-  background-image: url("../img/sirviendo1.svg");
+  background-image: url("../img/sirviendo1.avif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -314,7 +314,7 @@ header .navbar .menu .active:hover {
 }
 .main-sobre-nosotros .img2 {
   position: relative;
-  background-image: url("../img/sirviendo2.svg");
+  background-image: url("../img/sirviendo2.avif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -326,7 +326,7 @@ header .navbar .menu .active:hover {
 }
 .main-sobre-nosotros .img3 {
   position: relative;
-  background-image: url("../img/hardan-lautaro2.svg");
+  background-image: url("../img/hardan-lautaro.avif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -338,7 +338,7 @@ header .navbar .menu .active:hover {
 }
 .main-sobre-nosotros .img4 {
   position: relative;
-  background-image: url("../img/distincion-senadores.svg");
+  background-image: url("../img/distincion-senadores.avif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
